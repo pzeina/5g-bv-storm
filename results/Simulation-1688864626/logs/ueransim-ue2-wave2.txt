@@ -1,0 +1,626 @@
+UERANSIM v3.2.6
+[2023-07-09 01:05:57.850] [208930000005029|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.850] [208930000005014|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.850] [208930000005029|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.850] [208930000005010|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.850] [208930000005014|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.850] [208930000005013|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.851] [208930000005018|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.851] [208930000005013|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.851] [208930000005023|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.851] [208930000005018|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.851] [208930000005028|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.851] [208930000005015|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.851] [208930000005022|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.851] [208930000005014|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.851] [208930000005023|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.851] [208930000005014|rrc] [warning] Suitable cell selection failed in [1] cells. [0] out of PLMN, [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.851] [208930000005014|rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.851] [208930000005014|rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2023-07-09 01:05:57.851] [208930000005018|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.851] [208930000005027|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.851] [208930000005013|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.851] [208930000005013|rrc] [warning] Suitable cell selection failed in [1] cells. [0] out of PLMN, [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.851] [208930000005018|rrc] [warning] Suitable cell selection failed in [1] cells. [0] out of PLMN, [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.851] [208930000005013|rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.851] [208930000005013|rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2023-07-09 01:05:57.851] [208930000005018|rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.851] [208930000005018|rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2023-07-09 01:05:57.852] [208930000005005|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.852] [208930000005028|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.853] [208930000005015|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.853] [208930000005010|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.853] [208930000005022|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.853] [208930000005011|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.853] [208930000005010|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.853] [208930000005010|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.853] [208930000005010|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.853] [208930000005010|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.853] [208930000005010|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.853] [208930000005027|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.853] [208930000005021|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.853] [208930000005006|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.853] [208930000005005|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.854] [208930000005006|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.854] [208930000005003|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.854] [208930000005003|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.854] [208930000005016|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.854] [208930000005016|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.854] [208930000005008|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.854] [208930000005002|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.854] [208930000005008|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.854] [208930000005002|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.854] [208930000005001|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.854] [208930000005009|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.855] [208930000005000|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.855] [208930000005012|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.855] [208930000005024|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.855] [208930000005017|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.855] [208930000005004|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.856] [208930000005019|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.856] [208930000005007|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.856] [208930000005020|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.856] [208930000005025|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.856] [208930000005026|nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:57.857] [208930000005021|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.858] [208930000005010|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.858] [208930000005010|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.859] [208930000005006|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.859] [208930000005006|rrc] [warning] Suitable cell selection failed in [1] cells. [0] out of PLMN, [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.859] [208930000005006|rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.859] [208930000005006|rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2023-07-09 01:05:57.859] [208930000005009|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.859] [208930000005023|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.859] [208930000005000|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.859] [208930000005029|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.859] [208930000005012|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.860] [208930000005024|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.862] [208930000005012|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.860] [208930000005019|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.862] [208930000005012|rrc] [warning] Suitable cell selection failed in [1] cells. [0] out of PLMN, [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.862] [208930000005012|rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.862] [208930000005012|rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2023-07-09 01:05:57.862] [208930000005024|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.860] [208930000005007|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.862] [208930000005019|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.860] [208930000005020|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.862] [208930000005007|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.860] [208930000005025|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.862] [208930000005027|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.862] [208930000005020|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.860] [208930000005017|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.862] [208930000005015|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.862] [208930000005025|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.862] [208930000005015|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.863] [208930000005017|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.860] [208930000005026|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.863] [208930000005026|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.863] [208930000005026|rrc] [warning] Suitable cell selection failed in [1] cells. [0] out of PLMN, [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.863] [208930000005026|rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.863] [208930000005026|rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2023-07-09 01:05:57.860] [208930000005023|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.860] [208930000005028|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.861] [208930000005016|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.863] [208930000005023|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.861] [208930000005009|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.863] [208930000005023|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.863] [208930000005023|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.861] [208930000005022|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.863] [208930000005016|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.863] [208930000005017|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.863] [208930000005017|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.863] [208930000005017|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.863] [208930000005017|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.863] [208930000005016|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.863] [208930000005016|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.863] [208930000005016|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.865] [208930000005025|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.865] [208930000005025|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.865] [208930000005025|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.865] [208930000005025|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.861] [208930000005008|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.861] [208930000005003|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.861] [208930000005002|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.861] [208930000005021|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.861] [208930000005005|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.861] [208930000005000|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.865] [208930000005022|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.860] [208930000005004|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.865] [208930000005022|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.865] [208930000005022|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.865] [208930000005022|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.865] [208930000005021|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.865] [208930000005021|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.865] [208930000005021|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.865] [208930000005021|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.865] [208930000005004|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.865] [208930000005008|rrc] [warning] Suitable cell selection failed in [1] cells. [0] out of PLMN, [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.865] [208930000005008|rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.865] [208930000005008|rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2023-07-09 01:05:57.865] [208930000005003|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.865] [208930000005003|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.865] [208930000005003|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.865] [208930000005003|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.862] [208930000005029|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.865] [208930000005029|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.865] [208930000005029|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.865] [208930000005029|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.866] [208930000005029|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.866] [208930000005029|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.866] [208930000005022|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.866] [208930000005022|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.867] [208930000005002|rrc] [warning] Suitable cell selection failed in [1] cells. [0] out of PLMN, [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.867] [208930000005002|rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:05:57.867] [208930000005002|rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2023-07-09 01:05:57.868] [208930000005007|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.868] [208930000005007|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.868] [208930000005007|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.868] [208930000005007|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.869] [208930000005016|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.869] [208930000005016|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.873] [208930000005004|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.873] [208930000005004|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.873] [208930000005004|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.873] [208930000005004|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.873] [208930000005020|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.873] [208930000005020|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.873] [208930000005020|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.873] [208930000005020|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.873] [208930000005027|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.873] [208930000005027|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.873] [208930000005027|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.873] [208930000005027|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.877] [208930000005019|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.877] [208930000005028|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.877] [208930000005019|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.877] [208930000005019|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.877] [208930000005019|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.877] [208930000005028|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.877] [208930000005028|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.877] [208930000005028|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.878] [208930000005000|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.878] [208930000005009|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.878] [208930000005009|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.878] [208930000005009|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.878] [208930000005009|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.880] [208930000005024|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.880] [208930000005024|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.880] [208930000005024|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.880] [208930000005024|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.880] [208930000005009|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.880] [208930000005009|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.881] [208930000005000|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.881] [208930000005000|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.881] [208930000005000|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.884] [208930000005017|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.884] [208930000005017|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.885] [208930000005015|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.885] [208930000005015|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.885] [208930000005015|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.890] [208930000005029|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.890] [208930000005029|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.890] [208930000005005|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.890] [208930000005005|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.890] [208930000005005|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.890] [208930000005005|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.892] [208930000005024|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.892] [208930000005024|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.893] [208930000005023|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.893] [208930000005023|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.894] [208930000005021|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.894] [208930000005021|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.897] [208930000005004|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.897] [208930000005004|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.897] [208930000005003|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.897] [208930000005003|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.897] [208930000005005|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.897] [208930000005005|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.897] [208930000005028|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.897] [208930000005028|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.898] [208930000005019|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.898] [208930000005019|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.901] [208930000005015|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.901] [208930000005015|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.903] [208930000005011|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:57.903] [208930000005000|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.903] [208930000005000|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.905] [208930000005011|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:57.906] [208930000005010|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.906] [208930000005010|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.907] [208930000005025|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.907] [208930000005025|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.912] [208930000005020|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.912] [208930000005020|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.913] [208930000005011|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:57.913] [208930000005011|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:57.913] [208930000005011|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:57.913] [208930000005011|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:57.921] [208930000005029|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.921] [208930000005029|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.922] [208930000005007|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.922] [208930000005007|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.922] [208930000005011|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.922] [208930000005011|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.923] [208930000005027|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:57.923] [208930000005027|nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:57.923] [208930000005010|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.923] [208930000005010|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.925] [208930000005010|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.934] [208930000005021|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.934] [208930000005021|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.939] [208930000005022|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.939] [208930000005022|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.939] [208930000005022|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.939] [208930000005022|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.939] [208930000005028|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.939] [208930000005022|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.939] [208930000005021|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.939] [208930000005021|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.939] [208930000005021|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.939] [208930000005028|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.939] [208930000005028|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.939] [208930000005028|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.939] [208930000005028|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.941] [208930000005009|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.941] [208930000005009|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.942] [208930000005016|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.942] [208930000005016|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.943] [208930000005016|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.943] [208930000005016|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.944] [208930000005009|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.944] [208930000005009|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.944] [208930000005016|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.944] [208930000005009|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.947] [208930000005027|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.947] [208930000005027|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.947] [208930000005027|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.947] [208930000005027|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.947] [208930000005027|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.958] [208930000005029|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.966] [208930000005004|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.967] [208930000005004|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.967] [208930000005004|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.972] [208930000005000|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.972] [208930000005000|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.972] [208930000005004|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.972] [208930000005004|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.973] [208930000005000|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.973] [208930000005000|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.973] [208930000005000|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.973] [208930000005003|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.973] [208930000005003|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.973] [208930000005003|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.973] [208930000005003|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.973] [208930000005003|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.974] [208930000005017|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.974] [208930000005017|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.974] [208930000005017|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.974] [208930000005017|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.974] [208930000005015|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.974] [208930000005015|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.975] [208930000005015|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.975] [208930000005015|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.975] [208930000005015|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.976] [208930000005023|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.976] [208930000005023|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.976] [208930000005023|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.976] [208930000005023|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.977] [208930000005007|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.977] [208930000005007|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.977] [208930000005017|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.978] [208930000005007|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.978] [208930000005007|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.978] [208930000005023|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.980] [208930000005011|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.980] [208930000005011|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.981] [208930000005007|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.981] [208930000005011|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.981] [208930000005011|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.981] [208930000005011|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.982] [208930000005005|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.982] [208930000005005|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.983] [208930000005019|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.983] [208930000005019|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.983] [208930000005019|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.983] [208930000005019|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.983] [208930000005019|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.984] [208930000005024|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.984] [208930000005024|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.985] [208930000005024|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.985] [208930000005024|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.985] [208930000005024|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.985] [208930000005020|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.985] [208930000005005|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.985] [208930000005005|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.985] [208930000005005|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.985] [208930000005020|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.985] [208930000005020|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.985] [208930000005020|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.985] [208930000005020|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:57.987] [208930000005025|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:57.987] [208930000005025|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:57.988] [208930000005025|rrc] [info] RRC connection established
+[2023-07-09 01:05:57.988] [208930000005025|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:57.988] [208930000005025|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:58.032] [208930000005029|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:05:58.032] [208930000005029|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:05:58.032] [208930000005029|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:58.032] [208930000005029|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:05:58.034] [208930000005029|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:05:58.034] [208930000005029|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:05:58.224] [208930000005010|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:05:58.224] [208930000005010|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:05:58.224] [208930000005010|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:58.224] [208930000005010|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:05:58.327] [208930000005010|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:05:58.327] [208930000005010|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:05:58.356] [208930000005022|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:05:58.356] [208930000005022|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:05:58.356] [208930000005022|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:58.356] [208930000005022|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:05:58.403] [208930000005022|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:05:58.403] [208930000005022|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:05:58.654] [208930000005021|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:05:58.654] [208930000005021|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:05:58.654] [208930000005021|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:58.654] [208930000005021|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:05:58.759] [208930000005021|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:05:58.759] [208930000005021|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:05:58.932] [208930000005001|rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:58.946] [208930000005028|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:05:58.946] [208930000005028|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:05:58.946] [208930000005028|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:58.946] [208930000005028|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:05:59.047] [208930000005028|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:05:59.047] [208930000005028|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:05:59.149] [208930000005016|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:05:59.149] [208930000005016|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:05:59.149] [208930000005016|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:59.149] [208930000005016|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:05:59.255] [208930000005016|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:05:59.255] [208930000005016|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:05:59.255] [208930000005009|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:05:59.255] [208930000005009|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:05:59.255] [208930000005009|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:59.255] [208930000005009|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:05:59.255] [208930000005009|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:05:59.255] [208930000005009|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:05:59.357] [208930000005027|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:05:59.357] [208930000005027|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:05:59.357] [208930000005027|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:59.357] [208930000005027|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:05:59.359] [208930000005027|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:05:59.359] [208930000005027|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:05:59.659] [208930000005004|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:05:59.659] [208930000005004|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:05:59.659] [208930000005004|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:59.659] [208930000005004|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:05:59.759] [208930000005004|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:05:59.759] [208930000005004|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:05:59.938] [208930000005000|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:05:59.938] [208930000005000|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:05:59.938] [208930000005000|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:59.938] [208930000005000|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:00.039] [208930000005000|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:00.039] [208930000005000|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:00.056] [208930000005001|nas] [error] PLMN selection failure, no cells in coverage
+[2023-07-09 01:06:00.147] [208930000005003|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:00.147] [208930000005003|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:00.147] [208930000005003|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.147] [208930000005003|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:00.255] [208930000005003|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:00.255] [208930000005003|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:00.255] [208930000005017|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:00.255] [208930000005017|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:00.255] [208930000005017|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.255] [208930000005017|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:00.255] [208930000005017|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:00.255] [208930000005017|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:00.351] [208930000005018|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:06:00.351] [208930000005013|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:06:00.351] [208930000005018|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.351] [208930000005018|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:06:00.351] [208930000005013|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.351] [208930000005014|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:06:00.351] [208930000005013|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:06:00.351] [208930000005013|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:06:00.351] [208930000005018|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:06:00.351] [208930000005014|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.351] [208930000005014|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:06:00.351] [208930000005013|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:06:00.351] [208930000005014|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:06:00.351] [208930000005013|nas] [debug] Sending Initial Registration
+[2023-07-09 01:06:00.354] [208930000005006|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:06:00.355] [208930000005002|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:06:00.355] [208930000005002|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.355] [208930000005002|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:06:00.355] [208930000005002|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:06:00.356] [208930000005012|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:06:00.356] [208930000005012|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.356] [208930000005012|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:06:00.356] [208930000005012|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:06:00.356] [208930000005018|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:06:00.356] [208930000005014|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:06:00.356] [208930000005014|nas] [debug] Sending Initial Registration
+[2023-07-09 01:06:00.356] [208930000005018|nas] [debug] Sending Initial Registration
+[2023-07-09 01:06:00.357] [208930000005026|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:06:00.357] [208930000005026|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.357] [208930000005026|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:06:00.357] [208930000005026|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:06:00.357] [208930000005026|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:06:00.357] [208930000005026|nas] [debug] Sending Initial Registration
+[2023-07-09 01:06:00.359] [208930000005012|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:06:00.359] [208930000005012|nas] [debug] Sending Initial Registration
+[2023-07-09 01:06:00.360] [208930000005008|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:06:00.360] [208930000005008|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.360] [208930000005008|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:06:00.360] [208930000005008|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:06:00.360] [208930000005008|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:06:00.360] [208930000005008|nas] [debug] Sending Initial Registration
+[2023-07-09 01:06:00.360] [208930000005006|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.360] [208930000005006|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:06:00.360] [208930000005006|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:06:00.360] [208930000005006|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:06:00.360] [208930000005006|nas] [debug] Sending Initial Registration
+[2023-07-09 01:06:00.376] [208930000005018|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:06:00.376] [208930000005018|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:06:00.376] [208930000005018|rrc] [info] RRC connection established
+[2023-07-09 01:06:00.376] [208930000005018|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:06:00.376] [208930000005018|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:06:00.379] [208930000005012|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:06:00.380] [208930000005012|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:06:00.380] [208930000005002|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:06:00.380] [208930000005002|nas] [debug] Sending Initial Registration
+[2023-07-09 01:06:00.380] [208930000005012|rrc] [info] RRC connection established
+[2023-07-09 01:06:00.380] [208930000005012|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:06:00.380] [208930000005012|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:06:00.389] [208930000005026|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:06:00.389] [208930000005026|rrc] [info] RRC connection established
+[2023-07-09 01:06:00.389] [208930000005026|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:06:00.391] [208930000005026|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:06:00.391] [208930000005026|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:06:00.394] [208930000005014|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:06:00.394] [208930000005014|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:06:00.394] [208930000005014|rrc] [info] RRC connection established
+[2023-07-09 01:06:00.394] [208930000005014|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:06:00.394] [208930000005014|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:06:00.398] [208930000005008|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:06:00.398] [208930000005008|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:06:00.399] [208930000005008|rrc] [info] RRC connection established
+[2023-07-09 01:06:00.399] [208930000005008|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:06:00.399] [208930000005008|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:06:00.401] [208930000005013|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:06:00.401] [208930000005013|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:06:00.401] [208930000005013|rrc] [info] RRC connection established
+[2023-07-09 01:06:00.401] [208930000005013|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:06:00.401] [208930000005013|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:06:00.409] [208930000005006|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:06:00.409] [208930000005006|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:06:00.409] [208930000005002|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:06:00.409] [208930000005002|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:06:00.410] [208930000005002|rrc] [info] RRC connection established
+[2023-07-09 01:06:00.410] [208930000005002|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:06:00.410] [208930000005006|rrc] [info] RRC connection established
+[2023-07-09 01:06:00.410] [208930000005006|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:06:00.410] [208930000005002|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:06:00.410] [208930000005006|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:06:00.555] [208930000005015|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:00.555] [208930000005015|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:00.555] [208930000005015|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.555] [208930000005015|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:00.566] [208930000005001|nas] [info] Selected plmn[208/93]
+[2023-07-09 01:06:00.567] [208930000005001|rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:06:00.567] [208930000005001|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.567] [208930000005001|nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:06:00.567] [208930000005001|nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:06:00.567] [208930000005001|nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:06:00.567] [208930000005001|nas] [debug] Sending Initial Registration
+[2023-07-09 01:06:00.580] [208930000005015|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:00.580] [208930000005015|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:00.588] [208930000005001|nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:06:00.588] [208930000005001|rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:06:00.588] [208930000005001|rrc] [info] RRC connection established
+[2023-07-09 01:06:00.588] [208930000005001|rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:06:00.588] [208930000005001|nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:06:00.634] [208930000005023|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:00.634] [208930000005023|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:00.634] [208930000005023|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.634] [208930000005023|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:00.634] [208930000005023|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:00.634] [208930000005023|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:00.741] [208930000005007|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:00.741] [208930000005007|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:00.741] [208930000005007|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.741] [208930000005007|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:00.790] [208930000005007|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:00.790] [208930000005007|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:00.852] [208930000005011|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:00.852] [208930000005011|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:00.852] [208930000005011|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:00.852] [208930000005011|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:00.955] [208930000005011|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:00.955] [208930000005011|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:01.142] [208930000005019|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:01.142] [208930000005019|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:01.142] [208930000005019|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:01.142] [208930000005019|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:01.197] [208930000005019|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:01.197] [208930000005019|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:01.257] [208930000005024|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:01.257] [208930000005024|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:01.257] [208930000005024|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:01.257] [208930000005024|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:01.363] [208930000005024|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:01.363] [208930000005024|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:01.540] [208930000005005|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:01.540] [208930000005005|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:01.540] [208930000005005|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:01.540] [208930000005005|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:01.643] [208930000005005|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:01.643] [208930000005005|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:01.756] [208930000005020|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:01.756] [208930000005020|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:01.756] [208930000005020|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:01.756] [208930000005020|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:01.859] [208930000005020|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:01.859] [208930000005020|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:02.120] [208930000005025|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:02.120] [208930000005025|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:02.120] [208930000005025|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:02.120] [208930000005025|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:02.174] [208930000005025|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:02.174] [208930000005025|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:02.336] [208930000005018|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:02.337] [208930000005018|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:02.337] [208930000005018|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:02.337] [208930000005018|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:02.337] [208930000005018|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:02.337] [208930000005018|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:02.546] [208930000005012|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:02.546] [208930000005012|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:02.546] [208930000005012|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:02.546] [208930000005012|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:02.651] [208930000005012|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:02.651] [208930000005012|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:02.851] [208930000005026|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:02.851] [208930000005026|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:02.851] [208930000005026|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:02.851] [208930000005026|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:02.955] [208930000005026|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:02.955] [208930000005026|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:03.222] [208930000005014|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:03.222] [208930000005014|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:03.222] [208930000005014|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:03.222] [208930000005014|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:03.323] [208930000005014|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:03.323] [208930000005014|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:03.426] [208930000005008|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:03.426] [208930000005008|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:03.426] [208930000005008|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:03.426] [208930000005008|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:03.527] [208930000005008|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:03.527] [208930000005008|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:03.628] [208930000005013|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:03.628] [208930000005013|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:03.628] [208930000005013|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:03.628] [208930000005013|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:03.628] [208930000005013|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:03.628] [208930000005013|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:03.702] [208930000005002|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:03.702] [208930000005002|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:03.703] [208930000005002|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:03.703] [208930000005002|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:03.703] [208930000005002|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:03.703] [208930000005002|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:03.823] [208930000005006|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:03.823] [208930000005006|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:03.823] [208930000005006|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:03.823] [208930000005006|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:03.923] [208930000005006|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:03.923] [208930000005006|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 01:06:04.225] [208930000005001|nas] [error] Initial Registration failed [ILLEGAL_UE]
+[2023-07-09 01:06:04.225] [208930000005001|nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 01:06:04.225] [208930000005001|nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:06:04.225] [208930000005001|nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 01:06:04.327] [208930000005001|nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 01:06:04.327] [208930000005001|nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]

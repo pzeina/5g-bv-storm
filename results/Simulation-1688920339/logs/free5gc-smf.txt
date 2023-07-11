@@ -1,0 +1,29 @@
+2023-07-09T16:32:12Z[36m [INFO][SMF][CFG] [0mSMF config version [1.0.2]
+2023-07-09T16:32:12Z[36m [INFO][SMF][CFG] [0mUE-Routing config version [1.0.1]
+2023-07-09T16:32:12Z[36m [INFO][SMF][Init] [0mSMF Log level is set to [info] level
+2023-07-09T16:32:12Z[36m [INFO][LIB][NAS] [0mset log level : info
+2023-07-09T16:32:12Z[36m [INFO][LIB][NAS] [0mset report call : false
+2023-07-09T16:32:12Z[36m [INFO][LIB][NGAP] [0mset log level : info
+2023-07-09T16:32:12Z[36m [INFO][LIB][NGAP] [0mset report call : false
+2023-07-09T16:32:12Z[36m [INFO][LIB][Aper] [0mset log level : info
+2023-07-09T16:32:12Z[36m [INFO][LIB][Aper] [0mset report call : false
+2023-07-09T16:32:12Z[36m [INFO][LIB][PFCP] [0mset log level : info
+2023-07-09T16:32:12Z[36m [INFO][LIB][PFCP] [0mset report call : false
+2023-07-09T16:32:12Z[36m [INFO][SMF][App] [0msmf
+2023-07-09T16:32:12Z[36m [INFO][SMF][App] [0mSMF version:  
+	free5GC version: v3.2.0
+	build time:      2022-09-26T16:39:36Z
+	commit hash:     +722ca79
+	commit time:     2022-09-26T15:21:14Z
+	go version:      go1.14.4 linux/amd64
+2023-07-09T16:32:12Z[36m [INFO][SMF][CTX] [0msmfconfig Info: Version[1.0.2] Description[SMF initial local configuration]
+2023-07-09T16:32:12Z[36m [INFO][SMF][CTX] [0mEndpoints: [10.12.3.1]
+2023-07-09T16:32:12Z[36m [INFO][SMF][Init] [0mServer started
+2023-07-09T16:32:12Z[36m [INFO][SMF][Init] [0mSMF Registration to NRF {e40dae59-8cd6-4dfc-85e1-608ec6b8f247 SMF REGISTERED 0 0xc0004002c0 0xc000400540 [] []   [smf-nsmf] [] <nil> [] [] <nil> 0 0 0 area1 <nil> <nil> <nil> <nil> 0xc0002423c0 <nil> <nil> <nil> <nil> <nil> map[] <nil> false 0xc0004000a0 false false []}
+2023-07-09T16:32:12Z[36m [INFO][SMF][PFCP] [0mListen on 10.12.4.101:8805
+2023-07-09T16:32:12Z[36m [INFO][SMF][App] [0mSending PFCP Association Request to UPF[10.12.4.1]
+2023-07-09T16:32:12Z[36m [INFO][LIB][PFCP] [0mRemove Request Transaction [1]
+2023-07-09T16:32:12Z[36m [INFO][SMF][App] [0mReceived PFCP Association Setup Accepted Response from UPF[10.12.4.1]
+2023-07-09T16:41:06Z[36m [INFO][SMF][Init] [0mTerminating SMF...
+2023-07-09T16:41:06Z[36m [INFO][SMF][Consumer] [0mSend Deregister NFInstance
+2023-07-09T16:41:06Z[31m [ERRO][SMF][Init] [0mDeregister NF instance Error[server no response]

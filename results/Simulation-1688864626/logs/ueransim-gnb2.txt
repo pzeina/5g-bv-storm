@@ -1,0 +1,1752 @@
+UERANSIM v3.2.6
+[2023-07-09 01:03:44.029] [sctp] [info] Trying to establish SCTP connection... (10.12.2.2:38412)
+[2023-07-09 01:03:44.034] [sctp] [info] SCTP connection established (10.12.2.2:38412)
+[2023-07-09 01:03:44.034] [sctp] [debug] SCTP association setup ascId[558]
+[2023-07-09 01:03:44.034] [ngap] [debug] Sending NG Setup Request
+[2023-07-09 01:03:44.041] [ngap] [debug] NG Setup Response received
+[2023-07-09 01:03:44.041] [ngap] [info] NG Setup procedure is successful
+[2023-07-09 01:03:48.714] [rrc] [debug] UE[1] new signal detected
+[2023-07-09 01:03:48.735] [rrc] [info] RRC Setup for UE[1]
+[2023-07-09 01:03:48.736] [ngap] [debug] Initial NAS message received from UE[1]
+[2023-07-09 01:03:49.025] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:03:49.463] [rrc] [debug] UE[2] new signal detected
+[2023-07-09 01:03:49.476] [rrc] [info] RRC Setup for UE[2]
+[2023-07-09 01:03:49.477] [ngap] [debug] Initial NAS message received from UE[2]
+[2023-07-09 01:03:49.736] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:03:56.900] [rrc] [debug] UE[3] new signal detected
+[2023-07-09 01:03:56.922] [rrc] [info] RRC Setup for UE[3]
+[2023-07-09 01:03:56.922] [ngap] [debug] Initial NAS message received from UE[3]
+[2023-07-09 01:03:57.079] [rrc] [debug] UE[4] new signal detected
+[2023-07-09 01:03:57.079] [rrc] [debug] UE[5] new signal detected
+[2023-07-09 01:03:57.079] [rrc] [debug] UE[6] new signal detected
+[2023-07-09 01:03:57.080] [rrc] [debug] UE[7] new signal detected
+[2023-07-09 01:03:57.080] [rrc] [debug] UE[8] new signal detected
+[2023-07-09 01:03:57.081] [rrc] [debug] UE[9] new signal detected
+[2023-07-09 01:03:57.081] [rrc] [debug] UE[10] new signal detected
+[2023-07-09 01:03:57.082] [rrc] [debug] UE[11] new signal detected
+[2023-07-09 01:03:57.085] [rrc] [debug] UE[12] new signal detected
+[2023-07-09 01:03:57.085] [rrc] [debug] UE[13] new signal detected
+[2023-07-09 01:03:57.085] [rrc] [debug] UE[14] new signal detected
+[2023-07-09 01:03:57.087] [rrc] [debug] UE[15] new signal detected
+[2023-07-09 01:03:57.097] [rrc] [debug] UE[16] new signal detected
+[2023-07-09 01:03:57.102] [rrc] [debug] UE[17] new signal detected
+[2023-07-09 01:03:57.103] [rrc] [info] RRC Setup for UE[4]
+[2023-07-09 01:03:57.103] [rrc] [debug] UE[18] new signal detected
+[2023-07-09 01:03:57.103] [rrc] [debug] UE[19] new signal detected
+[2023-07-09 01:03:57.103] [rrc] [debug] UE[20] new signal detected
+[2023-07-09 01:03:57.103] [rrc] [debug] UE[21] new signal detected
+[2023-07-09 01:03:57.103] [rrc] [debug] UE[22] new signal detected
+[2023-07-09 01:03:57.103] [rrc] [debug] UE[23] new signal detected
+[2023-07-09 01:03:57.103] [rrc] [debug] UE[24] new signal detected
+[2023-07-09 01:03:57.103] [rrc] [debug] UE[25] new signal detected
+[2023-07-09 01:03:57.103] [rrc] [debug] UE[26] new signal detected
+[2023-07-09 01:03:57.110] [ngap] [debug] Initial NAS message received from UE[4]
+[2023-07-09 01:03:57.113] [rrc] [debug] UE[27] new signal detected
+[2023-07-09 01:03:57.119] [rrc] [debug] UE[28] new signal detected
+[2023-07-09 01:03:57.120] [rrc] [debug] UE[29] new signal detected
+[2023-07-09 01:03:57.128] [rrc] [info] RRC Setup for UE[7]
+[2023-07-09 01:03:57.128] [ngap] [debug] Initial NAS message received from UE[7]
+[2023-07-09 01:03:57.130] [rrc] [info] RRC Setup for UE[14]
+[2023-07-09 01:03:57.134] [ngap] [debug] Initial NAS message received from UE[14]
+[2023-07-09 01:03:57.141] [rrc] [info] RRC Setup for UE[23]
+[2023-07-09 01:03:57.143] [ngap] [debug] Initial NAS message received from UE[23]
+[2023-07-09 01:03:57.147] [rrc] [info] RRC Setup for UE[16]
+[2023-07-09 01:03:57.147] [rrc] [debug] UE[30] new signal detected
+[2023-07-09 01:03:57.147] [ngap] [debug] Initial NAS message received from UE[16]
+[2023-07-09 01:03:57.147] [rrc] [debug] UE[31] new signal detected
+[2023-07-09 01:03:57.148] [rrc] [debug] UE[32] new signal detected
+[2023-07-09 01:03:57.149] [rrc] [debug] UE[33] new signal detected
+[2023-07-09 01:03:57.165] [rrc] [info] RRC Setup for UE[9]
+[2023-07-09 01:03:57.170] [rrc] [info] RRC Setup for UE[17]
+[2023-07-09 01:03:57.170] [rrc] [info] RRC Setup for UE[13]
+[2023-07-09 01:03:57.171] [rrc] [info] RRC Setup for UE[31]
+[2023-07-09 01:03:57.171] [ngap] [debug] Initial NAS message received from UE[13]
+[2023-07-09 01:03:57.171] [rrc] [info] RRC Setup for UE[8]
+[2023-07-09 01:03:57.172] [ngap] [debug] Initial NAS message received from UE[31]
+[2023-07-09 01:03:57.172] [ngap] [debug] Initial NAS message received from UE[8]
+[2023-07-09 01:03:57.173] [ngap] [debug] Initial NAS message received from UE[9]
+[2023-07-09 01:03:57.173] [ngap] [debug] Initial NAS message received from UE[17]
+[2023-07-09 01:03:57.222] [rrc] [info] RRC Setup for UE[27]
+[2023-07-09 01:03:57.222] [ngap] [debug] Initial NAS message received from UE[27]
+[2023-07-09 01:03:57.229] [rrc] [info] RRC Setup for UE[28]
+[2023-07-09 01:03:57.229] [rrc] [info] RRC Setup for UE[6]
+[2023-07-09 01:03:57.229] [ngap] [debug] Initial NAS message received from UE[28]
+[2023-07-09 01:03:57.229] [ngap] [debug] Initial NAS message received from UE[6]
+[2023-07-09 01:03:57.231] [rrc] [info] RRC Setup for UE[26]
+[2023-07-09 01:03:57.231] [ngap] [debug] Initial NAS message received from UE[26]
+[2023-07-09 01:03:57.240] [rrc] [info] RRC Setup for UE[32]
+[2023-07-09 01:03:57.240] [ngap] [debug] Initial NAS message received from UE[32]
+[2023-07-09 01:03:57.241] [rrc] [info] RRC Setup for UE[10]
+[2023-07-09 01:03:57.242] [ngap] [debug] Initial NAS message received from UE[10]
+[2023-07-09 01:03:57.245] [rrc] [info] RRC Setup for UE[11]
+[2023-07-09 01:03:57.245] [ngap] [debug] Initial NAS message received from UE[11]
+[2023-07-09 01:03:57.247] [rrc] [info] RRC Setup for UE[30]
+[2023-07-09 01:03:57.248] [rrc] [info] RRC Setup for UE[25]
+[2023-07-09 01:03:57.248] [ngap] [debug] Initial NAS message received from UE[30]
+[2023-07-09 01:03:57.249] [ngap] [debug] Initial NAS message received from UE[25]
+[2023-07-09 01:03:57.253] [rrc] [info] RRC Setup for UE[29]
+[2023-07-09 01:03:57.253] [ngap] [debug] Initial NAS message received from UE[29]
+[2023-07-09 01:03:57.254] [rrc] [info] RRC Setup for UE[5]
+[2023-07-09 01:03:57.254] [ngap] [debug] Initial NAS message received from UE[5]
+[2023-07-09 01:03:57.255] [rrc] [info] RRC Setup for UE[21]
+[2023-07-09 01:03:57.255] [ngap] [debug] Initial NAS message received from UE[21]
+[2023-07-09 01:03:57.256] [rrc] [info] RRC Setup for UE[19]
+[2023-07-09 01:03:57.257] [ngap] [debug] Initial NAS message received from UE[19]
+[2023-07-09 01:03:57.257] [rrc] [info] RRC Setup for UE[12]
+[2023-07-09 01:03:57.258] [ngap] [debug] Initial NAS message received from UE[12]
+[2023-07-09 01:03:57.258] [rrc] [info] RRC Setup for UE[15]
+[2023-07-09 01:03:57.258] [ngap] [debug] Initial NAS message received from UE[15]
+[2023-07-09 01:03:57.259] [rrc] [info] RRC Setup for UE[18]
+[2023-07-09 01:03:57.259] [ngap] [debug] Initial NAS message received from UE[18]
+[2023-07-09 01:03:57.323] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:03:59.603] [rrc] [info] RRC Setup for UE[22]
+[2023-07-09 01:03:59.603] [ngap] [debug] Initial NAS message received from UE[22]
+[2023-07-09 01:03:59.607] [rrc] [info] RRC Setup for UE[20]
+[2023-07-09 01:03:59.608] [ngap] [debug] Initial NAS message received from UE[20]
+[2023-07-09 01:03:59.622] [rrc] [info] RRC Setup for UE[24]
+[2023-07-09 01:03:59.622] [ngap] [debug] Initial NAS message received from UE[24]
+[2023-07-09 01:03:59.623] [rrc] [info] RRC Setup for UE[33]
+[2023-07-09 01:03:59.623] [ngap] [debug] Initial NAS message received from UE[33]
+[2023-07-09 01:04:47.282] [rrc] [debug] UE[34] new signal detected
+[2023-07-09 01:04:47.295] [rrc] [info] RRC Setup for UE[34]
+[2023-07-09 01:04:47.295] [ngap] [debug] Initial NAS message received from UE[34]
+[2023-07-09 01:04:47.660] [rrc] [debug] UE[35] new signal detected
+[2023-07-09 01:04:47.687] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:04:48.467] [rrc] [debug] UE[36] new signal detected
+[2023-07-09 01:04:48.481] [rrc] [info] RRC Setup for UE[36]
+[2023-07-09 01:04:48.482] [ngap] [debug] Initial NAS message received from UE[36]
+[2023-07-09 01:04:48.732] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:04:49.238] [rrc] [debug] UE[37] new signal detected
+[2023-07-09 01:04:49.249] [rrc] [info] RRC Setup for UE[37]
+[2023-07-09 01:04:49.250] [ngap] [debug] Initial NAS message received from UE[37]
+[2023-07-09 01:04:49.510] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:04:50.180] [rrc] [info] RRC Setup for UE[35]
+[2023-07-09 01:04:50.186] [ngap] [debug] Initial NAS message received from UE[35]
+[2023-07-09 01:04:50.582] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:04:50.862] [rrc] [debug] UE[38] new signal detected
+[2023-07-09 01:04:50.874] [rrc] [info] RRC Setup for UE[38]
+[2023-07-09 01:04:50.874] [ngap] [debug] Initial NAS message received from UE[38]
+[2023-07-09 01:04:51.622] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:04:53.857] [rrc] [debug] UE[39] new signal detected
+[2023-07-09 01:04:56.366] [rrc] [info] RRC Setup for UE[39]
+[2023-07-09 01:04:56.366] [ngap] [debug] Initial NAS message received from UE[39]
+[2023-07-09 01:04:56.404] [rrc] [debug] UE[40] new signal detected
+[2023-07-09 01:04:56.415] [rrc] [info] RRC Setup for UE[40]
+[2023-07-09 01:04:56.415] [ngap] [debug] Initial NAS message received from UE[40]
+[2023-07-09 01:04:56.646] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:04:57.124] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:04:57.208] [rrc] [debug] UE[41] new signal detected
+[2023-07-09 01:04:57.220] [rrc] [info] RRC Setup for UE[41]
+[2023-07-09 01:04:57.220] [ngap] [debug] Initial NAS message received from UE[41]
+[2023-07-09 01:04:57.622] [rrc] [debug] UE[42] new signal detected
+[2023-07-09 01:04:57.623] [rrc] [debug] UE[43] new signal detected
+[2023-07-09 01:04:57.625] [rrc] [debug] UE[44] new signal detected
+[2023-07-09 01:04:57.628] [rrc] [debug] UE[45] new signal detected
+[2023-07-09 01:04:57.628] [rrc] [debug] UE[46] new signal detected
+[2023-07-09 01:04:57.629] [rrc] [debug] UE[47] new signal detected
+[2023-07-09 01:04:57.630] [rrc] [debug] UE[48] new signal detected
+[2023-07-09 01:04:57.630] [rrc] [debug] UE[49] new signal detected
+[2023-07-09 01:04:57.631] [rrc] [debug] UE[50] new signal detected
+[2023-07-09 01:04:57.631] [rrc] [debug] UE[51] new signal detected
+[2023-07-09 01:04:57.633] [rrc] [debug] UE[52] new signal detected
+[2023-07-09 01:04:57.633] [rrc] [debug] UE[53] new signal detected
+[2023-07-09 01:04:57.633] [rrc] [debug] UE[54] new signal detected
+[2023-07-09 01:04:57.633] [rrc] [debug] UE[55] new signal detected
+[2023-07-09 01:04:57.633] [rrc] [debug] UE[56] new signal detected
+[2023-07-09 01:04:57.642] [rrc] [debug] UE[57] new signal detected
+[2023-07-09 01:04:57.642] [rrc] [debug] UE[58] new signal detected
+[2023-07-09 01:04:57.642] [rrc] [debug] UE[59] new signal detected
+[2023-07-09 01:04:57.642] [rrc] [debug] UE[60] new signal detected
+[2023-07-09 01:04:57.649] [rrc] [debug] UE[61] new signal detected
+[2023-07-09 01:04:57.650] [rrc] [debug] UE[62] new signal detected
+[2023-07-09 01:04:57.650] [rrc] [debug] UE[63] new signal detected
+[2023-07-09 01:04:57.650] [rrc] [debug] UE[64] new signal detected
+[2023-07-09 01:04:57.658] [rrc] [info] RRC Setup for UE[42]
+[2023-07-09 01:04:57.659] [ngap] [debug] Initial NAS message received from UE[42]
+[2023-07-09 01:04:57.665] [rrc] [info] RRC Setup for UE[45]
+[2023-07-09 01:04:57.669] [rrc] [debug] UE[65] new signal detected
+[2023-07-09 01:04:57.671] [ngap] [debug] Initial NAS message received from UE[45]
+[2023-07-09 01:04:57.677] [rrc] [debug] UE[66] new signal detected
+[2023-07-09 01:04:57.677] [rrc] [debug] UE[67] new signal detected
+[2023-07-09 01:04:57.679] [rrc] [debug] UE[68] new signal detected
+[2023-07-09 01:04:57.726] [rrc] [debug] UE[69] new signal detected
+[2023-07-09 01:04:57.728] [rrc] [info] RRC Setup for UE[48]
+[2023-07-09 01:04:57.728] [rrc] [debug] UE[70] new signal detected
+[2023-07-09 01:04:57.728] [rrc] [debug] UE[71] new signal detected
+[2023-07-09 01:04:57.730] [ngap] [debug] Initial NAS message received from UE[48]
+[2023-07-09 01:04:57.730] [rrc] [info] RRC Setup for UE[44]
+[2023-07-09 01:04:57.741] [ngap] [debug] Initial NAS message received from UE[44]
+[2023-07-09 01:04:57.741] [rrc] [info] RRC Setup for UE[60]
+[2023-07-09 01:04:57.745] [rrc] [info] RRC Setup for UE[63]
+[2023-07-09 01:04:57.745] [ngap] [debug] Initial NAS message received from UE[63]
+[2023-07-09 01:04:57.749] [ngap] [debug] Initial NAS message received from UE[60]
+[2023-07-09 01:04:57.750] [rrc] [info] RRC Setup for UE[67]
+[2023-07-09 01:04:57.752] [rrc] [info] RRC Setup for UE[66]
+[2023-07-09 01:04:57.752] [ngap] [debug] Initial NAS message received from UE[67]
+[2023-07-09 01:04:57.752] [ngap] [debug] Initial NAS message received from UE[66]
+[2023-07-09 01:04:57.759] [rrc] [info] RRC Setup for UE[68]
+[2023-07-09 01:04:57.760] [ngap] [debug] Initial NAS message received from UE[68]
+[2023-07-09 01:04:57.775] [rrc] [info] RRC Setup for UE[56]
+[2023-07-09 01:04:57.775] [ngap] [debug] Initial NAS message received from UE[56]
+[2023-07-09 01:04:57.782] [rrc] [info] RRC Setup for UE[54]
+[2023-07-09 01:04:57.782] [ngap] [debug] Initial NAS message received from UE[54]
+[2023-07-09 01:04:57.784] [rrc] [info] RRC Setup for UE[55]
+[2023-07-09 01:04:57.793] [ngap] [debug] Initial NAS message received from UE[55]
+[2023-07-09 01:04:57.793] [rrc] [info] RRC Setup for UE[52]
+[2023-07-09 01:04:57.793] [ngap] [debug] Initial NAS message received from UE[52]
+[2023-07-09 01:04:57.796] [rrc] [info] RRC Setup for UE[43]
+[2023-07-09 01:04:57.796] [ngap] [debug] Initial NAS message received from UE[43]
+[2023-07-09 01:04:57.798] [rrc] [info] RRC Setup for UE[53]
+[2023-07-09 01:04:57.798] [ngap] [debug] Initial NAS message received from UE[53]
+[2023-07-09 01:04:57.800] [rrc] [info] RRC Setup for UE[62]
+[2023-07-09 01:04:57.800] [ngap] [debug] Initial NAS message received from UE[62]
+[2023-07-09 01:04:57.804] [rrc] [info] RRC Setup for UE[46]
+[2023-07-09 01:04:57.805] [rrc] [info] RRC Setup for UE[65]
+[2023-07-09 01:04:57.805] [ngap] [debug] Initial NAS message received from UE[65]
+[2023-07-09 01:04:57.808] [rrc] [info] RRC Setup for UE[69]
+[2023-07-09 01:04:57.809] [ngap] [debug] Initial NAS message received from UE[69]
+[2023-07-09 01:04:57.810] [ngap] [debug] Initial NAS message received from UE[46]
+[2023-07-09 01:04:57.810] [rrc] [info] RRC Setup for UE[61]
+[2023-07-09 01:04:57.810] [ngap] [debug] Initial NAS message received from UE[61]
+[2023-07-09 01:04:57.816] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:04:59.150] [rrc] [debug] UE[72] new signal detected
+[2023-07-09 01:04:59.165] [rrc] [info] RRC Setup for UE[72]
+[2023-07-09 01:04:59.165] [ngap] [debug] Initial NAS message received from UE[72]
+[2023-07-09 01:04:59.177] [rrc] [info] RRC Setup for UE[50]
+[2023-07-09 01:04:59.177] [ngap] [debug] Initial NAS message received from UE[50]
+[2023-07-09 01:04:59.183] [rrc] [info] RRC Setup for UE[51]
+[2023-07-09 01:04:59.183] [ngap] [debug] Initial NAS message received from UE[51]
+[2023-07-09 01:04:59.694] [rrc] [debug] UE[73] new signal detected
+[2023-07-09 01:04:59.714] [rrc] [info] RRC Setup for UE[73]
+[2023-07-09 01:04:59.715] [ngap] [debug] Initial NAS message received from UE[73]
+[2023-07-09 01:05:00.146] [rrc] [info] RRC Setup for UE[47]
+[2023-07-09 01:05:00.147] [ngap] [debug] Initial NAS message received from UE[47]
+[2023-07-09 01:05:00.164] [rrc] [info] RRC Setup for UE[64]
+[2023-07-09 01:05:00.169] [rrc] [info] RRC Setup for UE[58]
+[2023-07-09 01:05:00.169] [rrc] [info] RRC Setup for UE[57]
+[2023-07-09 01:05:00.169] [ngap] [debug] Initial NAS message received from UE[64]
+[2023-07-09 01:05:00.170] [ngap] [debug] Initial NAS message received from UE[58]
+[2023-07-09 01:05:00.170] [ngap] [debug] Initial NAS message received from UE[57]
+[2023-07-09 01:05:00.175] [rrc] [info] RRC Setup for UE[49]
+[2023-07-09 01:05:00.175] [ngap] [debug] Initial NAS message received from UE[49]
+[2023-07-09 01:05:00.183] [rrc] [info] RRC Setup for UE[71]
+[2023-07-09 01:05:00.183] [ngap] [debug] Initial NAS message received from UE[71]
+[2023-07-09 01:05:00.185] [rrc] [info] RRC Setup for UE[59]
+[2023-07-09 01:05:00.189] [ngap] [debug] Initial NAS message received from UE[59]
+[2023-07-09 01:05:00.189] [rrc] [info] RRC Setup for UE[70]
+[2023-07-09 01:05:00.189] [ngap] [debug] Initial NAS message received from UE[70]
+[2023-07-09 01:05:01.583] [rrc] [debug] UE[74] new signal detected
+[2023-07-09 01:05:01.620] [rrc] [info] RRC Setup for UE[74]
+[2023-07-09 01:05:01.621] [ngap] [debug] Initial NAS message received from UE[74]
+[2023-07-09 01:05:04.227] [rrc] [debug] UE[75] new signal detected
+[2023-07-09 01:05:04.246] [rrc] [info] RRC Setup for UE[75]
+[2023-07-09 01:05:04.246] [ngap] [debug] Initial NAS message received from UE[75]
+[2023-07-09 01:05:05.354] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:06.028] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:06.352] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:07.068] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:08.251] [rrc] [debug] UE[76] new signal detected
+[2023-07-09 01:05:08.265] [rrc] [info] RRC Setup for UE[76]
+[2023-07-09 01:05:08.265] [ngap] [debug] Initial NAS message received from UE[76]
+[2023-07-09 01:05:08.537] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:09.918] [rrc] [debug] UE[77] new signal detected
+[2023-07-09 01:05:09.944] [rrc] [info] RRC Setup for UE[77]
+[2023-07-09 01:05:09.945] [ngap] [debug] Initial NAS message received from UE[77]
+[2023-07-09 01:05:10.119] [rrc] [debug] UE[78] new signal detected
+[2023-07-09 01:05:10.134] [rrc] [info] RRC Setup for UE[78]
+[2023-07-09 01:05:10.135] [ngap] [debug] Initial NAS message received from UE[78]
+[2023-07-09 01:05:10.210] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:10.334] [rrc] [debug] UE[79] new signal detected
+[2023-07-09 01:05:10.353] [rrc] [info] RRC Setup for UE[79]
+[2023-07-09 01:05:10.354] [ngap] [debug] Initial NAS message received from UE[79]
+[2023-07-09 01:05:10.995] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:11.322] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:12.170] [rrc] [debug] UE[80] new signal detected
+[2023-07-09 01:05:12.185] [rrc] [info] RRC Setup for UE[80]
+[2023-07-09 01:05:12.185] [ngap] [debug] Initial NAS message received from UE[80]
+[2023-07-09 01:05:12.421] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:13.163] [rrc] [debug] UE[81] new signal detected
+[2023-07-09 01:05:13.175] [rrc] [info] RRC Setup for UE[81]
+[2023-07-09 01:05:13.175] [ngap] [debug] Initial NAS message received from UE[81]
+[2023-07-09 01:05:13.431] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:13.746] [rrc] [debug] UE[82] new signal detected
+[2023-07-09 01:05:13.764] [rrc] [info] RRC Setup for UE[82]
+[2023-07-09 01:05:13.765] [ngap] [debug] Initial NAS message received from UE[82]
+[2023-07-09 01:05:13.918] [rrc] [debug] UE[83] new signal detected
+[2023-07-09 01:05:13.932] [rrc] [info] RRC Setup for UE[83]
+[2023-07-09 01:05:13.936] [ngap] [debug] Initial NAS message received from UE[83]
+[2023-07-09 01:05:14.314] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:14.379] [rrc] [debug] UE[84] new signal detected
+[2023-07-09 01:05:14.392] [rrc] [info] RRC Setup for UE[84]
+[2023-07-09 01:05:14.392] [ngap] [debug] Initial NAS message received from UE[84]
+[2023-07-09 01:05:14.458] [rrc] [debug] UE[85] new signal detected
+[2023-07-09 01:05:14.473] [rrc] [info] RRC Setup for UE[85]
+[2023-07-09 01:05:14.473] [ngap] [debug] Initial NAS message received from UE[85]
+[2023-07-09 01:05:14.680] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:15.132] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:15.349] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:15.719] [rrc] [debug] UE[86] new signal detected
+[2023-07-09 01:05:15.734] [rrc] [info] RRC Setup for UE[86]
+[2023-07-09 01:05:15.734] [ngap] [debug] Initial NAS message received from UE[86]
+[2023-07-09 01:05:16.022] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:16.466] [rrc] [debug] UE[87] new signal detected
+[2023-07-09 01:05:16.489] [rrc] [info] RRC Setup for UE[87]
+[2023-07-09 01:05:16.489] [ngap] [debug] Initial NAS message received from UE[87]
+[2023-07-09 01:05:16.491] [rrc] [debug] UE[88] new signal detected
+[2023-07-09 01:05:16.518] [rrc] [info] RRC Setup for UE[88]
+[2023-07-09 01:05:16.519] [ngap] [debug] Initial NAS message received from UE[88]
+[2023-07-09 01:05:17.198] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:17.338] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:18.899] [rls] [debug] UE[1] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[4] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[5] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[6] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[7] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[8] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[9] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[10] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[11] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[12] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[13] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[14] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[15] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[16] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[17] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[18] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[19] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[20] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[21] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[22] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[23] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[24] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[25] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[26] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[27] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[28] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[29] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[30] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[31] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[32] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[33] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[42] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[43] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[44] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[45] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[46] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[47] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[48] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[49] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[50] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[51] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[52] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[53] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[54] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[55] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[56] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[57] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[58] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[59] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[60] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[61] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[62] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[63] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[64] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[65] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[66] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[67] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[68] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[69] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[70] signal lost
+[2023-07-09 01:05:18.899] [rls] [debug] UE[71] signal lost
+[2023-07-09 01:05:19.076] [rrc] [debug] UE[89] new signal detected
+[2023-07-09 01:05:19.089] [rrc] [info] RRC Setup for UE[89]
+[2023-07-09 01:05:19.090] [ngap] [debug] Initial NAS message received from UE[89]
+[2023-07-09 01:05:19.331] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:20.648] [rrc] [debug] UE[90] new signal detected
+[2023-07-09 01:05:20.663] [rrc] [info] RRC Setup for UE[90]
+[2023-07-09 01:05:20.664] [ngap] [debug] Initial NAS message received from UE[90]
+[2023-07-09 01:05:21.031] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:21.645] [rrc] [debug] UE[91] new signal detected
+[2023-07-09 01:05:21.659] [rrc] [info] RRC Setup for UE[91]
+[2023-07-09 01:05:21.659] [ngap] [debug] Initial NAS message received from UE[91]
+[2023-07-09 01:05:21.927] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:22.011] [rrc] [debug] UE[92] new signal detected
+[2023-07-09 01:05:22.025] [rrc] [info] RRC Setup for UE[92]
+[2023-07-09 01:05:22.025] [ngap] [debug] Initial NAS message received from UE[92]
+[2023-07-09 01:05:22.381] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:22.977] [rrc] [debug] UE[93] new signal detected
+[2023-07-09 01:05:23.001] [rrc] [info] RRC Setup for UE[93]
+[2023-07-09 01:05:23.002] [ngap] [debug] Initial NAS message received from UE[93]
+[2023-07-09 01:05:23.280] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:25.575] [rrc] [debug] UE[94] new signal detected
+[2023-07-09 01:05:25.591] [rrc] [info] RRC Setup for UE[94]
+[2023-07-09 01:05:25.591] [ngap] [debug] Initial NAS message received from UE[94]
+[2023-07-09 01:05:25.834] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:28.791] [rrc] [debug] UE[95] new signal detected
+[2023-07-09 01:05:28.814] [rrc] [info] RRC Setup for UE[95]
+[2023-07-09 01:05:28.815] [ngap] [debug] Initial NAS message received from UE[95]
+[2023-07-09 01:05:29.279] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:31.775] [rrc] [debug] UE[96] new signal detected
+[2023-07-09 01:05:31.789] [rrc] [info] RRC Setup for UE[96]
+[2023-07-09 01:05:31.790] [ngap] [debug] Initial NAS message received from UE[96]
+[2023-07-09 01:05:32.059] [rrc] [debug] UE[97] new signal detected
+[2023-07-09 01:05:32.066] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:32.074] [rrc] [info] RRC Setup for UE[97]
+[2023-07-09 01:05:32.075] [ngap] [debug] Initial NAS message received from UE[97]
+[2023-07-09 01:05:32.524] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:32.921] [rrc] [debug] UE[98] new signal detected
+[2023-07-09 01:05:32.947] [rrc] [info] RRC Setup for UE[98]
+[2023-07-09 01:05:32.948] [ngap] [debug] Initial NAS message received from UE[98]
+[2023-07-09 01:05:33.079] [rrc] [debug] UE[99] new signal detected
+[2023-07-09 01:05:33.095] [rrc] [info] RRC Setup for UE[99]
+[2023-07-09 01:05:33.095] [ngap] [debug] Initial NAS message received from UE[99]
+[2023-07-09 01:05:33.205] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:33.685] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:33.778] [rrc] [debug] UE[100] new signal detected
+[2023-07-09 01:05:34.754] [rrc] [debug] UE[101] new signal detected
+[2023-07-09 01:05:34.767] [rrc] [info] RRC Setup for UE[101]
+[2023-07-09 01:05:34.767] [ngap] [debug] Initial NAS message received from UE[101]
+[2023-07-09 01:05:35.040] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:35.843] [rrc] [debug] UE[102] new signal detected
+[2023-07-09 01:05:36.187] [rrc] [debug] UE[103] new signal detected
+[2023-07-09 01:05:36.200] [rrc] [info] RRC Setup for UE[103]
+[2023-07-09 01:05:36.201] [ngap] [debug] Initial NAS message received from UE[103]
+[2023-07-09 01:05:36.288] [rrc] [info] RRC Setup for UE[100]
+[2023-07-09 01:05:36.289] [ngap] [debug] Initial NAS message received from UE[100]
+[2023-07-09 01:05:36.574] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:36.587] [rrc] [debug] UE[104] new signal detected
+[2023-07-09 01:05:36.601] [rrc] [info] RRC Setup for UE[104]
+[2023-07-09 01:05:36.601] [ngap] [debug] Initial NAS message received from UE[104]
+[2023-07-09 01:05:36.944] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:37.406] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:37.771] [rrc] [debug] UE[105] new signal detected
+[2023-07-09 01:05:37.788] [rrc] [info] RRC Setup for UE[105]
+[2023-07-09 01:05:37.788] [ngap] [debug] Initial NAS message received from UE[105]
+[2023-07-09 01:05:38.325] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:38.358] [rrc] [info] RRC Setup for UE[102]
+[2023-07-09 01:05:38.359] [ngap] [debug] Initial NAS message received from UE[102]
+[2023-07-09 01:05:38.390] [rrc] [debug] UE[106] new signal detected
+[2023-07-09 01:05:38.401] [rrc] [info] RRC Setup for UE[106]
+[2023-07-09 01:05:38.402] [ngap] [debug] Initial NAS message received from UE[106]
+[2023-07-09 01:05:38.768] [rrc] [debug] UE[107] new signal detected
+[2023-07-09 01:05:38.783] [rrc] [info] RRC Setup for UE[107]
+[2023-07-09 01:05:38.784] [ngap] [debug] Initial NAS message received from UE[107]
+[2023-07-09 01:05:38.891] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:39.045] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:39.215] [rrc] [debug] UE[108] new signal detected
+[2023-07-09 01:05:39.232] [rrc] [info] RRC Setup for UE[108]
+[2023-07-09 01:05:39.232] [ngap] [debug] Initial NAS message received from UE[108]
+[2023-07-09 01:05:40.151] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:40.526] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:42.363] [rrc] [debug] UE[109] new signal detected
+[2023-07-09 01:05:42.375] [rrc] [info] RRC Setup for UE[109]
+[2023-07-09 01:05:42.376] [ngap] [debug] Initial NAS message received from UE[109]
+[2023-07-09 01:05:42.629] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:42.942] [rrc] [debug] UE[110] new signal detected
+[2023-07-09 01:05:42.956] [rrc] [info] RRC Setup for UE[110]
+[2023-07-09 01:05:42.956] [ngap] [debug] Initial NAS message received from UE[110]
+[2023-07-09 01:05:43.323] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:44.784] [rrc] [debug] UE[111] new signal detected
+[2023-07-09 01:05:44.820] [rrc] [info] RRC Setup for UE[111]
+[2023-07-09 01:05:44.821] [ngap] [debug] Initial NAS message received from UE[111]
+[2023-07-09 01:05:44.899] [rrc] [debug] UE[112] new signal detected
+[2023-07-09 01:05:44.913] [rrc] [info] RRC Setup for UE[112]
+[2023-07-09 01:05:44.914] [ngap] [debug] Initial NAS message received from UE[112]
+[2023-07-09 01:05:45.447] [rrc] [debug] UE[113] new signal detected
+[2023-07-09 01:05:45.465] [rrc] [info] RRC Setup for UE[113]
+[2023-07-09 01:05:45.465] [ngap] [debug] Initial NAS message received from UE[113]
+[2023-07-09 01:05:45.546] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:45.838] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:46.249] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:48.343] [rrc] [debug] UE[114] new signal detected
+[2023-07-09 01:05:48.356] [rrc] [info] RRC Setup for UE[114]
+[2023-07-09 01:05:48.357] [ngap] [debug] Initial NAS message received from UE[114]
+[2023-07-09 01:05:48.601] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:50.571] [rrc] [debug] UE[115] new signal detected
+[2023-07-09 01:05:50.584] [rrc] [info] RRC Setup for UE[115]
+[2023-07-09 01:05:50.585] [ngap] [debug] Initial NAS message received from UE[115]
+[2023-07-09 01:05:50.841] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:53.793] [rrc] [debug] UE[116] new signal detected
+[2023-07-09 01:05:53.814] [rrc] [info] RRC Setup for UE[116]
+[2023-07-09 01:05:53.814] [ngap] [debug] Initial NAS message received from UE[116]
+[2023-07-09 01:05:54.023] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:54.855] [rrc] [debug] UE[117] new signal detected
+[2023-07-09 01:05:54.874] [rrc] [info] RRC Setup for UE[117]
+[2023-07-09 01:05:54.874] [ngap] [debug] Initial NAS message received from UE[117]
+[2023-07-09 01:05:55.157] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:57.144] [rrc] [debug] UE[118] new signal detected
+[2023-07-09 01:05:57.161] [rrc] [info] RRC Setup for UE[118]
+[2023-07-09 01:05:57.162] [ngap] [debug] Initial NAS message received from UE[118]
+[2023-07-09 01:05:57.431] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:05:57.850] [rrc] [debug] UE[119] new signal detected
+[2023-07-09 01:05:57.852] [rrc] [debug] UE[120] new signal detected
+[2023-07-09 01:05:57.852] [rrc] [debug] UE[121] new signal detected
+[2023-07-09 01:05:57.852] [rrc] [debug] UE[122] new signal detected
+[2023-07-09 01:05:57.852] [rrc] [debug] UE[123] new signal detected
+[2023-07-09 01:05:57.852] [rrc] [debug] UE[124] new signal detected
+[2023-07-09 01:05:57.852] [rrc] [debug] UE[125] new signal detected
+[2023-07-09 01:05:57.852] [rrc] [debug] UE[126] new signal detected
+[2023-07-09 01:05:57.852] [rrc] [debug] UE[127] new signal detected
+[2023-07-09 01:05:57.852] [rrc] [debug] UE[128] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[129] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[130] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[131] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[132] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[133] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[134] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[135] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[136] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[137] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[138] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[139] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[140] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[141] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[142] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[143] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[144] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[145] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[146] new signal detected
+[2023-07-09 01:05:57.862] [rrc] [debug] UE[147] new signal detected
+[2023-07-09 01:05:57.917] [rrc] [info] RRC Setup for UE[119]
+[2023-07-09 01:05:57.917] [rrc] [debug] UE[148] new signal detected
+[2023-07-09 01:05:57.921] [ngap] [debug] Initial NAS message received from UE[119]
+[2023-07-09 01:05:57.923] [rrc] [info] RRC Setup for UE[121]
+[2023-07-09 01:05:57.923] [ngap] [debug] Initial NAS message received from UE[121]
+[2023-07-09 01:05:57.934] [rrc] [info] RRC Setup for UE[130]
+[2023-07-09 01:05:57.939] [rrc] [info] RRC Setup for UE[127]
+[2023-07-09 01:05:57.939] [ngap] [debug] Initial NAS message received from UE[127]
+[2023-07-09 01:05:57.939] [rrc] [info] RRC Setup for UE[125]
+[2023-07-09 01:05:57.939] [ngap] [debug] Initial NAS message received from UE[130]
+[2023-07-09 01:05:57.940] [ngap] [debug] Initial NAS message received from UE[125]
+[2023-07-09 01:05:57.942] [rrc] [info] RRC Setup for UE[133]
+[2023-07-09 01:05:57.942] [rrc] [info] RRC Setup for UE[137]
+[2023-07-09 01:05:57.944] [ngap] [debug] Initial NAS message received from UE[133]
+[2023-07-09 01:05:57.944] [ngap] [debug] Initial NAS message received from UE[137]
+[2023-07-09 01:05:57.947] [rrc] [info] RRC Setup for UE[128]
+[2023-07-09 01:05:57.947] [ngap] [debug] Initial NAS message received from UE[128]
+[2023-07-09 01:05:57.967] [rrc] [info] RRC Setup for UE[142]
+[2023-07-09 01:05:57.967] [ngap] [debug] Initial NAS message received from UE[142]
+[2023-07-09 01:05:57.972] [rrc] [info] RRC Setup for UE[138]
+[2023-07-09 01:05:57.973] [ngap] [debug] Initial NAS message received from UE[138]
+[2023-07-09 01:05:57.973] [rrc] [info] RRC Setup for UE[132]
+[2023-07-09 01:05:57.973] [ngap] [debug] Initial NAS message received from UE[132]
+[2023-07-09 01:05:57.974] [rrc] [info] RRC Setup for UE[141]
+[2023-07-09 01:05:57.974] [ngap] [debug] Initial NAS message received from UE[141]
+[2023-07-09 01:05:57.974] [rrc] [info] RRC Setup for UE[126]
+[2023-07-09 01:05:57.975] [ngap] [debug] Initial NAS message received from UE[126]
+[2023-07-09 01:05:57.976] [rrc] [info] RRC Setup for UE[124]
+[2023-07-09 01:05:57.976] [ngap] [debug] Initial NAS message received from UE[124]
+[2023-07-09 01:05:57.977] [rrc] [info] RRC Setup for UE[144]
+[2023-07-09 01:05:57.978] [ngap] [debug] Initial NAS message received from UE[144]
+[2023-07-09 01:05:57.981] [rrc] [info] RRC Setup for UE[148]
+[2023-07-09 01:05:57.981] [ngap] [debug] Initial NAS message received from UE[148]
+[2023-07-09 01:05:57.982] [rrc] [info] RRC Setup for UE[129]
+[2023-07-09 01:05:57.983] [rrc] [info] RRC Setup for UE[143]
+[2023-07-09 01:05:57.983] [ngap] [debug] Initial NAS message received from UE[143]
+[2023-07-09 01:05:57.984] [rrc] [info] RRC Setup for UE[140]
+[2023-07-09 01:05:57.985] [ngap] [debug] Initial NAS message received from UE[140]
+[2023-07-09 01:05:57.985] [rrc] [info] RRC Setup for UE[145]
+[2023-07-09 01:05:57.985] [ngap] [debug] Initial NAS message received from UE[129]
+[2023-07-09 01:05:57.985] [ngap] [debug] Initial NAS message received from UE[145]
+[2023-07-09 01:05:57.987] [rrc] [info] RRC Setup for UE[146]
+[2023-07-09 01:05:57.988] [ngap] [debug] Initial NAS message received from UE[146]
+[2023-07-09 01:05:58.328] [rrc] [debug] UE[149] new signal detected
+[2023-07-09 01:05:58.401] [rrc] [info] RRC Setup for UE[149]
+[2023-07-09 01:05:58.402] [ngap] [debug] Initial NAS message received from UE[149]
+[2023-07-09 01:06:00.376] [rrc] [info] RRC Setup for UE[123]
+[2023-07-09 01:06:00.376] [ngap] [debug] Initial NAS message received from UE[123]
+[2023-07-09 01:06:00.380] [rrc] [info] RRC Setup for UE[139]
+[2023-07-09 01:06:00.380] [ngap] [debug] Initial NAS message received from UE[139]
+[2023-07-09 01:06:00.389] [rrc] [info] RRC Setup for UE[147]
+[2023-07-09 01:06:00.389] [ngap] [debug] Initial NAS message received from UE[147]
+[2023-07-09 01:06:00.394] [rrc] [info] RRC Setup for UE[120]
+[2023-07-09 01:06:00.394] [ngap] [debug] Initial NAS message received from UE[120]
+[2023-07-09 01:06:00.398] [rrc] [info] RRC Setup for UE[134]
+[2023-07-09 01:06:00.399] [ngap] [debug] Initial NAS message received from UE[134]
+[2023-07-09 01:06:00.401] [rrc] [info] RRC Setup for UE[122]
+[2023-07-09 01:06:00.401] [ngap] [debug] Initial NAS message received from UE[122]
+[2023-07-09 01:06:00.409] [rrc] [info] RRC Setup for UE[131]
+[2023-07-09 01:06:00.409] [rrc] [info] RRC Setup for UE[135]
+[2023-07-09 01:06:00.410] [ngap] [debug] Initial NAS message received from UE[135]
+[2023-07-09 01:06:00.410] [ngap] [debug] Initial NAS message received from UE[131]
+[2023-07-09 01:06:00.563] [rrc] [debug] UE[150] new signal detected
+[2023-07-09 01:06:00.579] [rrc] [info] RRC Setup for UE[150]
+[2023-07-09 01:06:00.579] [ngap] [debug] Initial NAS message received from UE[150]
+[2023-07-09 01:06:00.588] [rrc] [info] RRC Setup for UE[136]
+[2023-07-09 01:06:00.588] [ngap] [debug] Initial NAS message received from UE[136]
+[2023-07-09 01:06:00.771] [rrc] [debug] UE[151] new signal detected
+[2023-07-09 01:06:00.789] [rrc] [info] RRC Setup for UE[151]
+[2023-07-09 01:06:00.789] [ngap] [debug] Initial NAS message received from UE[151]
+[2023-07-09 01:06:01.176] [rrc] [debug] UE[152] new signal detected
+[2023-07-09 01:06:01.196] [rrc] [info] RRC Setup for UE[152]
+[2023-07-09 01:06:01.197] [ngap] [debug] Initial NAS message received from UE[152]
+[2023-07-09 01:06:02.038] [rrc] [debug] UE[153] new signal detected
+[2023-07-09 01:06:02.086] [rrc] [info] RRC Setup for UE[153]
+[2023-07-09 01:06:02.087] [ngap] [debug] Initial NAS message received from UE[153]
+[2023-07-09 01:06:02.148] [rrc] [debug] UE[154] new signal detected
+[2023-07-09 01:06:02.169] [rrc] [info] RRC Setup for UE[154]
+[2023-07-09 01:06:02.173] [ngap] [debug] Initial NAS message received from UE[154]
+[2023-07-09 01:06:02.179] [rrc] [debug] UE[155] new signal detected
+[2023-07-09 01:06:02.195] [rrc] [info] RRC Setup for UE[155]
+[2023-07-09 01:06:02.195] [ngap] [debug] Initial NAS message received from UE[155]
+[2023-07-09 01:06:02.241] [rrc] [debug] UE[156] new signal detected
+[2023-07-09 01:06:02.261] [rrc] [info] RRC Setup for UE[156]
+[2023-07-09 01:06:02.262] [ngap] [debug] Initial NAS message received from UE[156]
+[2023-07-09 01:06:02.357] [rrc] [debug] UE[157] new signal detected
+[2023-07-09 01:06:02.371] [rrc] [info] RRC Setup for UE[157]
+[2023-07-09 01:06:02.371] [ngap] [debug] Initial NAS message received from UE[157]
+[2023-07-09 01:06:03.571] [rrc] [debug] UE[158] new signal detected
+[2023-07-09 01:06:03.592] [rrc] [info] RRC Setup for UE[158]
+[2023-07-09 01:06:03.593] [ngap] [debug] Initial NAS message received from UE[158]
+[2023-07-09 01:06:03.657] [rrc] [debug] UE[159] new signal detected
+[2023-07-09 01:06:03.675] [rrc] [info] RRC Setup for UE[159]
+[2023-07-09 01:06:03.679] [ngap] [debug] Initial NAS message received from UE[159]
+[2023-07-09 01:06:04.560] [rrc] [debug] UE[160] new signal detected
+[2023-07-09 01:06:04.580] [rrc] [info] RRC Setup for UE[160]
+[2023-07-09 01:06:04.581] [ngap] [debug] Initial NAS message received from UE[160]
+[2023-07-09 01:06:05.218] [rrc] [debug] UE[161] new signal detected
+[2023-07-09 01:06:05.238] [rrc] [info] RRC Setup for UE[161]
+[2023-07-09 01:06:05.239] [ngap] [debug] Initial NAS message received from UE[161]
+[2023-07-09 01:06:08.176] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:08.335] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:08.472] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:08.607] [rrc] [debug] UE[162] new signal detected
+[2023-07-09 01:06:08.625] [rrc] [info] RRC Setup for UE[162]
+[2023-07-09 01:06:08.626] [ngap] [debug] Initial NAS message received from UE[162]
+[2023-07-09 01:06:08.654] [rrc] [debug] UE[163] new signal detected
+[2023-07-09 01:06:08.672] [rrc] [info] RRC Setup for UE[163]
+[2023-07-09 01:06:08.673] [ngap] [debug] Initial NAS message received from UE[163]
+[2023-07-09 01:06:08.741] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:09.084] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:09.304] [rrc] [debug] UE[164] new signal detected
+[2023-07-09 01:06:09.317] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:09.319] [rrc] [info] RRC Setup for UE[164]
+[2023-07-09 01:06:09.320] [ngap] [debug] Initial NAS message received from UE[164]
+[2023-07-09 01:06:09.544] [rrc] [debug] UE[165] new signal detected
+[2023-07-09 01:06:09.580] [rrc] [info] RRC Setup for UE[165]
+[2023-07-09 01:06:09.581] [ngap] [debug] Initial NAS message received from UE[165]
+[2023-07-09 01:06:09.587] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:10.036] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:10.192] [rrc] [debug] UE[166] new signal detected
+[2023-07-09 01:06:10.213] [rrc] [info] RRC Setup for UE[166]
+[2023-07-09 01:06:10.214] [ngap] [debug] Initial NAS message received from UE[166]
+[2023-07-09 01:06:10.348] [rrc] [debug] UE[167] new signal detected
+[2023-07-09 01:06:10.362] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:10.370] [rrc] [info] RRC Setup for UE[167]
+[2023-07-09 01:06:10.370] [ngap] [debug] Initial NAS message received from UE[167]
+[2023-07-09 01:06:11.153] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:11.623] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:11.775] [rrc] [debug] UE[168] new signal detected
+[2023-07-09 01:06:11.802] [rrc] [info] RRC Setup for UE[168]
+[2023-07-09 01:06:11.802] [ngap] [debug] Initial NAS message received from UE[168]
+[2023-07-09 01:06:12.146] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:12.302] [rrc] [debug] UE[169] new signal detected
+[2023-07-09 01:06:12.319] [rrc] [info] RRC Setup for UE[169]
+[2023-07-09 01:06:12.320] [ngap] [debug] Initial NAS message received from UE[169]
+[2023-07-09 01:06:13.005] [rrc] [debug] UE[170] new signal detected
+[2023-07-09 01:06:13.059] [rrc] [info] RRC Setup for UE[170]
+[2023-07-09 01:06:13.060] [ngap] [debug] Initial NAS message received from UE[170]
+[2023-07-09 01:06:13.148] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:14.631] [rrc] [debug] UE[171] new signal detected
+[2023-07-09 01:06:14.651] [rrc] [info] RRC Setup for UE[171]
+[2023-07-09 01:06:14.651] [ngap] [debug] Initial NAS message received from UE[171]
+[2023-07-09 01:06:14.786] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:14.939] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:15.071] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:15.207] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:15.325] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:15.440] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:15.558] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:15.611] [rrc] [debug] UE[172] new signal detected
+[2023-07-09 01:06:15.625] [rrc] [info] RRC Setup for UE[172]
+[2023-07-09 01:06:15.625] [ngap] [debug] Initial NAS message received from UE[172]
+[2023-07-09 01:06:15.758] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:15.890] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:16.209] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:16.328] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:17.479] [rrc] [debug] UE[173] new signal detected
+[2023-07-09 01:06:17.493] [rrc] [info] RRC Setup for UE[173]
+[2023-07-09 01:06:17.494] [ngap] [debug] Initial NAS message received from UE[173]
+[2023-07-09 01:06:17.763] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:18.684] [rls] [debug] UE[120] signal lost
+[2023-07-09 01:06:18.684] [rls] [debug] UE[121] signal lost
+[2023-07-09 01:06:18.684] [rls] [debug] UE[123] signal lost
+[2023-07-09 01:06:18.684] [rls] [debug] UE[125] signal lost
+[2023-07-09 01:06:18.684] [rls] [debug] UE[127] signal lost
+[2023-07-09 01:06:18.684] [rls] [debug] UE[132] signal lost
+[2023-07-09 01:06:18.684] [rls] [debug] UE[133] signal lost
+[2023-07-09 01:06:18.684] [rls] [debug] UE[137] signal lost
+[2023-07-09 01:06:18.684] [rls] [debug] UE[140] signal lost
+[2023-07-09 01:06:18.684] [rls] [debug] UE[143] signal lost
+[2023-07-09 01:06:18.684] [rls] [debug] UE[144] signal lost
+[2023-07-09 01:06:18.684] [rls] [debug] UE[146] signal lost
+[2023-07-09 01:06:19.498] [rrc] [debug] UE[174] new signal detected
+[2023-07-09 01:06:19.541] [rrc] [info] RRC Setup for UE[174]
+[2023-07-09 01:06:19.541] [ngap] [debug] Initial NAS message received from UE[174]
+[2023-07-09 01:06:19.672] [rrc] [debug] UE[175] new signal detected
+[2023-07-09 01:06:19.688] [rls] [debug] UE[39] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[119] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[122] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[124] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[126] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[128] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[129] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[130] signal lost
+[2023-07-09 01:06:19.688] [rrc] [info] RRC Setup for UE[175]
+[2023-07-09 01:06:19.688] [rls] [debug] UE[131] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[134] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[135] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[136] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[138] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[139] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[141] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[142] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[145] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[147] signal lost
+[2023-07-09 01:06:19.688] [rls] [debug] UE[148] signal lost
+[2023-07-09 01:06:19.689] [ngap] [debug] Initial NAS message received from UE[175]
+[2023-07-09 01:06:19.794] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:20.279] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:20.346] [rrc] [debug] UE[176] new signal detected
+[2023-07-09 01:06:20.359] [rrc] [info] RRC Setup for UE[176]
+[2023-07-09 01:06:20.360] [ngap] [debug] Initial NAS message received from UE[176]
+[2023-07-09 01:06:20.848] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:20.876] [rrc] [debug] UE[177] new signal detected
+[2023-07-09 01:06:20.892] [rrc] [info] RRC Setup for UE[177]
+[2023-07-09 01:06:20.892] [ngap] [debug] Initial NAS message received from UE[177]
+[2023-07-09 01:06:21.346] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:22.820] [rrc] [debug] UE[178] new signal detected
+[2023-07-09 01:06:22.837] [rrc] [info] RRC Setup for UE[178]
+[2023-07-09 01:06:22.838] [ngap] [debug] Initial NAS message received from UE[178]
+[2023-07-09 01:06:23.232] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:23.283] [rrc] [debug] UE[179] new signal detected
+[2023-07-09 01:06:23.301] [rrc] [info] RRC Setup for UE[179]
+[2023-07-09 01:06:23.302] [ngap] [debug] Initial NAS message received from UE[179]
+[2023-07-09 01:06:23.409] [rrc] [debug] UE[180] new signal detected
+[2023-07-09 01:06:23.435] [rrc] [info] RRC Setup for UE[180]
+[2023-07-09 01:06:23.435] [ngap] [debug] Initial NAS message received from UE[180]
+[2023-07-09 01:06:24.238] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:24.491] [rrc] [debug] UE[181] new signal detected
+[2023-07-09 01:06:24.544] [rrc] [info] RRC Setup for UE[181]
+[2023-07-09 01:06:24.545] [ngap] [debug] Initial NAS message received from UE[181]
+[2023-07-09 01:06:24.855] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:25.354] [rrc] [debug] UE[182] new signal detected
+[2023-07-09 01:06:25.369] [rrc] [info] RRC Setup for UE[182]
+[2023-07-09 01:06:25.370] [ngap] [debug] Initial NAS message received from UE[182]
+[2023-07-09 01:06:25.415] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:25.875] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:26.526] [rrc] [debug] UE[183] new signal detected
+[2023-07-09 01:06:26.549] [rrc] [info] RRC Setup for UE[183]
+[2023-07-09 01:06:26.549] [ngap] [debug] Initial NAS message received from UE[183]
+[2023-07-09 01:06:26.630] [rrc] [debug] UE[184] new signal detected
+[2023-07-09 01:06:26.648] [rrc] [info] RRC Setup for UE[184]
+[2023-07-09 01:06:26.649] [ngap] [debug] Initial NAS message received from UE[184]
+[2023-07-09 01:06:26.943] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:27.303] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:27.475] [rrc] [debug] UE[185] new signal detected
+[2023-07-09 01:06:27.490] [rrc] [info] RRC Setup for UE[185]
+[2023-07-09 01:06:27.491] [ngap] [debug] Initial NAS message received from UE[185]
+[2023-07-09 01:06:27.814] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:28.140] [rrc] [debug] UE[186] new signal detected
+[2023-07-09 01:06:28.165] [rrc] [info] RRC Setup for UE[186]
+[2023-07-09 01:06:28.165] [ngap] [debug] Initial NAS message received from UE[186]
+[2023-07-09 01:06:28.625] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:29.044] [rrc] [debug] UE[187] new signal detected
+[2023-07-09 01:06:29.248] [rrc] [debug] UE[188] new signal detected
+[2023-07-09 01:06:29.263] [rrc] [info] RRC Setup for UE[188]
+[2023-07-09 01:06:29.264] [ngap] [debug] Initial NAS message received from UE[188]
+[2023-07-09 01:06:29.731] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:31.254] [rrc] [debug] UE[189] new signal detected
+[2023-07-09 01:06:31.287] [rrc] [info] RRC Setup for UE[189]
+[2023-07-09 01:06:31.288] [ngap] [debug] Initial NAS message received from UE[189]
+[2023-07-09 01:06:31.555] [rrc] [info] RRC Setup for UE[187]
+[2023-07-09 01:06:31.556] [ngap] [debug] Initial NAS message received from UE[187]
+[2023-07-09 01:06:31.563] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:31.651] [rrc] [debug] UE[190] new signal detected
+[2023-07-09 01:06:31.700] [rrc] [info] RRC Setup for UE[190]
+[2023-07-09 01:06:31.700] [ngap] [debug] Initial NAS message received from UE[190]
+[2023-07-09 01:06:32.264] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:32.628] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:33.236] [rrc] [debug] UE[191] new signal detected
+[2023-07-09 01:06:33.250] [rrc] [info] RRC Setup for UE[191]
+[2023-07-09 01:06:33.250] [ngap] [debug] Initial NAS message received from UE[191]
+[2023-07-09 01:06:33.488] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:33.721] [rrc] [debug] UE[192] new signal detected
+[2023-07-09 01:06:33.740] [rrc] [info] RRC Setup for UE[192]
+[2023-07-09 01:06:33.740] [ngap] [debug] Initial NAS message received from UE[192]
+[2023-07-09 01:06:33.980] [rrc] [debug] UE[193] new signal detected
+[2023-07-09 01:06:34.011] [rrc] [info] RRC Setup for UE[193]
+[2023-07-09 01:06:34.012] [ngap] [debug] Initial NAS message received from UE[193]
+[2023-07-09 01:06:34.361] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:34.484] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:36.157] [rrc] [debug] UE[194] new signal detected
+[2023-07-09 01:06:36.177] [rrc] [info] RRC Setup for UE[194]
+[2023-07-09 01:06:36.178] [ngap] [debug] Initial NAS message received from UE[194]
+[2023-07-09 01:06:36.619] [rrc] [debug] UE[195] new signal detected
+[2023-07-09 01:06:36.908] [rrc] [debug] UE[196] new signal detected
+[2023-07-09 01:06:36.954] [rrc] [info] RRC Setup for UE[196]
+[2023-07-09 01:06:36.954] [ngap] [debug] Initial NAS message received from UE[196]
+[2023-07-09 01:06:37.013] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:37.243] [rrc] [debug] UE[197] new signal detected
+[2023-07-09 01:06:37.257] [rrc] [info] RRC Setup for UE[197]
+[2023-07-09 01:06:37.257] [ngap] [debug] Initial NAS message received from UE[197]
+[2023-07-09 01:06:37.695] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:38.222] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:38.265] [rrc] [debug] UE[198] new signal detected
+[2023-07-09 01:06:38.286] [rrc] [info] RRC Setup for UE[198]
+[2023-07-09 01:06:38.286] [ngap] [debug] Initial NAS message received from UE[198]
+[2023-07-09 01:06:38.936] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:39.149] [rrc] [info] RRC Setup for UE[195]
+[2023-07-09 01:06:39.150] [ngap] [debug] Initial NAS message received from UE[195]
+[2023-07-09 01:06:39.615] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:40.006] [rrc] [debug] UE[199] new signal detected
+[2023-07-09 01:06:40.246] [rrc] [debug] UE[200] new signal detected
+[2023-07-09 01:06:40.261] [rrc] [info] RRC Setup for UE[200]
+[2023-07-09 01:06:40.262] [ngap] [debug] Initial NAS message received from UE[200]
+[2023-07-09 01:06:40.527] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:41.011] [rrc] [debug] UE[201] new signal detected
+[2023-07-09 01:06:41.030] [rrc] [info] RRC Setup for UE[201]
+[2023-07-09 01:06:41.031] [ngap] [debug] Initial NAS message received from UE[201]
+[2023-07-09 01:06:41.282] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:42.454] [rrc] [debug] UE[202] new signal detected
+[2023-07-09 01:06:42.534] [rrc] [info] RRC Setup for UE[199]
+[2023-07-09 01:06:42.535] [ngap] [debug] Initial NAS message received from UE[199]
+[2023-07-09 01:06:42.781] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:43.618] [rrc] [debug] UE[203] new signal detected
+[2023-07-09 01:06:43.636] [rrc] [info] RRC Setup for UE[203]
+[2023-07-09 01:06:43.637] [ngap] [debug] Initial NAS message received from UE[203]
+[2023-07-09 01:06:44.228] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:44.561] [rrc] [debug] UE[204] new signal detected
+[2023-07-09 01:06:44.582] [rrc] [info] RRC Setup for UE[204]
+[2023-07-09 01:06:44.583] [ngap] [debug] Initial NAS message received from UE[204]
+[2023-07-09 01:06:44.901] [rrc] [debug] UE[205] new signal detected
+[2023-07-09 01:06:44.916] [rrc] [info] RRC Setup for UE[205]
+[2023-07-09 01:06:44.917] [ngap] [debug] Initial NAS message received from UE[205]
+[2023-07-09 01:06:44.932] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:44.964] [rrc] [info] RRC Setup for UE[202]
+[2023-07-09 01:06:44.965] [ngap] [debug] Initial NAS message received from UE[202]
+[2023-07-09 01:06:45.177] [rrc] [debug] UE[206] new signal detected
+[2023-07-09 01:06:45.194] [rrc] [info] RRC Setup for UE[206]
+[2023-07-09 01:06:45.195] [ngap] [debug] Initial NAS message received from UE[206]
+[2023-07-09 01:06:45.369] [rrc] [debug] UE[207] new signal detected
+[2023-07-09 01:06:45.385] [rrc] [info] RRC Setup for UE[207]
+[2023-07-09 01:06:45.386] [ngap] [debug] Initial NAS message received from UE[207]
+[2023-07-09 01:06:45.429] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:45.456] [rrc] [debug] UE[208] new signal detected
+[2023-07-09 01:06:45.484] [rrc] [info] RRC Setup for UE[208]
+[2023-07-09 01:06:45.484] [ngap] [debug] Initial NAS message received from UE[208]
+[2023-07-09 01:06:45.568] [rrc] [debug] UE[209] new signal detected
+[2023-07-09 01:06:45.587] [rrc] [info] RRC Setup for UE[209]
+[2023-07-09 01:06:45.587] [ngap] [debug] Initial NAS message received from UE[209]
+[2023-07-09 01:06:45.589] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:46.111] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:46.272] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:46.407] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:46.546] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:46.583] [rrc] [debug] UE[210] new signal detected
+[2023-07-09 01:06:46.599] [rrc] [info] RRC Setup for UE[210]
+[2023-07-09 01:06:46.600] [ngap] [debug] Initial NAS message received from UE[210]
+[2023-07-09 01:06:47.035] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:51.533] [rrc] [debug] UE[211] new signal detected
+[2023-07-09 01:06:51.550] [rrc] [info] RRC Setup for UE[211]
+[2023-07-09 01:06:51.551] [ngap] [debug] Initial NAS message received from UE[211]
+[2023-07-09 01:06:51.563] [rrc] [debug] UE[212] new signal detected
+[2023-07-09 01:06:51.583] [rrc] [info] RRC Setup for UE[212]
+[2023-07-09 01:06:51.583] [ngap] [debug] Initial NAS message received from UE[212]
+[2023-07-09 01:06:52.018] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:52.167] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:53.180] [rrc] [debug] UE[213] new signal detected
+[2023-07-09 01:06:53.201] [rrc] [info] RRC Setup for UE[213]
+[2023-07-09 01:06:53.202] [ngap] [debug] Initial NAS message received from UE[213]
+[2023-07-09 01:06:53.444] [rrc] [debug] UE[214] new signal detected
+[2023-07-09 01:06:53.479] [rrc] [info] RRC Setup for UE[214]
+[2023-07-09 01:06:53.479] [ngap] [debug] Initial NAS message received from UE[214]
+[2023-07-09 01:06:53.848] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:54.101] [rrc] [debug] UE[215] new signal detected
+[2023-07-09 01:06:54.120] [rrc] [info] RRC Setup for UE[215]
+[2023-07-09 01:06:54.120] [ngap] [debug] Initial NAS message received from UE[215]
+[2023-07-09 01:06:54.273] [rrc] [debug] UE[216] new signal detected
+[2023-07-09 01:06:54.290] [rrc] [info] RRC Setup for UE[216]
+[2023-07-09 01:06:54.290] [ngap] [debug] Initial NAS message received from UE[216]
+[2023-07-09 01:06:54.852] [rrc] [debug] UE[217] new signal detected
+[2023-07-09 01:06:54.912] [rrc] [info] RRC Setup for UE[217]
+[2023-07-09 01:06:54.913] [ngap] [debug] Initial NAS message received from UE[217]
+[2023-07-09 01:06:55.245] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:56.050] [rrc] [debug] UE[218] new signal detected
+[2023-07-09 01:06:56.102] [rrc] [info] RRC Setup for UE[218]
+[2023-07-09 01:06:56.102] [ngap] [debug] Initial NAS message received from UE[218]
+[2023-07-09 01:06:56.139] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:56.678] [rrc] [debug] UE[219] new signal detected
+[2023-07-09 01:06:56.710] [rrc] [info] RRC Setup for UE[219]
+[2023-07-09 01:06:56.711] [ngap] [debug] Initial NAS message received from UE[219]
+[2023-07-09 01:06:57.306] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:57.642] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:06:57.862] [rrc] [debug] UE[220] new signal detected
+[2023-07-09 01:06:57.862] [rrc] [debug] UE[221] new signal detected
+[2023-07-09 01:06:57.867] [rrc] [debug] UE[222] new signal detected
+[2023-07-09 01:06:57.867] [rrc] [debug] UE[223] new signal detected
+[2023-07-09 01:06:57.867] [rrc] [debug] UE[224] new signal detected
+[2023-07-09 01:06:57.867] [rrc] [debug] UE[225] new signal detected
+[2023-07-09 01:06:57.867] [rrc] [debug] UE[226] new signal detected
+[2023-07-09 01:06:57.867] [rrc] [debug] UE[227] new signal detected
+[2023-07-09 01:06:57.867] [rrc] [debug] UE[228] new signal detected
+[2023-07-09 01:06:57.867] [rrc] [debug] UE[229] new signal detected
+[2023-07-09 01:06:57.868] [rrc] [debug] UE[230] new signal detected
+[2023-07-09 01:06:57.868] [rrc] [debug] UE[231] new signal detected
+[2023-07-09 01:06:57.868] [rrc] [debug] UE[232] new signal detected
+[2023-07-09 01:06:57.868] [rrc] [debug] UE[233] new signal detected
+[2023-07-09 01:06:57.868] [rrc] [debug] UE[234] new signal detected
+[2023-07-09 01:06:57.870] [rrc] [debug] UE[235] new signal detected
+[2023-07-09 01:06:57.871] [rrc] [debug] UE[236] new signal detected
+[2023-07-09 01:06:57.871] [rrc] [debug] UE[237] new signal detected
+[2023-07-09 01:06:57.871] [rrc] [debug] UE[238] new signal detected
+[2023-07-09 01:06:57.871] [rrc] [debug] UE[239] new signal detected
+[2023-07-09 01:06:57.957] [rrc] [debug] UE[240] new signal detected
+[2023-07-09 01:06:57.957] [rrc] [debug] UE[241] new signal detected
+[2023-07-09 01:06:57.957] [rrc] [debug] UE[242] new signal detected
+[2023-07-09 01:06:57.957] [rrc] [debug] UE[243] new signal detected
+[2023-07-09 01:06:57.957] [rrc] [debug] UE[244] new signal detected
+[2023-07-09 01:06:57.958] [rrc] [debug] UE[245] new signal detected
+[2023-07-09 01:06:57.958] [rrc] [debug] UE[246] new signal detected
+[2023-07-09 01:06:57.958] [rrc] [debug] UE[247] new signal detected
+[2023-07-09 01:06:57.958] [rrc] [debug] UE[248] new signal detected
+[2023-07-09 01:06:57.958] [rrc] [debug] UE[249] new signal detected
+[2023-07-09 01:06:57.993] [rrc] [info] RRC Setup for UE[221]
+[2023-07-09 01:06:57.994] [rrc] [info] RRC Setup for UE[220]
+[2023-07-09 01:06:57.994] [rrc] [info] RRC Setup for UE[237]
+[2023-07-09 01:06:57.994] [rrc] [info] RRC Setup for UE[232]
+[2023-07-09 01:06:57.994] [rrc] [info] RRC Setup for UE[233]
+[2023-07-09 01:06:58.051] [rrc] [info] RRC Setup for UE[249]
+[2023-07-09 01:06:58.051] [rrc] [info] RRC Setup for UE[248]
+[2023-07-09 01:06:58.051] [rrc] [info] RRC Setup for UE[241]
+[2023-07-09 01:06:58.051] [rrc] [info] RRC Setup for UE[240]
+[2023-07-09 01:06:58.051] [rrc] [info] RRC Setup for UE[243]
+[2023-07-09 01:06:58.051] [rrc] [info] RRC Setup for UE[247]
+[2023-07-09 01:06:58.051] [rrc] [info] RRC Setup for UE[245]
+[2023-07-09 01:06:58.051] [rrc] [info] RRC Setup for UE[244]
+[2023-07-09 01:06:58.051] [rrc] [info] RRC Setup for UE[246]
+[2023-07-09 01:06:58.051] [rrc] [info] RRC Setup for UE[242]
+[2023-07-09 01:06:58.052] [rrc] [debug] UE[250] new signal detected
+[2023-07-09 01:06:58.052] [ngap] [debug] Initial NAS message received from UE[237]
+[2023-07-09 01:06:58.052] [ngap] [debug] Initial NAS message received from UE[220]
+[2023-07-09 01:06:58.052] [ngap] [debug] Initial NAS message received from UE[240]
+[2023-07-09 01:06:58.052] [ngap] [debug] Initial NAS message received from UE[248]
+[2023-07-09 01:06:58.052] [ngap] [debug] Initial NAS message received from UE[232]
+[2023-07-09 01:06:58.052] [ngap] [debug] Initial NAS message received from UE[233]
+[2023-07-09 01:06:58.052] [ngap] [debug] Initial NAS message received from UE[241]
+[2023-07-09 01:06:58.052] [ngap] [debug] Initial NAS message received from UE[249]
+[2023-07-09 01:06:58.052] [ngap] [debug] Initial NAS message received from UE[243]
+[2023-07-09 01:06:58.052] [ngap] [debug] Initial NAS message received from UE[221]
+[2023-07-09 01:06:58.052] [ngap] [debug] Initial NAS message received from UE[247]
+[2023-07-09 01:06:58.052] [ngap] [debug] Initial NAS message received from UE[242]
+[2023-07-09 01:06:58.058] [ngap] [debug] Initial NAS message received from UE[246]
+[2023-07-09 01:06:58.058] [ngap] [debug] Initial NAS message received from UE[245]
+[2023-07-09 01:06:58.058] [ngap] [debug] Initial NAS message received from UE[244]
+[2023-07-09 01:06:58.118] [rrc] [info] RRC Setup for UE[250]
+[2023-07-09 01:06:58.119] [ngap] [debug] Initial NAS message received from UE[250]
+[2023-07-09 01:06:59.880] [rrc] [debug] UE[251] new signal detected
+[2023-07-09 01:06:59.903] [rrc] [info] RRC Setup for UE[251]
+[2023-07-09 01:06:59.903] [ngap] [debug] Initial NAS message received from UE[251]
+[2023-07-09 01:06:59.908] [rrc] [info] RRC Setup for UE[239]
+[2023-07-09 01:06:59.908] [ngap] [debug] Initial NAS message received from UE[239]
+[2023-07-09 01:06:59.913] [rrc] [info] RRC Setup for UE[238]
+[2023-07-09 01:06:59.915] [ngap] [debug] Initial NAS message received from UE[238]
+[2023-07-09 01:07:00.397] [rrc] [info] RRC Setup for UE[227]
+[2023-07-09 01:07:00.398] [ngap] [debug] Initial NAS message received from UE[227]
+[2023-07-09 01:07:00.413] [rrc] [info] RRC Setup for UE[228]
+[2023-07-09 01:07:00.415] [rrc] [info] RRC Setup for UE[223]
+[2023-07-09 01:07:00.415] [ngap] [debug] Initial NAS message received from UE[228]
+[2023-07-09 01:07:00.416] [rrc] [info] RRC Setup for UE[225]
+[2023-07-09 01:07:00.416] [ngap] [debug] Initial NAS message received from UE[223]
+[2023-07-09 01:07:00.416] [ngap] [debug] Initial NAS message received from UE[225]
+[2023-07-09 01:07:00.421] [rrc] [info] RRC Setup for UE[235]
+[2023-07-09 01:07:00.421] [ngap] [debug] Initial NAS message received from UE[235]
+[2023-07-09 01:07:00.422] [rrc] [info] RRC Setup for UE[226]
+[2023-07-09 01:07:00.422] [ngap] [debug] Initial NAS message received from UE[226]
+[2023-07-09 01:07:00.423] [rrc] [info] RRC Setup for UE[222]
+[2023-07-09 01:07:00.423] [ngap] [debug] Initial NAS message received from UE[222]
+[2023-07-09 01:07:00.424] [rrc] [info] RRC Setup for UE[231]
+[2023-07-09 01:07:00.424] [ngap] [debug] Initial NAS message received from UE[231]
+[2023-07-09 01:07:00.425] [rrc] [info] RRC Setup for UE[224]
+[2023-07-09 01:07:00.425] [rrc] [info] RRC Setup for UE[230]
+[2023-07-09 01:07:00.425] [rrc] [info] RRC Setup for UE[236]
+[2023-07-09 01:07:00.425] [ngap] [debug] Initial NAS message received from UE[224]
+[2023-07-09 01:07:00.425] [ngap] [debug] Initial NAS message received from UE[230]
+[2023-07-09 01:07:00.426] [rrc] [info] RRC Setup for UE[234]
+[2023-07-09 01:07:00.426] [ngap] [debug] Initial NAS message received from UE[236]
+[2023-07-09 01:07:00.426] [ngap] [debug] Initial NAS message received from UE[234]
+[2023-07-09 01:07:00.434] [rrc] [info] RRC Setup for UE[229]
+[2023-07-09 01:07:00.434] [ngap] [debug] Initial NAS message received from UE[229]
+[2023-07-09 01:07:00.671] [rrc] [debug] UE[252] new signal detected
+[2023-07-09 01:07:00.690] [rrc] [info] RRC Setup for UE[252]
+[2023-07-09 01:07:00.690] [ngap] [debug] Initial NAS message received from UE[252]
+[2023-07-09 01:07:02.992] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:04.798] [rrc] [debug] UE[253] new signal detected
+[2023-07-09 01:07:04.823] [rrc] [info] RRC Setup for UE[253]
+[2023-07-09 01:07:04.824] [ngap] [debug] Initial NAS message received from UE[253]
+[2023-07-09 01:07:05.464] [rrc] [debug] UE[254] new signal detected
+[2023-07-09 01:07:05.481] [rrc] [info] RRC Setup for UE[254]
+[2023-07-09 01:07:05.481] [ngap] [debug] Initial NAS message received from UE[254]
+[2023-07-09 01:07:05.515] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:05.781] [rrc] [debug] UE[255] new signal detected
+[2023-07-09 01:07:05.798] [rrc] [info] RRC Setup for UE[255]
+[2023-07-09 01:07:05.799] [ngap] [debug] Initial NAS message received from UE[255]
+[2023-07-09 01:07:06.382] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:06.506] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:06.641] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:06.822] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:06.959] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:07.089] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:08.491] [rrc] [debug] UE[256] new signal detected
+[2023-07-09 01:07:08.523] [rrc] [info] RRC Setup for UE[256]
+[2023-07-09 01:07:08.523] [rrc] [debug] UE[257] new signal detected
+[2023-07-09 01:07:08.526] [ngap] [debug] Initial NAS message received from UE[256]
+[2023-07-09 01:07:08.549] [rrc] [info] RRC Setup for UE[257]
+[2023-07-09 01:07:08.550] [ngap] [debug] Initial NAS message received from UE[257]
+[2023-07-09 01:07:08.851] [rrc] [debug] UE[258] new signal detected
+[2023-07-09 01:07:08.871] [rrc] [info] RRC Setup for UE[258]
+[2023-07-09 01:07:08.872] [ngap] [debug] Initial NAS message received from UE[258]
+[2023-07-09 01:07:09.155] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:09.229] [rrc] [debug] UE[259] new signal detected
+[2023-07-09 01:07:09.250] [rrc] [info] RRC Setup for UE[259]
+[2023-07-09 01:07:09.251] [ngap] [debug] Initial NAS message received from UE[259]
+[2023-07-09 01:07:09.620] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:09.653] [rrc] [debug] UE[260] new signal detected
+[2023-07-09 01:07:09.672] [rrc] [info] RRC Setup for UE[260]
+[2023-07-09 01:07:09.673] [ngap] [debug] Initial NAS message received from UE[260]
+[2023-07-09 01:07:10.146] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:10.824] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:11.313] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:12.652] [rrc] [debug] UE[261] new signal detected
+[2023-07-09 01:07:12.671] [rrc] [info] RRC Setup for UE[261]
+[2023-07-09 01:07:12.672] [ngap] [debug] Initial NAS message received from UE[261]
+[2023-07-09 01:07:12.932] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:13.271] [rrc] [debug] UE[262] new signal detected
+[2023-07-09 01:07:13.390] [rrc] [debug] UE[263] new signal detected
+[2023-07-09 01:07:13.412] [rrc] [info] RRC Setup for UE[263]
+[2023-07-09 01:07:13.412] [ngap] [debug] Initial NAS message received from UE[263]
+[2023-07-09 01:07:13.681] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:14.290] [rrc] [debug] UE[264] new signal detected
+[2023-07-09 01:07:14.320] [rrc] [info] RRC Setup for UE[264]
+[2023-07-09 01:07:14.321] [ngap] [debug] Initial NAS message received from UE[264]
+[2023-07-09 01:07:14.581] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:14.884] [rrc] [debug] UE[265] new signal detected
+[2023-07-09 01:07:15.803] [rrc] [info] RRC Setup for UE[262]
+[2023-07-09 01:07:15.804] [ngap] [debug] Initial NAS message received from UE[262]
+[2023-07-09 01:07:16.354] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:17.395] [rrc] [info] RRC Setup for UE[265]
+[2023-07-09 01:07:17.395] [ngap] [debug] Initial NAS message received from UE[265]
+[2023-07-09 01:07:17.722] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:18.424] [rrc] [debug] UE[266] new signal detected
+[2023-07-09 01:07:18.440] [rrc] [info] RRC Setup for UE[266]
+[2023-07-09 01:07:18.441] [ngap] [debug] Initial NAS message received from UE[266]
+[2023-07-09 01:07:18.739] [rrc] [debug] UE[267] new signal detected
+[2023-07-09 01:07:18.759] [rrc] [info] RRC Setup for UE[267]
+[2023-07-09 01:07:18.759] [ngap] [debug] Initial NAS message received from UE[267]
+[2023-07-09 01:07:18.795] [rrc] [debug] UE[268] new signal detected
+[2023-07-09 01:07:18.815] [rrc] [info] RRC Setup for UE[268]
+[2023-07-09 01:07:18.815] [ngap] [debug] Initial NAS message received from UE[268]
+[2023-07-09 01:07:18.838] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:19.201] [rls] [debug] UE[116] signal lost
+[2023-07-09 01:07:19.215] [rrc] [debug] UE[269] new signal detected
+[2023-07-09 01:07:19.237] [rrc] [info] RRC Setup for UE[269]
+[2023-07-09 01:07:19.238] [ngap] [debug] Initial NAS message received from UE[269]
+[2023-07-09 01:07:19.541] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:19.746] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:20.144] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:20.296] [rrc] [debug] UE[270] new signal detected
+[2023-07-09 01:07:20.314] [rrc] [info] RRC Setup for UE[270]
+[2023-07-09 01:07:20.314] [ngap] [debug] Initial NAS message received from UE[270]
+[2023-07-09 01:07:20.915] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:22.731] [rrc] [debug] UE[271] new signal detected
+[2023-07-09 01:07:22.750] [rrc] [info] RRC Setup for UE[271]
+[2023-07-09 01:07:22.751] [ngap] [debug] Initial NAS message received from UE[271]
+[2023-07-09 01:07:22.840] [rrc] [debug] UE[272] new signal detected
+[2023-07-09 01:07:22.859] [rrc] [info] RRC Setup for UE[272]
+[2023-07-09 01:07:22.859] [ngap] [debug] Initial NAS message received from UE[272]
+[2023-07-09 01:07:23.150] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:23.488] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:24.116] [rrc] [debug] UE[273] new signal detected
+[2023-07-09 01:07:24.136] [rrc] [info] RRC Setup for UE[273]
+[2023-07-09 01:07:24.136] [ngap] [debug] Initial NAS message received from UE[273]
+[2023-07-09 01:07:24.496] [rrc] [debug] UE[274] new signal detected
+[2023-07-09 01:07:24.508] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:24.518] [rrc] [info] RRC Setup for UE[274]
+[2023-07-09 01:07:24.518] [ngap] [debug] Initial NAS message received from UE[274]
+[2023-07-09 01:07:24.664] [rrc] [debug] UE[275] new signal detected
+[2023-07-09 01:07:24.697] [rrc] [info] RRC Setup for UE[275]
+[2023-07-09 01:07:24.697] [ngap] [debug] Initial NAS message received from UE[275]
+[2023-07-09 01:07:25.167] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:25.294] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:28.689] [rrc] [debug] UE[276] new signal detected
+[2023-07-09 01:07:28.707] [rrc] [info] RRC Setup for UE[276]
+[2023-07-09 01:07:28.707] [ngap] [debug] Initial NAS message received from UE[276]
+[2023-07-09 01:07:28.867] [rrc] [debug] UE[277] new signal detected
+[2023-07-09 01:07:29.022] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:29.396] [rrc] [debug] UE[278] new signal detected
+[2023-07-09 01:07:29.414] [rrc] [info] RRC Setup for UE[278]
+[2023-07-09 01:07:29.415] [ngap] [debug] Initial NAS message received from UE[278]
+[2023-07-09 01:07:29.891] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:30.714] [rrc] [debug] UE[279] new signal detected
+[2023-07-09 01:07:31.377] [rrc] [info] RRC Setup for UE[277]
+[2023-07-09 01:07:31.378] [ngap] [debug] Initial NAS message received from UE[277]
+[2023-07-09 01:07:31.646] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:32.486] [rrc] [debug] UE[280] new signal detected
+[2023-07-09 01:07:32.506] [rrc] [info] RRC Setup for UE[280]
+[2023-07-09 01:07:32.507] [ngap] [debug] Initial NAS message received from UE[280]
+[2023-07-09 01:07:32.520] [rrc] [debug] UE[281] new signal detected
+[2023-07-09 01:07:32.539] [rrc] [info] RRC Setup for UE[281]
+[2023-07-09 01:07:32.540] [ngap] [debug] Initial NAS message received from UE[281]
+[2023-07-09 01:07:32.924] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:33.056] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:33.225] [rrc] [info] RRC Setup for UE[279]
+[2023-07-09 01:07:33.226] [ngap] [debug] Initial NAS message received from UE[279]
+[2023-07-09 01:07:33.261] [rrc] [debug] UE[282] new signal detected
+[2023-07-09 01:07:33.288] [rrc] [info] RRC Setup for UE[282]
+[2023-07-09 01:07:33.288] [ngap] [debug] Initial NAS message received from UE[282]
+[2023-07-09 01:07:33.642] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:33.768] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:34.848] [rrc] [debug] UE[283] new signal detected
+[2023-07-09 01:07:34.868] [rrc] [info] RRC Setup for UE[283]
+[2023-07-09 01:07:34.869] [ngap] [debug] Initial NAS message received from UE[283]
+[2023-07-09 01:07:35.242] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:35.731] [rrc] [debug] UE[284] new signal detected
+[2023-07-09 01:07:35.764] [rrc] [info] RRC Setup for UE[284]
+[2023-07-09 01:07:35.765] [ngap] [debug] Initial NAS message received from UE[284]
+[2023-07-09 01:07:36.012] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:36.160] [rrc] [debug] UE[285] new signal detected
+[2023-07-09 01:07:36.176] [rrc] [info] RRC Setup for UE[285]
+[2023-07-09 01:07:36.178] [ngap] [debug] Initial NAS message received from UE[285]
+[2023-07-09 01:07:36.469] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:36.669] [rrc] [debug] UE[286] new signal detected
+[2023-07-09 01:07:36.696] [rrc] [info] RRC Setup for UE[286]
+[2023-07-09 01:07:36.697] [ngap] [debug] Initial NAS message received from UE[286]
+[2023-07-09 01:07:37.213] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:37.403] [rrc] [debug] UE[287] new signal detected
+[2023-07-09 01:07:37.436] [rrc] [info] RRC Setup for UE[287]
+[2023-07-09 01:07:37.436] [ngap] [debug] Initial NAS message received from UE[287]
+[2023-07-09 01:07:37.900] [rrc] [debug] UE[288] new signal detected
+[2023-07-09 01:07:37.919] [rrc] [info] RRC Setup for UE[288]
+[2023-07-09 01:07:37.919] [ngap] [debug] Initial NAS message received from UE[288]
+[2023-07-09 01:07:37.961] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:38.240] [rrc] [debug] UE[289] new signal detected
+[2023-07-09 01:07:38.258] [rrc] [info] RRC Setup for UE[289]
+[2023-07-09 01:07:38.259] [ngap] [debug] Initial NAS message received from UE[289]
+[2023-07-09 01:07:38.747] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:39.142] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:39.965] [rrc] [debug] UE[290] new signal detected
+[2023-07-09 01:07:39.988] [rrc] [info] RRC Setup for UE[290]
+[2023-07-09 01:07:39.989] [ngap] [debug] Initial NAS message received from UE[290]
+[2023-07-09 01:07:40.284] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:41.800] [rrc] [debug] UE[291] new signal detected
+[2023-07-09 01:07:43.088] [rrc] [debug] UE[292] new signal detected
+[2023-07-09 01:07:43.111] [rrc] [info] RRC Setup for UE[292]
+[2023-07-09 01:07:43.112] [ngap] [debug] Initial NAS message received from UE[292]
+[2023-07-09 01:07:43.119] [rrc] [debug] UE[293] new signal detected
+[2023-07-09 01:07:43.139] [rrc] [info] RRC Setup for UE[293]
+[2023-07-09 01:07:43.139] [ngap] [debug] Initial NAS message received from UE[293]
+[2023-07-09 01:07:43.485] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:43.615] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:44.061] [rrc] [debug] UE[294] new signal detected
+[2023-07-09 01:07:44.089] [rrc] [info] RRC Setup for UE[294]
+[2023-07-09 01:07:44.090] [ngap] [debug] Initial NAS message received from UE[294]
+[2023-07-09 01:07:44.310] [rrc] [info] RRC Setup for UE[291]
+[2023-07-09 01:07:44.311] [ngap] [debug] Initial NAS message received from UE[291]
+[2023-07-09 01:07:44.338] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:44.848] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:46.409] [rrc] [debug] UE[295] new signal detected
+[2023-07-09 01:07:46.431] [rrc] [info] RRC Setup for UE[295]
+[2023-07-09 01:07:46.431] [ngap] [debug] Initial NAS message received from UE[295]
+[2023-07-09 01:07:46.742] [rrc] [debug] UE[296] new signal detected
+[2023-07-09 01:07:46.766] [rrc] [info] RRC Setup for UE[296]
+[2023-07-09 01:07:46.767] [ngap] [debug] Initial NAS message received from UE[296]
+[2023-07-09 01:07:47.076] [rrc] [debug] UE[297] new signal detected
+[2023-07-09 01:07:47.105] [rrc] [info] RRC Setup for UE[297]
+[2023-07-09 01:07:47.106] [ngap] [debug] Initial NAS message received from UE[297]
+[2023-07-09 01:07:47.244] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:47.790] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:47.992] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:48.486] [rrc] [debug] UE[298] new signal detected
+[2023-07-09 01:07:48.509] [rrc] [info] RRC Setup for UE[298]
+[2023-07-09 01:07:48.509] [ngap] [debug] Initial NAS message received from UE[298]
+[2023-07-09 01:07:48.664] [rrc] [debug] UE[299] new signal detected
+[2023-07-09 01:07:48.684] [rrc] [info] RRC Setup for UE[299]
+[2023-07-09 01:07:48.685] [ngap] [debug] Initial NAS message received from UE[299]
+[2023-07-09 01:07:48.779] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:49.319] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:49.912] [rrc] [debug] UE[300] new signal detected
+[2023-07-09 01:07:49.930] [rrc] [info] RRC Setup for UE[300]
+[2023-07-09 01:07:49.931] [ngap] [debug] Initial NAS message received from UE[300]
+[2023-07-09 01:07:50.347] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:50.420] [rrc] [debug] UE[301] new signal detected
+[2023-07-09 01:07:50.449] [rrc] [info] RRC Setup for UE[301]
+[2023-07-09 01:07:50.449] [ngap] [debug] Initial NAS message received from UE[301]
+[2023-07-09 01:07:50.891] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:50.936] [rrc] [debug] UE[302] new signal detected
+[2023-07-09 01:07:50.954] [rrc] [info] RRC Setup for UE[302]
+[2023-07-09 01:07:50.954] [ngap] [debug] Initial NAS message received from UE[302]
+[2023-07-09 01:07:51.426] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:53.828] [rrc] [debug] UE[303] new signal detected
+[2023-07-09 01:07:53.849] [rrc] [info] RRC Setup for UE[303]
+[2023-07-09 01:07:53.849] [ngap] [debug] Initial NAS message received from UE[303]
+[2023-07-09 01:07:53.947] [rrc] [debug] UE[304] new signal detected
+[2023-07-09 01:07:53.968] [rrc] [info] RRC Setup for UE[304]
+[2023-07-09 01:07:53.969] [ngap] [debug] Initial NAS message received from UE[304]
+[2023-07-09 01:07:54.132] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:54.473] [rrc] [debug] UE[305] new signal detected
+[2023-07-09 01:07:54.506] [rrc] [info] RRC Setup for UE[305]
+[2023-07-09 01:07:54.507] [ngap] [debug] Initial NAS message received from UE[305]
+[2023-07-09 01:07:55.217] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:55.602] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:56.391] [rrc] [debug] UE[306] new signal detected
+[2023-07-09 01:07:56.410] [rrc] [info] RRC Setup for UE[306]
+[2023-07-09 01:07:56.411] [ngap] [debug] Initial NAS message received from UE[306]
+[2023-07-09 01:07:56.700] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:07:57.538] [rrc] [debug] UE[307] new signal detected
+[2023-07-09 01:07:57.538] [rrc] [debug] UE[308] new signal detected
+[2023-07-09 01:07:57.550] [rrc] [debug] UE[309] new signal detected
+[2023-07-09 01:07:57.550] [rrc] [debug] UE[310] new signal detected
+[2023-07-09 01:07:57.550] [rrc] [debug] UE[311] new signal detected
+[2023-07-09 01:07:57.550] [rrc] [debug] UE[312] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[313] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[314] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[315] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[316] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[317] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[318] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[319] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[320] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[321] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[322] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[323] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[324] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[325] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[326] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[327] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[328] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[329] new signal detected
+[2023-07-09 01:07:57.551] [rrc] [debug] UE[330] new signal detected
+[2023-07-09 01:07:57.552] [rrc] [debug] UE[331] new signal detected
+[2023-07-09 01:07:57.552] [rrc] [debug] UE[332] new signal detected
+[2023-07-09 01:07:57.552] [rrc] [debug] UE[333] new signal detected
+[2023-07-09 01:07:57.552] [rrc] [debug] UE[334] new signal detected
+[2023-07-09 01:07:57.552] [rrc] [debug] UE[335] new signal detected
+[2023-07-09 01:07:57.788] [rrc] [debug] UE[336] new signal detected
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[308]
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[327]
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[334]
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[326]
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[335]
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[322]
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[323]
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[333]
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[307]
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[329]
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[325]
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[331]
+[2023-07-09 01:07:57.788] [rrc] [info] RRC Setup for UE[324]
+[2023-07-09 01:07:57.798] [ngap] [debug] Initial NAS message received from UE[323]
+[2023-07-09 01:07:57.798] [ngap] [debug] Initial NAS message received from UE[333]
+[2023-07-09 01:07:57.798] [ngap] [debug] Initial NAS message received from UE[308]
+[2023-07-09 01:07:57.798] [ngap] [debug] Initial NAS message received from UE[325]
+[2023-07-09 01:07:57.798] [ngap] [debug] Initial NAS message received from UE[327]
+[2023-07-09 01:07:57.798] [ngap] [debug] Initial NAS message received from UE[335]
+[2023-07-09 01:07:57.798] [ngap] [debug] Initial NAS message received from UE[324]
+[2023-07-09 01:07:57.798] [ngap] [debug] Initial NAS message received from UE[322]
+[2023-07-09 01:07:57.798] [ngap] [debug] Initial NAS message received from UE[326]
+[2023-07-09 01:07:57.799] [ngap] [debug] Initial NAS message received from UE[329]
+[2023-07-09 01:07:57.799] [ngap] [debug] Initial NAS message received from UE[307]
+[2023-07-09 01:07:57.799] [ngap] [debug] Initial NAS message received from UE[334]
+[2023-07-09 01:07:57.799] [ngap] [debug] Initial NAS message received from UE[331]
+[2023-07-09 01:07:58.164] [rrc] [debug] UE[337] new signal detected
+[2023-07-09 01:08:00.069] [rrc] [info] RRC Setup for UE[314]
+[2023-07-09 01:08:00.070] [ngap] [debug] Initial NAS message received from UE[314]
+[2023-07-09 01:08:00.071] [rrc] [info] RRC Setup for UE[317]
+[2023-07-09 01:08:00.072] [ngap] [debug] Initial NAS message received from UE[317]
+[2023-07-09 01:08:00.079] [rrc] [info] RRC Setup for UE[321]
+[2023-07-09 01:08:00.080] [ngap] [debug] Initial NAS message received from UE[321]
+[2023-07-09 01:08:00.107] [rrc] [debug] UE[338] new signal detected
+[2023-07-09 01:08:00.119] [rrc] [info] RRC Setup for UE[315]
+[2023-07-09 01:08:00.119] [ngap] [debug] Initial NAS message received from UE[315]
+[2023-07-09 01:08:00.122] [rrc] [info] RRC Setup for UE[328]
+[2023-07-09 01:08:00.122] [ngap] [debug] Initial NAS message received from UE[328]
+[2023-07-09 01:08:00.124] [rrc] [info] RRC Setup for UE[313]
+[2023-07-09 01:08:00.126] [rrc] [info] RRC Setup for UE[312]
+[2023-07-09 01:08:00.126] [ngap] [debug] Initial NAS message received from UE[312]
+[2023-07-09 01:08:00.129] [ngap] [debug] Initial NAS message received from UE[313]
+[2023-07-09 01:08:00.129] [rrc] [info] RRC Setup for UE[319]
+[2023-07-09 01:08:00.130] [ngap] [debug] Initial NAS message received from UE[319]
+[2023-07-09 01:08:00.130] [rrc] [info] RRC Setup for UE[336]
+[2023-07-09 01:08:00.131] [ngap] [debug] Initial NAS message received from UE[336]
+[2023-07-09 01:08:00.131] [rrc] [info] RRC Setup for UE[310]
+[2023-07-09 01:08:00.131] [ngap] [debug] Initial NAS message received from UE[310]
+[2023-07-09 01:08:00.134] [rrc] [info] RRC Setup for UE[337]
+[2023-07-09 01:08:00.135] [ngap] [debug] Initial NAS message received from UE[337]
+[2023-07-09 01:08:00.140] [rrc] [info] RRC Setup for UE[338]
+[2023-07-09 01:08:00.140] [ngap] [debug] Initial NAS message received from UE[338]
+[2023-07-09 01:08:00.151] [rrc] [info] RRC Setup for UE[318]
+[2023-07-09 01:08:00.151] [ngap] [debug] Initial NAS message received from UE[318]
+[2023-07-09 01:08:00.153] [rrc] [info] RRC Setup for UE[316]
+[2023-07-09 01:08:00.153] [ngap] [debug] Initial NAS message received from UE[316]
+[2023-07-09 01:08:00.161] [rrc] [info] RRC Setup for UE[330]
+[2023-07-09 01:08:00.162] [ngap] [debug] Initial NAS message received from UE[330]
+[2023-07-09 01:08:00.162] [rrc] [info] RRC Setup for UE[309]
+[2023-07-09 01:08:00.162] [rrc] [info] RRC Setup for UE[320]
+[2023-07-09 01:08:00.166] [ngap] [debug] Initial NAS message received from UE[309]
+[2023-07-09 01:08:00.166] [ngap] [debug] Initial NAS message received from UE[320]
+[2023-07-09 01:08:00.167] [rrc] [info] RRC Setup for UE[332]
+[2023-07-09 01:08:00.167] [rrc] [info] RRC Setup for UE[311]
+[2023-07-09 01:08:00.168] [ngap] [debug] Initial NAS message received from UE[332]
+[2023-07-09 01:08:00.168] [ngap] [debug] Initial NAS message received from UE[311]
+[2023-07-09 01:08:00.565] [rrc] [debug] UE[339] new signal detected
+[2023-07-09 01:08:00.615] [rrc] [info] RRC Setup for UE[339]
+[2023-07-09 01:08:00.616] [ngap] [debug] Initial NAS message received from UE[339]
+[2023-07-09 01:08:00.680] [rrc] [debug] UE[340] new signal detected
+[2023-07-09 01:08:00.703] [rrc] [info] RRC Setup for UE[340]
+[2023-07-09 01:08:00.703] [ngap] [debug] Initial NAS message received from UE[340]
+[2023-07-09 01:08:00.765] [rrc] [debug] UE[341] new signal detected
+[2023-07-09 01:08:00.788] [rrc] [info] RRC Setup for UE[341]
+[2023-07-09 01:08:00.788] [ngap] [debug] Initial NAS message received from UE[341]
+[2023-07-09 01:08:01.481] [rrc] [debug] UE[342] new signal detected
+[2023-07-09 01:08:01.703] [rrc] [debug] UE[343] new signal detected
+[2023-07-09 01:08:01.810] [rrc] [debug] UE[344] new signal detected
+[2023-07-09 01:08:01.856] [rrc] [info] RRC Setup for UE[342]
+[2023-07-09 01:08:01.857] [ngap] [debug] Initial NAS message received from UE[342]
+[2023-07-09 01:08:01.857] [rrc] [info] RRC Setup for UE[343]
+[2023-07-09 01:08:01.859] [ngap] [debug] Initial NAS message received from UE[343]
+[2023-07-09 01:08:01.865] [rrc] [info] RRC Setup for UE[344]
+[2023-07-09 01:08:01.868] [ngap] [debug] Initial NAS message received from UE[344]
+[2023-07-09 01:08:03.270] [rrc] [debug] UE[345] new signal detected
+[2023-07-09 01:08:03.628] [rrc] [debug] UE[346] new signal detected
+[2023-07-09 01:08:03.669] [rrc] [info] RRC Setup for UE[345]
+[2023-07-09 01:08:03.669] [ngap] [debug] Initial NAS message received from UE[345]
+[2023-07-09 01:08:03.672] [rrc] [info] RRC Setup for UE[346]
+[2023-07-09 01:08:03.672] [ngap] [debug] Initial NAS message received from UE[346]
+[2023-07-09 01:08:05.967] [rrc] [debug] UE[347] new signal detected
+[2023-07-09 01:08:05.997] [rrc] [info] RRC Setup for UE[347]
+[2023-07-09 01:08:05.997] [ngap] [debug] Initial NAS message received from UE[347]
+[2023-07-09 01:08:06.326] [rrc] [debug] UE[348] new signal detected
+[2023-07-09 01:08:06.352] [rrc] [info] RRC Setup for UE[348]
+[2023-07-09 01:08:06.353] [ngap] [debug] Initial NAS message received from UE[348]
+[2023-07-09 01:08:06.928] [rrc] [debug] UE[349] new signal detected
+[2023-07-09 01:08:06.953] [rrc] [info] RRC Setup for UE[349]
+[2023-07-09 01:08:06.954] [ngap] [debug] Initial NAS message received from UE[349]
+[2023-07-09 01:08:07.232] [rrc] [debug] UE[350] new signal detected
+[2023-07-09 01:08:07.754] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:07.905] [rrc] [debug] UE[351] new signal detected
+[2023-07-09 01:08:07.939] [rrc] [warning] Discarding RRC Setup Request, UE context already exists
+[2023-07-09 01:08:07.942] [rrc] [info] RRC Setup for UE[351]
+[2023-07-09 01:08:07.943] [ngap] [debug] Initial NAS message received from UE[351]
+[2023-07-09 01:08:07.944] [rrc] [info] RRC Setup for UE[350]
+[2023-07-09 01:08:07.944] [ngap] [debug] Initial NAS message received from UE[350]
+[2023-07-09 01:08:08.173] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:08.467] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:08.844] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:08.981] [rrc] [debug] UE[352] new signal detected
+[2023-07-09 01:08:09.017] [rrc] [info] RRC Setup for UE[352]
+[2023-07-09 01:08:09.018] [ngap] [debug] Initial NAS message received from UE[352]
+[2023-07-09 01:08:09.176] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:09.289] [rrc] [debug] UE[353] new signal detected
+[2023-07-09 01:08:09.322] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:09.614] [rrc] [debug] UE[354] new signal detected
+[2023-07-09 01:08:09.808] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:09.967] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:10.100] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:10.134] [rrc] [debug] UE[355] new signal detected
+[2023-07-09 01:08:10.155] [rrc] [info] RRC Setup for UE[355]
+[2023-07-09 01:08:10.156] [ngap] [debug] Initial NAS message received from UE[355]
+[2023-07-09 01:08:10.480] [rrc] [debug] UE[356] new signal detected
+[2023-07-09 01:08:10.627] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:10.906] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:11.065] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:11.329] [rrc] [debug] UE[357] new signal detected
+[2023-07-09 01:08:11.352] [rrc] [info] RRC Setup for UE[357]
+[2023-07-09 01:08:11.352] [ngap] [debug] Initial NAS message received from UE[357]
+[2023-07-09 01:08:11.363] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:11.831] [rrc] [info] RRC Setup for UE[353]
+[2023-07-09 01:08:11.832] [ngap] [debug] Initial NAS message received from UE[353]
+[2023-07-09 01:08:11.960] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:12.133] [rrc] [info] RRC Setup for UE[354]
+[2023-07-09 01:08:12.134] [ngap] [debug] Initial NAS message received from UE[354]
+[2023-07-09 01:08:12.201] [rrc] [debug] UE[358] new signal detected
+[2023-07-09 01:08:12.222] [rrc] [info] RRC Setup for UE[358]
+[2023-07-09 01:08:12.222] [ngap] [debug] Initial NAS message received from UE[358]
+[2023-07-09 01:08:12.282] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:12.553] [rrc] [debug] UE[359] new signal detected
+[2023-07-09 01:08:12.574] [rrc] [info] RRC Setup for UE[359]
+[2023-07-09 01:08:12.575] [ngap] [debug] Initial NAS message received from UE[359]
+[2023-07-09 01:08:12.591] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:13.026] [rrc] [info] RRC Setup for UE[356]
+[2023-07-09 01:08:13.027] [ngap] [debug] Initial NAS message received from UE[356]
+[2023-07-09 01:08:13.591] [rrc] [debug] UE[360] new signal detected
+[2023-07-09 01:08:13.626] [rrc] [info] RRC Setup for UE[360]
+[2023-07-09 01:08:13.627] [ngap] [debug] Initial NAS message received from UE[360]
+[2023-07-09 01:08:14.632] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:15.154] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:15.550] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:16.227] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:16.414] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:16.569] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:16.694] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:18.265] [rls] [debug] UE[220] signal lost
+[2023-07-09 01:08:18.265] [rls] [debug] UE[221] signal lost
+[2023-07-09 01:08:18.265] [rls] [debug] UE[223] signal lost
+[2023-07-09 01:08:18.265] [rls] [debug] UE[226] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[215] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[222] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[224] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[225] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[227] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[228] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[229] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[230] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[231] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[232] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[233] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[234] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[235] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[236] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[237] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[238] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[239] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[240] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[241] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[242] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[243] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[244] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[245] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[246] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[247] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[248] signal lost
+[2023-07-09 01:08:19.266] [rls] [debug] UE[249] signal lost
+[2023-07-09 01:08:21.478] [rrc] [debug] UE[361] new signal detected
+[2023-07-09 01:08:21.500] [rrc] [info] RRC Setup for UE[361]
+[2023-07-09 01:08:21.501] [ngap] [debug] Initial NAS message received from UE[361]
+[2023-07-09 01:08:21.798] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:22.145] [rrc] [debug] UE[362] new signal detected
+[2023-07-09 01:08:22.170] [rrc] [info] RRC Setup for UE[362]
+[2023-07-09 01:08:22.170] [ngap] [debug] Initial NAS message received from UE[362]
+[2023-07-09 01:08:23.123] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:23.170] [rrc] [debug] UE[363] new signal detected
+[2023-07-09 01:08:23.192] [rrc] [info] RRC Setup for UE[363]
+[2023-07-09 01:08:23.193] [ngap] [debug] Initial NAS message received from UE[363]
+[2023-07-09 01:08:23.380] [rrc] [debug] UE[364] new signal detected
+[2023-07-09 01:08:23.604] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:24.461] [rls] [debug] UE[345] signal lost
+[2023-07-09 01:08:24.481] [rrc] [debug] UE[365] new signal detected
+[2023-07-09 01:08:24.498] [rrc] [info] RRC Setup for UE[365]
+[2023-07-09 01:08:24.498] [ngap] [debug] Initial NAS message received from UE[365]
+[2023-07-09 01:08:24.593] [rrc] [debug] UE[366] new signal detected
+[2023-07-09 01:08:24.613] [rrc] [info] RRC Setup for UE[366]
+[2023-07-09 01:08:24.613] [ngap] [debug] Initial NAS message received from UE[366]
+[2023-07-09 01:08:24.756] [rrc] [debug] UE[367] new signal detected
+[2023-07-09 01:08:24.774] [rrc] [info] RRC Setup for UE[367]
+[2023-07-09 01:08:24.774] [ngap] [debug] Initial NAS message received from UE[367]
+[2023-07-09 01:08:24.892] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:25.003] [rrc] [debug] UE[368] new signal detected
+[2023-07-09 01:08:25.022] [rrc] [info] RRC Setup for UE[368]
+[2023-07-09 01:08:25.023] [ngap] [debug] Initial NAS message received from UE[368]
+[2023-07-09 01:08:25.121] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:25.528] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:25.810] [rrc] [debug] UE[369] new signal detected
+[2023-07-09 01:08:25.832] [rrc] [info] RRC Setup for UE[369]
+[2023-07-09 01:08:25.839] [ngap] [debug] Initial NAS message received from UE[369]
+[2023-07-09 01:08:25.843] [rrc] [debug] UE[370] new signal detected
+[2023-07-09 01:08:25.874] [rrc] [info] RRC Setup for UE[370]
+[2023-07-09 01:08:25.874] [ngap] [debug] Initial NAS message received from UE[370]
+[2023-07-09 01:08:26.045] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:26.583] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:26.718] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:27.662] [rrc] [debug] UE[371] new signal detected
+[2023-07-09 01:08:27.680] [rrc] [info] RRC Setup for UE[371]
+[2023-07-09 01:08:27.681] [ngap] [debug] Initial NAS message received from UE[371]
+[2023-07-09 01:08:27.941] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:29.151] [rrc] [debug] UE[372] new signal detected
+[2023-07-09 01:08:29.192] [rrc] [info] RRC Setup for UE[372]
+[2023-07-09 01:08:29.192] [ngap] [debug] Initial NAS message received from UE[372]
+[2023-07-09 01:08:29.381] [rrc] [debug] UE[373] new signal detected
+[2023-07-09 01:08:29.403] [rrc] [info] RRC Setup for UE[373]
+[2023-07-09 01:08:29.404] [ngap] [debug] Initial NAS message received from UE[373]
+[2023-07-09 01:08:29.468] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:29.541] [rrc] [debug] UE[374] new signal detected
+[2023-07-09 01:08:29.561] [rrc] [info] RRC Setup for UE[374]
+[2023-07-09 01:08:29.562] [ngap] [debug] Initial NAS message received from UE[374]
+[2023-07-09 01:08:30.116] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:30.482] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:31.158] [rrc] [debug] UE[375] new signal detected
+[2023-07-09 01:08:31.178] [rrc] [info] RRC Setup for UE[375]
+[2023-07-09 01:08:31.179] [ngap] [debug] Initial NAS message received from UE[375]
+[2023-07-09 01:08:31.571] [rrc] [debug] UE[376] new signal detected
+[2023-07-09 01:08:31.606] [rrc] [info] RRC Setup for UE[376]
+[2023-07-09 01:08:31.606] [ngap] [debug] Initial NAS message received from UE[376]
+[2023-07-09 01:08:31.638] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:32.312] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:33.300] [rrc] [info] RRC Setup for UE[364]
+[2023-07-09 01:08:33.300] [ngap] [debug] Initial NAS message received from UE[364]
+[2023-07-09 01:08:33.336] [rrc] [debug] UE[377] new signal detected
+[2023-07-09 01:08:33.355] [rrc] [info] RRC Setup for UE[377]
+[2023-07-09 01:08:33.356] [ngap] [debug] Initial NAS message received from UE[377]
+[2023-07-09 01:08:34.073] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:34.258] [rrc] [debug] UE[378] new signal detected
+[2023-07-09 01:08:34.282] [rrc] [info] RRC Setup for UE[378]
+[2023-07-09 01:08:34.282] [ngap] [debug] Initial NAS message received from UE[378]
+[2023-07-09 01:08:34.950] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:36.034] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:08:53.681] [rrc] [debug] UE[379] new signal detected
+[2023-07-09 01:08:53.711] [rrc] [info] RRC Setup for UE[379]
+[2023-07-09 01:08:53.711] [ngap] [debug] Initial NAS message received from UE[379]
+[2023-07-09 01:08:53.896] [ngap] [debug] Initial Context Setup Request received
+[2023-07-09 01:09:18.482] [rls] [debug] UE[303] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[307] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[308] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[309] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[310] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[311] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[312] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[313] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[314] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[315] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[316] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[317] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[318] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[319] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[321] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[322] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[324] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[325] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[326] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[330] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[331] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[332] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[333] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[334] signal lost
+[2023-07-09 01:09:18.482] [rls] [debug] UE[336] signal lost
+[2023-07-09 01:09:19.483] [rls] [debug] UE[320] signal lost
+[2023-07-09 01:09:19.483] [rls] [debug] UE[323] signal lost
+[2023-07-09 01:09:19.483] [rls] [debug] UE[327] signal lost
+[2023-07-09 01:09:19.483] [rls] [debug] UE[328] signal lost
+[2023-07-09 01:09:19.483] [rls] [debug] UE[329] signal lost
+[2023-07-09 01:09:19.483] [rls] [debug] UE[335] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[2] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[34] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[37] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[38] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[40] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[41] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[72] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[73] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[74] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[75] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[76] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[77] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[78] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[79] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[80] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[81] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[82] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[83] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[85] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[86] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[88] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[89] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[90] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[91] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[92] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[93] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[94] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[95] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[96] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[97] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[98] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[99] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[100] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[101] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[102] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[103] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[104] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[105] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[106] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[107] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[108] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[109] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[110] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[111] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[112] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[113] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[114] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[117] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[149] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[150] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[151] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[152] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[155] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[156] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[157] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[158] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[159] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[160] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[161] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[162] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[163] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[164] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[166] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[167] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[168] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[169] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[172] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[173] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[174] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[175] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[176] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[177] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[178] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[179] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[180] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[181] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[182] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[183] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[184] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[185] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[186] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[187] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[188] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[189] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[190] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[192] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[193] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[194] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[195] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[197] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[198] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[199] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[200] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[201] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[202] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[204] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[205] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[206] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[208] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[209] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[210] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[212] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[216] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[217] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[218] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[219] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[250] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[252] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[253] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[256] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[259] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[261] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[264] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[265] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[266] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[267] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[270] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[273] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[274] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[276] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[277] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[278] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[279] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[281] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[282] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[283] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[284] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[285] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[286] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[287] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[288] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[289] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[290] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[291] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[292] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[293] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[294] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[295] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[296] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[298] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[299] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[300] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[301] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[304] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[305] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[338] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[339] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[341] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[342] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[344] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[346] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[347] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[348] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[349] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[350] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[352] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[354] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[355] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[356] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[357] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[359] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[361] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[363] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[364] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[365] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[366] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[367] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[368] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[370] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[372] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[374] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[375] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[377] signal lost
+[2023-07-09 01:11:18.882] [rls] [debug] UE[378] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[3] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[35] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[36] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[84] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[87] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[115] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[118] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[153] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[154] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[165] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[170] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[171] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[191] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[196] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[203] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[207] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[211] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[213] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[214] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[251] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[254] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[255] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[257] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[258] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[260] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[262] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[263] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[268] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[269] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[271] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[272] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[275] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[280] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[297] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[302] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[306] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[337] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[340] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[343] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[351] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[353] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[358] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[360] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[362] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[369] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[371] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[373] signal lost
+[2023-07-09 01:11:19.883] [rls] [debug] UE[376] signal lost
+[2023-07-09 01:11:52.487] [rls] [debug] UE[379] signal lost

@@ -1,0 +1,22 @@
+UERANSIM v3.2.6
+[2023-07-09 03:08:20.591] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 03:08:20.591] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 03:08:20.597] [nas] [info] Selected plmn[208/93]
+[2023-07-09 03:08:20.599] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 03:08:20.599] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 03:08:20.599] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 03:08:20.599] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 03:08:20.599] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 03:08:20.599] [nas] [debug] Sending Initial Registration
+[2023-07-09 03:08:20.610] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 03:08:20.610] [rrc] [debug] Sending RRC Setup Request
+[2023-07-09 03:08:20.610] [rrc] [info] RRC connection established
+[2023-07-09 03:08:20.610] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 03:08:20.610] [nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 03:08:20.734] [nas] [debug] Authentication Request received
+[2023-07-09 03:08:20.947] [nas] [debug] Security Mode Command received
+[2023-07-09 03:08:20.947] [nas] [debug] Selected integrity[2] ciphering[0]
+[2023-07-09 03:08:21.158] [nas] [debug] Registration accept received
+[2023-07-09 03:08:21.158] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2023-07-09 03:08:21.158] [nas] [debug] Sending Registration Complete
+[2023-07-09 03:08:21.158] [nas] [info] Initial Registration is successful

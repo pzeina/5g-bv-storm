@@ -1,0 +1,37 @@
+UERANSIM v3.2.6
+[2023-07-09 01:05:16.491] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 01:05:16.492] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 01:05:16.494] [nas] [info] Selected plmn[208/93]
+[2023-07-09 01:05:16.494] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:05:16.494] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 01:05:16.494] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:16.494] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 01:05:16.502] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 01:05:16.502] [nas] [debug] Sending Initial Registration
+[2023-07-09 01:05:16.517] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 01:05:16.517] [rrc] [debug] Sending RRC Setup Request
+[2023-07-09 01:05:16.518] [rrc] [info] RRC connection established
+[2023-07-09 01:05:16.518] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 01:05:16.518] [nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 01:05:16.748] [nas] [debug] Authentication Request received
+[2023-07-09 01:05:16.748] [nas] [debug] Sending Authentication Failure due to SQN out of range
+[2023-07-09 01:05:17.038] [nas] [debug] Authentication Request received
+[2023-07-09 01:05:17.061] [nas] [debug] Security Mode Command received
+[2023-07-09 01:05:17.061] [nas] [debug] Selected integrity[2] ciphering[0]
+[2023-07-09 01:05:17.339] [nas] [debug] Registration accept received
+[2023-07-09 01:05:17.339] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2023-07-09 01:05:17.339] [nas] [debug] Sending Registration Complete
+[2023-07-09 01:05:17.339] [nas] [info] Initial Registration is successful
+[2023-07-09 01:07:58.774] [rrc] [debug] Signal lost for cell[1], total [0] cells in coverage
+[2023-07-09 01:07:58.774] [rrc] [debug] New signal detected for cell[2], total [1] cells in coverage
+[2023-07-09 01:07:58.776] [nas] [error] Radio link failure detected
+[2023-07-09 01:07:58.776] [nas] [info] UE switches to state [CM-IDLE]
+[2023-07-09 01:07:58.776] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+[2023-07-09 01:07:58.776] [nas] [info] UE switches to state [MM-REGISTERED/PLMN-SEARCH]
+[2023-07-09 01:07:58.776] [nas] [error] PLMN selection failure, no cells in coverage
+[2023-07-09 01:07:59.055] [rrc] [warning] Acceptable cell selection failed in [1] cells. [1] no SI, [0] reserved, [0] barred, ftai [0]
+[2023-07-09 01:07:59.055] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2023-07-09 01:08:00.122] [nas] [info] Selected plmn[208/93]
+[2023-07-09 01:08:00.124] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 01:08:00.124] [nas] [info] UE switches to state [MM-REGISTERED/PS]
+[2023-07-09 01:08:00.124] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]

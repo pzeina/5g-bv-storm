@@ -1,0 +1,57 @@
+UERANSIM v3.2.6
+[2023-07-09 15:24:50.599] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 15:24:50.601] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 15:24:50.605] [nas] [info] Selected plmn[208/93]
+[2023-07-09 15:24:53.100] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 15:24:53.100] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 15:24:53.100] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 15:24:53.100] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 15:24:53.100] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 15:24:53.100] [nas] [debug] Sending Initial Registration
+[2023-07-09 15:24:53.120] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 15:24:53.120] [rrc] [debug] Sending RRC Setup Request
+[2023-07-09 15:24:53.120] [rrc] [info] RRC connection established
+[2023-07-09 15:24:53.120] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 15:24:53.120] [nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 15:24:53.608] [nas] [error] Initial Registration failed [CONGESTION]
+[2023-07-09 15:24:53.608] [nas] [debug] Handling Registration Reject abnormal case
+[2023-07-09 15:24:53.608] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2023-07-09 15:24:53.609] [nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 15:24:53.609] [nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 15:25:03.612] [nas] [debug] NAS timer[3511] expired [1]
+[2023-07-09 15:25:03.612] [nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2023-07-09 15:25:03.612] [nas] [debug] Sending Initial Registration
+[2023-07-09 15:25:03.612] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 15:25:04.022] [nas] [error] Initial Registration failed [CONGESTION]
+[2023-07-09 15:25:04.022] [nas] [debug] Handling Registration Reject abnormal case
+[2023-07-09 15:25:04.022] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2023-07-09 15:25:04.147] [nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 15:25:04.147] [nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 15:25:14.632] [nas] [debug] NAS timer[3511] expired [1]
+[2023-07-09 15:25:14.632] [nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2023-07-09 15:25:14.632] [nas] [debug] Sending Initial Registration
+[2023-07-09 15:25:14.632] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 15:25:15.366] [nas] [error] Initial Registration failed [CONGESTION]
+[2023-07-09 15:25:15.366] [nas] [debug] Handling Registration Reject abnormal case
+[2023-07-09 15:25:15.366] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2023-07-09 15:25:15.366] [nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 15:25:15.366] [nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 15:25:25.643] [nas] [debug] NAS timer[3511] expired [1]
+[2023-07-09 15:25:25.643] [nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2023-07-09 15:25:25.643] [nas] [debug] Sending Initial Registration
+[2023-07-09 15:25:25.643] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 15:25:25.727] [nas] [error] Initial Registration failed [CONGESTION]
+[2023-07-09 15:25:25.727] [nas] [debug] Handling Registration Reject abnormal case
+[2023-07-09 15:25:25.727] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2023-07-09 15:25:25.891] [nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 15:25:25.891] [nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]
+[2023-07-09 15:25:36.654] [nas] [debug] NAS timer[3511] expired [1]
+[2023-07-09 15:25:36.654] [nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2023-07-09 15:25:36.654] [nas] [debug] Sending Initial Registration
+[2023-07-09 15:25:36.654] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 15:25:36.738] [nas] [error] Initial Registration failed [CONGESTION]
+[2023-07-09 15:25:36.738] [nas] [debug] Handling Registration Reject abnormal case
+[2023-07-09 15:25:36.738] [nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2023-07-09 15:25:36.738] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2023-07-09 15:25:36.915] [nas] [warning] Registration Reject ignored since the MM state is not MM_REGISTERED_INITIATED
+[2023-07-09 15:25:36.915] [nas] [warning] Sending MM Status with cause [MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE]

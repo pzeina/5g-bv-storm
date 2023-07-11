@@ -1,0 +1,51 @@
+2023-07-09T01:03:30Z[36m [INFO][UPF][Main] [0mUPF version:  
+	free5GC version: v3.2.0
+	build time:      2022-09-24T15:06:48Z
+	commit hash:     4972fffb
+	commit time:     2022-06-29T05:46:33Z
+	go version:      go1.14.4 linux/amd64
+2023-07-09T01:03:30Z[36m [INFO][UPF][Cfg] [0mRead config from [/free5gc/config/upfcfg.yaml]
+2023-07-09T01:03:30Z[36m [INFO][UPF][Cfg] [0m==================================================
+2023-07-09T01:03:30Z[36m [INFO][UPF][Cfg] [0m(*factory.Config)(0xc000408640)({
+	Version: (string) (len=5) "1.0.3",
+	Description: (string) (len=31) "UPF initial local configuration",
+	Pfcp: (*factory.Pfcp)(0xc000424960)({
+		Addr: (string) (len=9) "10.12.4.1",
+		NodeID: (string) (len=9) "10.12.4.1",
+		RetransTimeout: (time.Duration) 1s,
+		MaxRetrans: (uint8) 3
+	}),
+	Gtpu: (*factory.Gtpu)(0xc000424b10)({
+		Forwarder: (string) (len=5) "gtp5g",
+		IfList: ([]factory.IfInfo) (len=1 cap=1) {
+			(factory.IfInfo) {
+				Addr: (string) (len=9) "10.12.3.1",
+				Type: (string) (len=2) "N3",
+				Name: (string) "",
+				IfName: (string) ""
+			}
+		}
+	}),
+	DnnList: ([]factory.DnnList) (len=1 cap=1) {
+		(factory.DnnList) {
+			Dnn: (string) (len=8) "internet",
+			Cidr: (string) (len=11) "10.1.0.0/16",
+			NatIfName: (string) ""
+		}
+	},
+	Logger: (*factory.Logger)(0xc0003a5820)({
+		Enable: (bool) true,
+		Level: (string) (len=4) "info",
+		ReportCaller: (bool) false
+	})
+})
+2023-07-09T01:03:30Z[36m [INFO][UPF][Cfg] [0m==================================================
+2023-07-09T01:03:30Z[36m [INFO][UPF][Main] [0mLog level is set to [info] level
+2023-07-09T01:03:30Z[36m [INFO][UPF][Main] [0mstarting Gtpu Forwarder [gtp5g]
+2023-07-09T01:03:30Z[36m [INFO][UPF][Main] [0mGTP Address: "10.12.3.1:2152"
+2023-07-09T01:03:30Z[36m [INFO][UPF][Buff] [0mbuff server started
+2023-07-09T01:03:30Z[36m [INFO][UPF][Pfcp][10.12.4.1:8805] [0mstarting pfcp server
+2023-07-09T01:03:30Z[36m [INFO][UPF][Pfcp][10.12.4.1:8805] [0mpfcp server started
+2023-07-09T01:03:30Z[36m [INFO][UPF][Main] [0mUPF started
+2023-07-09T01:03:41Z[36m [INFO][UPF][Pfcp][10.12.4.1:8805] [0mhandleAssociationSetupRequest
+2023-07-09T01:03:41Z[36m [INFO][UPF][Pfcp][10.12.4.1:8805][rNodeID:10.12.4.101] [0mNew node

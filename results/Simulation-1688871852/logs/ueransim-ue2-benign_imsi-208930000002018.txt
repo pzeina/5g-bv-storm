@@ -1,0 +1,22 @@
+UERANSIM v3.2.6
+[2023-07-09 03:05:39.946] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-07-09 03:05:39.947] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-07-09 03:05:39.951] [nas] [info] Selected plmn[208/93]
+[2023-07-09 03:05:39.951] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-07-09 03:05:39.951] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 03:05:39.951] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-07-09 03:05:39.951] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-07-09 03:05:39.951] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-07-09 03:05:39.951] [nas] [debug] Sending Initial Registration
+[2023-07-09 03:05:39.968] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-07-09 03:05:39.969] [rrc] [debug] Sending RRC Setup Request
+[2023-07-09 03:05:39.970] [rrc] [info] RRC connection established
+[2023-07-09 03:05:39.970] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-07-09 03:05:39.970] [nas] [info] UE switches to state [CM-CONNECTED]
+[2023-07-09 03:05:42.041] [nas] [debug] Authentication Request received
+[2023-07-09 03:05:43.743] [nas] [error] Authentication Reject received
+[2023-07-09 03:05:43.743] [nas] [info] UE switches to state [5U3-ROAMING-NOT-ALLOWED]
+[2023-07-09 03:05:43.743] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-07-09 03:05:43.743] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-SUPI]
+[2023-07-09 03:05:43.744] [rrc] [debug] RRC Release received
+[2023-07-09 03:05:43.744] [nas] [info] UE switches to state [CM-IDLE]

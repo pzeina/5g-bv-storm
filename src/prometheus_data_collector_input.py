@@ -19,6 +19,7 @@ title_and_label_for_metrics = {
     'container_network_receive_packets_dropped_total':['Packets_dropped', 'packets'],
     'irate(container_network_transmit_packets_total':['Rate_of_transmitted_packets','packets/s'],
     'irate(container_network_receive_packets_total':['Rate_of_received_packets','packets/s'],
+    'rate(container_network_receive_packets_total':['Rate_of_received_packets','packets/s'],
     'irate(container_network_receive_packets_dropped_total':['Rate_of_received_packets_dropped','packets/s']
 }
 
@@ -30,6 +31,7 @@ metric_lists = [
     ['container_network_receive_packets_total','', 'pod'],
     ['container_network_receive_packets_dropped_total','','pod'],
     ['irate(container_network_receive_packets_total','[1m])', 'pod'],
+    ['rate(container_network_receive_packets_total','[1m])', 'pod'],
     ['irate(container_network_receive_packets_dropped_total','[1m])','pod'],
     ['irate(container_network_transmit_packets_total','[1m])','pod']
 ]
@@ -43,7 +45,7 @@ def get_pod(container, prefix='free5gc'):
     part2 = "/ {print $1;exit}'"
     command = part1 + container + part2
     output = exec_command(command, getRes=True)
-    #print(output)
+    # print(output)
     return output
 
 
@@ -61,9 +63,9 @@ containers = {
     'amf2':[['container','amf'],['pod',get_pod('amf2')]],
     'ausf':[['container','ausf']], 
     'udm':[['container','udm']], 
-    'udr':[['container','udr']], 
     'smf':[['container','smf']], 
     'upf':[['container','upf']], 
+    'udr':[['container','udr']], 
     'gnb1':[['container','gnb'],['pod',get_pod('gnb1', prefix='ueransim')]],
     'gnb2':[['container','gnb'],['pod',get_pod('gnb2', prefix='ueransim')]],
     'ue1':[['container','ue'],['pod',get_pod('ue1-benign', prefix='ueransim')]],
@@ -85,9 +87,6 @@ containers_color = {
     'ue2': 'tab:brown'
 }
 
-
-#amf eth0 or n3 ???
-#containers_complements = {'amf1':[['interface','n2']], 'amf2':[['interface','n2']], 'upf':[['interface','n4']], 'smf':[['interface','n4']]}
 containers_complements = {'amf1':[['interface','n3']], 'amf2':[['interface','n3']], 'upf':[['interface','n3']], 'smf':[['interface','n4']]}
 
 # Format of an entry:   {container: [[label, value], ...], ...}
@@ -96,7 +95,6 @@ pods = {container: [['pod',get_pod(container)]]+containers_complements.get(conta
 
 labels_dict = {
     'container': containers,
-    #'interface': interfaces,
     'pod': pods
 }
 
@@ -112,7 +110,7 @@ def update_pods():
         'ausf':[['container','ausf']], 
         'udm':[['container','udm']], 
         'smf':[['container','smf']], 
-        'upf':[['container','upf']], 
+        'upf':[['container','upf']],
         'udr':[['container','udr']], 
         'gnb1':[['container','gnb'],['pod',get_pod('gnb1', prefix='ueransim')]],
         'gnb2':[['container','gnb'],['pod',get_pod('gnb2', prefix='ueransim')]],
@@ -140,7 +138,7 @@ def get_prometheus_data(query, start_time, end_time, step, debug=False):
     }
 
 
-    #print(str(params))
+    # print(str(params))
 
     try:
         response = requests.get(url, params=params)
@@ -296,16 +294,16 @@ def data_collection(metric_lists, labels_dict, start_time, end_time, step, dest_
         print("Data collected.")
 
 
-def git_commit_results(destination_directory, withDefault=False):
-    shutil.copy('random_times_1.csv', 'ue-data/random_times_1.csv')
-    shutil.copy('random_times_2.csv', 'ue-data/random_times_2.csv')
+def commit_results(destination_directory, withDefault=False):
+    shutil.copy('random_times_1.csv', '../tmp/ue-data/random_times_1.csv')
+    shutil.copy('random_times_2.csv', '../tmp/ue-data/random_times_2.csv')
 
     # Define the source and destination paths
     current_path = os.getcwd()
-    source_folders = ["charts", "data", "logs", "ue-data"]
+    source_folders = ["../tmp/charts", "../tmp/data", "../tmp/logs", "../tmp/ue-data"]
     if withDefault:
-        source_folders += ["charts-default", "data_default", 'logs-default', "ue-data_default"]
-    destination_parent = os.path.join(current_path, "5g-attacks")
+        source_folders += ["../tmp/charts-default", "../tmp/data_default", '../tmp/logs-default', "../tmp/ue-data_default"]
+    destination_parent = os.path.join(current_path, "../results")
 
     # Create the destination directory
     destination_path = os.path.join(destination_parent, destination_directory)
@@ -315,39 +313,6 @@ def git_commit_results(destination_directory, withDefault=False):
     for folder in source_folders:
         source_path = os.path.join(current_path, folder)
         shutil.copytree(source_path, os.path.join(destination_path, folder))
-
-    # Change to the repository directory
-    repo_path = destination_parent
-    os.chdir(repo_path)
-
-
-
-    devnull = subprocess.DEVNULL
-
-    # Configure Git user email and name (required before making commits)
-    subprocess.run(['git', 'config', '--global', 'user.email', 'zeinatypol@gmail.com'], stdout=devnull, stderr=devnull)
-    subprocess.run(['git', 'config', '--global', 'user.name', 'Paul Zeinaty'], stdout=devnull, stderr=devnull)
-
-
-    # Change to the secondary branch "experiments" before committing changes
-    subprocess.run(['git', 'checkout', 'experiments'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-
-    # Add the new directory and files to the Git repository
-    subprocess.run(['git', 'add', destination_directory], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-
-    # Commit the changes
-    commit_message = 'Added new results ' + destination_directory
-    subprocess.run(['git', 'commit', '-m', commit_message, '-m', 'branch=experiments'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-
-    # Pull the remote changes before pushing
-    subprocess.run(['git', 'pull'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-
-
-    # Push the changes to update the remote branch
-    subprocess.run(['git', 'push'], stderr=subprocess.STDOUT)
-
-
-    #git clone git@github.com:pzeina/5g-attacks.git 5g-attacks
 
 
 def collect_and_plot(metric_lists, labels_dict, start_time, end_time, step, source_folder_path, dest_folder_path, debug=False):
@@ -375,22 +340,6 @@ if __name__ == "__main__":
     utc_end_time = datetime.utcfromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S')[:-3]
     print(utc_end_time)
 
-    # Create a thread for running the function
-    #log_collection_thread = threading.Thread(target=generate_logs, args=("logs/",))
-
-
-    # Start the thread in the background
-    #log_collection_thread.start()
-
-
-    # Continue with other operations in the script
-    #print("Log collection running in background.")
-
-
-    source_folder_path, dest_folder_path = 'data_default/', 'charts-default/' 
+    source_folder_path, dest_folder_path = '../tmp/data_default/', '../tmp/charts-default/' 
     # Plot charts every 5 seconds for real-time visualisation
     real_time_charts(metric_lists, labels_dict, start_time, end_time, step, source_folder_path, dest_folder_path, debug=True)
-
-
-    # Commit the results to the remote Git repository
-    # git_commit_results(str(int(start_time)))   

@@ -113,7 +113,7 @@ def benign_flow(ue_pod_md, csv_times, offset):
         for row in reader:
             imsi += 1
             time_value = float(row[0])
-            log_file_path = f'logs-default/ueransim-ue{ue_pod_md}-benign_imsi-208930000001{str(imsi).zfill(3)}.txt'
+            log_file_path = f'../tmp/logs-default/ueransim-ue{ue_pod_md}-benign_imsi-208930000001{str(imsi).zfill(3)}.txt'
 
             # Get current time
             current_time = datetime.now(timezone.utc).timestamp()
@@ -215,7 +215,7 @@ def run_benign_users(benign_params, log_folder, ue_data_folder, output_charts_fo
 
 
     # Save attack parameters
-    with open('logs-default/benign_params_default.txt', 'w', newline="") as file:
+    with open('../tmp/logs-default/benign_params_default.txt', 'w', newline="") as file:
         writer = csv.writer(file)
         # Write each parameter as a row in the CSV file
         for key, value in benign_params.items():
@@ -380,10 +380,10 @@ def run_default_experiment(benign_params_default, time_start_atk):
     #print(end_time)
     step = benign_params_default['collection_step']
 
-    delete_files_in_folder('charts-default/')
-    delete_files_in_folder('data_default/')
-    delete_files_in_folder('logs-default/')
-    delete_files_in_folder('ue-data_default/')
+    delete_files_in_folder('../tmp/charts-default/')
+    delete_files_in_folder('../tmp/data_default/')
+    delete_files_in_folder('../tmp/logs-default/')
+    delete_files_in_folder('../tmp/ue-data_default/')
 
     # Initialization
     init_pod(benign_params_default['deployments'])
@@ -405,7 +405,7 @@ def run_default_experiment(benign_params_default, time_start_atk):
     # Perform simulation and save results
     time_offset = start_time - time_start_atk
     print(f'[{datetime.now(timezone.utc).strftime("%H:%M:%S.%f")}]  Running the benign users...')
-    run_benign_users(benign_params_default, 'logs-default/', 'ue-data_default/', 'charts-default/', csv_files, time_offset=time_offset)
+    run_benign_users(benign_params_default, '../tmp/logs-default/', '../tmp/ue-data_default/', '../tmp/charts-default/', csv_files, time_offset=time_offset)
     
     
     end2 = (start_now + timedelta(minutes=benign_params_default['duration']+benign_params_default['collection_extra_time']))
@@ -494,7 +494,7 @@ if __name__ == "__main__":
     
 
     # Plot charts every 5 seconds for real-time visualisation
-    delete_files_in_folder('data_default/')
+    delete_files_in_folder('../tmp/data_default/')
     real_time_charts_process = multiprocessing.Process(target=prometheus_data_collector_input.real_time_charts, args=(prometheus_data_collector_input.metric_lists, prometheus_data_collector_input.labels_dict, start_time, end_collection_time, step))
     real_time_charts_process.start()
     print(f'[{datetime.now(timezone.utc).strftime("%H:%M:%S.%f")}]  Real-time charts running in background.')
@@ -502,7 +502,7 @@ if __name__ == "__main__":
 
     # Perform attack and save results
     print(f'[{datetime.now(timezone.utc).strftime("%H:%M:%S.%f")}]  Running the benign users...')
-    run_benign_users(benign_params, 'logs-default/', 'ue-data_default/', 'charts-default/', csv_files)
+    run_benign_users(benign_params, '../tmp/logs-default/', '../tmp/ue-data_default/', '../tmp/charts-default/', csv_files)
     kill_pod()
 
 

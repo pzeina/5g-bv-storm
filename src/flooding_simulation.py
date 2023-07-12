@@ -65,9 +65,25 @@ class LatestDataQueue:
 
 
 def select_manifests(simulation_params):
+    """
+    Edit `kustomization.yaml` files so deployed containers match the given parameters
+
+    Parameters
+    ----------
+    asimulation_params : dict
+        Parameters of the experiment.
+
+    Returns
+    -------
+    None
+        
+    """
+
+
     # ================================================================================
     # ========== Select the good free5gc containers to start the experiment ==========
     # ================================================================================
+
     # Read the kustomization.yaml file
     with open(f'../5g-manifests/{coreSelector}/nf/kustomization.yaml', 'r') as file:
         data = yaml.safe_load(file)
@@ -118,6 +134,21 @@ def exec_command(command):
 
 
 def delete_files_in_folder(folder_path, key=''):
+    """
+    A simple function to delete all the files from inside a repository
+    
+    Parameters
+    ----------
+    folder_path : str
+        Path to the target repository.
+    key (optional): str
+        If provided, only the files that contain this `key` in their name will be deleted
+
+    Returns
+    -------
+    None
+    """
+
     # Get a list of all files in the folder
     files = os.listdir(folder_path)
     if key:
@@ -132,6 +163,16 @@ def delete_files_in_folder(folder_path, key=''):
 
 
 def init_pod(deployments): 
+    """
+    Create UE pods (attackers and benign UEs)
+
+    Parameter:
+    -----------
+    deployemnts: int
+        Number of (attack,benign) UE container pairs to deploy, each pair being linked to a single dedicated gNB
+    """
+
+
     # Create pod
     print("Creating pods...")
     if deployments > 1:
@@ -153,6 +194,10 @@ def init_pod(deployments):
 
 
 def kill_pod(): 
+    """
+    Delete all running UE pods (attackers and benign UEs)
+    """    
+
     # Get running ue pod
     running_benign_pod = exec_command(COMMAND_GET_BENIGN)
     running_attacker_pod = exec_command(COMMAND_GET_ATTACKER)
@@ -183,6 +228,19 @@ def kill_pod():
 
 
 def complete_params(simulation_params):
+    """
+    Add some configuration parameters to the the given dictionnary, from selected manifest files 
+
+    Parameters
+    ----------
+    simulation_params : dict
+        Parameters of the experiment.
+
+    Returns
+    -------
+    dict
+        Completed parameters of the experiment.
+    """
 
     resMode = '-limited' if simulation_params['resource_mode'] == 'limited' else ''
     amfMode = '-storm' if simulation_params['amf_mode'] == 'signalling_storm_patch' else ''
@@ -238,14 +296,34 @@ def complete_params(simulation_params):
     return simulation_params
 
 
-
 def run_flooding_attack(atk_params, log_folder, output_charts_folder, shared_memory_benign):
+    """
+    Run successive waves of attackers until the end of the experiment
+
+    Parameters
+    ----------
+    atk_params : dict
+        Parameters of the experiment.
+    log_folder: str
+        Name of the folder where to store logs
+    output_charts_folder: str
+        Name of the folder where to store charts
+    shared_memory_benign: LatestDataQueue
+        Object to get shared data from the benign UEs' process
+
+    Returns
+    -------
+    None
+        
+    """
+
+
     end_time = (atk_params['start'] + timedelta(minutes=atk_params['duration'])).timestamp()
     next_wave_time = atk_params['start'].timestamp()
 
-    delete_files_in_folder('logs/')
-    delete_files_in_folder('ue-data/')
-    delete_files_in_folder('charts/')
+    delete_files_in_folder('..tmp/logs/')
+    delete_files_in_folder('..tmp/ue-data/')
+    delete_files_in_folder('..tmp/charts/')
 
 
     atk_params = complete_params(atk_params)
@@ -293,7 +371,7 @@ def run_flooding_attack(atk_params, log_folder, output_charts_folder, shared_mem
             time.sleep(1)
 
         # Save wave time
-        with open('logs/atk_params.txt', 'a', newline="") as file:
+        with open('../tmp/logs/atk_params.txt', 'a', newline="") as file:
             writer = csv.writer(file)
             writer.writerow([f'Wave{wave_num}', wave_time])
 
@@ -328,9 +406,9 @@ def run_flooding_attack(atk_params, log_folder, output_charts_folder, shared_mem
             results[i]['deregistration_duration'] = deregistration_duration
 
             # Save the data to csv files
-            save_data_points(registration_duration, f'ue-data/ue{i+1}_registration_time.csv')
-            save_data_points(pdu_establishment_duration, f'ue-data/ue{i+1}_pdu_establishment_time.csv')
-            save_data_points(wave_times, f'ue-data/ue{i+1}_wave_time.csv')
+            save_data_points(registration_duration, f'../tmp/ue-data/ue{i+1}_registration_time.csv')
+            save_data_points(pdu_establishment_duration, f'../tmp/ue-data/ue{i+1}_pdu_establishment_time.csv')
+            save_data_points(wave_times, f'../tmp/ue-data/ue{i+1}_wave_time.csv')
 
             # Plot the chart
             output_charts_path = f'{output_charts_folder}ue{i+1}_simulation_processing_times.png'
@@ -347,7 +425,7 @@ def run_flooding_attack(atk_params, log_folder, output_charts_folder, shared_mem
 
 
         # Sleep until next wave
-        time.sleep(max(0,(next_wave_time - datetime.now(timezone.utc)).total_seconds()-atk_params['cooldown']))
+        time.sleep(max(0,(next_wave_time - datetime.now(timezone.utc)).total_seconds()-10))
         
 
         for process in processes:
@@ -364,7 +442,7 @@ def run_flooding_attack(atk_params, log_folder, output_charts_folder, shared_mem
                 # Wait for the pod to terminate
                 print(f'Attacker pod(s) for wave {wave_num} terminating...')
 
-                time.sleep(float(atk_params['cooldown'])/2)
+                time.sleep(5)
                 
                 print(f'[{datetime.now(timezone.utc).strftime("%H:%M:%S.%f")}]  Pod {running_attacker_pod} terminated.')
 
@@ -389,6 +467,42 @@ def one_round_atk(
         output_queue=None,
         timer=30
     ):
+    """
+    Perform one wave of attacker registrations
+
+    Parameters
+    ----------
+    atk_params: dict
+        Parameters of the experiment.
+    registration_duration: list
+        List of all the registration durations computed from the start of the experiment    
+    pdu_establishment_duration: list
+        List of all the PDU establishment durations computed from the start of the experiment    
+    deregistration_duration: list
+        List of all the deregistration durations computed from the start of the experiment
+    wave_times: list
+        List of the start times of the waves
+    log_file_path: str
+        Path to where store the logs for attackers
+    wave_time: timestamp
+        Start time of this round (wave) of attackers
+    ue_pod: int
+        Id of the selected deployment
+    output_queue: Queue
+        Queue to make the duration times accessible to other attack processes
+    timer: float
+        Max time of one round (wave), in seconds
+
+    Returns
+    -------
+    registration_duration: list
+        Updated list of all the registration durations computed from the start of the experiment    
+    pdu_establishment_duration: list
+        Updated list of all the PDU establishment durations computed from the start of the experiment    
+    deregistration_duration: list
+        Updated list of all the deregistration durations computed from the start of the experiment
+        
+    """
 
     withDeregistration = atk_params['deregistration'] != None
     absolute_time_start = atk_params['start']
@@ -521,7 +635,23 @@ def one_round_atk(
 
 
 def benign_flow(ue_pod_md, csv_times, offset):
+    """
+    Start one new UERANSIM node simulating a benign UE
 
+    Parameters
+    ----------
+    ue_pod_md : int
+        Id of the selected deployment    
+    csv_times: str
+        Name of the file containing the random registration times to follow
+    offset: float
+        Time offset to add to convert relative `csv_times` to timestamps
+
+    Returns
+    -------
+    None
+        
+    """
     my_pod = exec_command("kubectl get pods -n paul | awk '/ueransim-ue" + str(ue_pod_md) + "-benign/ {print $1;exit}'")
 
     with open(csv_times, 'r') as file:
@@ -537,7 +667,7 @@ def benign_flow(ue_pod_md, csv_times, offset):
         for row in reader:
             imsi += 1
             time_value = float(row[0])
-            log_file_path = f'logs/ueransim-ue{ue_pod_md}-benign_imsi-20893000000{ue_pod_md}{str(imsi).zfill(3)}.txt'
+            log_file_path = f'../tmp/logs/ueransim-ue{ue_pod_md}-benign_imsi-20893000000{ue_pod_md}{str(imsi).zfill(3)}.txt'
 
             # Get current time
             current_time = datetime.now(timezone.utc).timestamp()
@@ -554,7 +684,27 @@ def benign_flow(ue_pod_md, csv_times, offset):
 
 
 def analyze_benign_flow(benign_params, log_key_prefix, output_queue=None):
+    """
+    Analyze the logs from the benign UEs
 
+    Parameters
+    ----------
+    benign_params : dict
+        Parameters of the experiment 
+    log_key_prefix: str
+        `key` parameters to feed the log parsing function (selecting the logs from the benign UEs)
+    output_queue (optional): LastDataQueue
+        Shared objects to allow other processes to plot the computed registration durations
+
+    Returns
+    -------
+    registration_duration: list
+        List of all the registration durations computed from the start of the experiment    
+    pdu_establishment_duration: list
+        List of all the PDU establishment durations computed from the start of the experiment    
+    deregistration_duration: list
+        List of all the deregistration durations computed from the start of the experiment 
+    """
     absolute_time_start = benign_params['start']
 
     registration_duration, pdu_establishment_duration, deregistration_duration = [[],[]], [[],[]], [[],[]]
@@ -629,7 +779,31 @@ def analyze_benign_flow(benign_params, log_key_prefix, output_queue=None):
     return registration_duration, pdu_establishment_duration, deregistration_duration
 
 
-def run_benign_users(benign_params, log_folder, output_charts_folder, csv_times, shared_memory_blocks, printRegistrations = False):
+def run_benign_users(benign_params, log_folder, output_charts_folder, csv_times, shared_memory_blocks, noCharts = True):
+    """
+    Run background benign UEs
+
+    Parameters
+    ----------
+    benign_params: dict
+        Parameters of the experiment
+    log_folder: str
+        Name of the folder for UE logs
+    output_charts_folder: str
+        Name of the folder for generated charts
+    csv_times: list
+        List of filenames containing the random registration times to follow
+    shared_memory_blocks: list of LastDataQueue
+        Shared objects to allow other processes to plot the computed registration durations
+    noCharts (optional): bool
+        If True, let the attack process plot charts for benign UEs as well
+
+    Returns
+    -------
+    None
+        
+    """
+
     end_time = (benign_params['start'] + timedelta(minutes=benign_params['duration'])).timestamp()
 
     
@@ -637,7 +811,7 @@ def run_benign_users(benign_params, log_folder, output_charts_folder, csv_times,
 
 
     # Save attack parameters
-    with open('logs/benign_params.txt', 'w', newline="") as file:
+    with open('../tmp/logs/benign_params.txt', 'w', newline="") as file:
         writer = csv.writer(file)
         # Write each parameter as a row in the CSV file
         for key, value in benign_params.items():
@@ -680,16 +854,14 @@ def run_benign_users(benign_params, log_folder, output_charts_folder, csv_times,
             shared_memory_blocks[ue_pod].put((registration_duration, pdu_establishment_duration, deregistration_duration))
             #print(registration_duration, pdu_establishment_duration, deregistration_duration)
 
-            if printRegistrations:
-                print(registration_duration)
-
             # Save the data to csv files
-            save_data_points(registration_duration, f'ue-data/ue{ue_pod+1}-benign_registration_time.csv')
-            save_data_points(pdu_establishment_duration, f'ue-data/ue{ue_pod+1}-benign_pdu_establishment_time.csv')
+            save_data_points(registration_duration, f'../tmp/ue-data/ue{ue_pod+1}-benign_registration_time.csv')
+            save_data_points(pdu_establishment_duration, f'../tmp/ue-data/ue{ue_pod+1}-benign_pdu_establishment_time.csv')
 
             # Plot the chart
-            #output_charts_path = f'{output_charts_folder}ue{i+1}-benign_processing_times.png'
-            #plot_time_charts(registration_duration, pdu_establishment_duration, deregistration_duration, output_charts_path)
+            if not noCharts:
+                output_charts_path = f'{output_charts_folder}ue{i+1}-benign_processing_times.png'
+                plot_time_charts(registration_duration, pdu_establishment_duration, deregistration_duration, [], output_charts_path)
 
     for process in processes:
         process.terminate()
@@ -704,12 +876,11 @@ def plot_time_charts(registration_duration, pdu_establishment_duration, deregist
         plt.plot(registration_duration[0][0],registration_duration[0][1], 'x', label='[ATK] Initial Registration', color='tab:red')
         plt.plot(deregistration_duration[0][0],deregistration_duration[0][1], '+', label='[ATK] Deregistration', color='tab:gray')
     elif one_color:
-        plt.plot(registration_duration[0][0],registration_duration[0][1], 'x', label='Registrations', color='tab:green')
+        plt.plot(registration_duration[0][0],registration_duration[0][1], 'x', color='tab:green')
 
     # Plot benign UEs
     plt.plot(registration_duration[1][0],registration_duration[1][1], 'x', label='[Benign] Initial Registration', color='tab:green')
     #plt.plot(deregistration_duration[1][0],deregistration_duration[1], '+', label='[Benign] Deregistration', color='tab:gray')
-
     #plt.plot(pdu_establishment_duration[0][0],pdu_establishment_duration[1], '+', label='PDU Session Establishment', color='tab:orange')
 
     plt.plot(wave_times[0], [0]*len(wave_times[0]), 'o', label="Waves", color='tab:blue')
@@ -725,7 +896,6 @@ def plot_time_charts(registration_duration, pdu_establishment_duration, deregist
     else:
         plt.show()
     print(f'   Chart generated ({output_chart_path})')
-
 
 
 if __name__ == "__main__":
@@ -745,16 +915,29 @@ if __name__ == "__main__":
     creation_phase(pod_representants, creation_order)
     kill_pod()
 
+    # =====================================================================================================================================================
+    # =========================================================== Parameters for the experiment ===========================================================
+    # =====================================================================================================================================================
+
+
     simulation_params = {
         'start': datetime.now(timezone.utc),
-        'duration': 5,                  # in minutes
-        'collection_extra_time': 2,     # in minutes
-        'collection_step': 1,           # in seconds
-        'wave_freq': 60,                # in seconds
+
+
+        'duration': 5,                  # Recommanded range:      5-10
+                                        # Duration of the experiments, in minutes
+
+        'collection_extra_time': 2,     # Recommanded range:      0.5-2
+                                        # Duration of the data collection is 'duration' + 'collection_extra_time', in minutes, so metrics go back to normal
+
+        'collection_step': 1,           # Recommanded range:      1-10
+                                        # Frequency of queries to Prometheus/Grafana, in seconds
+
+        'wave_freq': 60,                # Recommanded range:      30-60
                                         # Frequency of the storm attack waves, in seconds
 
-        'cooldown': 10,                 # in seconds
-                                        # 
+        'cooldown': 10,                 # 
+                                        # Time of cooldown (sleep) after each wave, in seconds
 
         'nb_ues': 30,                   # Recommanded range:      0-30
                                         # Number of attack UEs registering as a storm in synchronized waves, per deployment (see field below)
@@ -765,15 +948,23 @@ if __name__ == "__main__":
         'ghost': True,                  # Available options:    True, False
                                         # When set to True, attack UEs will be provided invalid imsi (not registered in the MongoDB)
 
-
         'deployments': 2,               # Recommanded range:      1-2
                                         # Number of AMF<->gNB<->UE(attacker+benign) deployments. deployments=3 is supported but unstable.
 
         'amf_mode': 'default',          # Available options:   'default', 'signalling_storm_patch'     
+
         'resource_mode': 'limited',     # Available options:   'default', 'limited'
+
         'restart_pod': False,           # !  Keep to False         
+
         'deregistration': 'normal',     # Available options (from UERANSIM):   None, 'normal', 'switch-off'
+
+        'newRandomTimes': False         # Set to True to generate new random registration start times for benign UEs
     }
+
+    # =====================================================================================================================================================
+    # =====================================================================================================================================================
+    # =====================================================================================================================================================
 
 
     # Select the manifest files for the containers to match the simulation params
@@ -785,9 +976,9 @@ if __name__ == "__main__":
 
 
     # Clean up old logs and data
-    delete_files_in_folder('logs/')
-    delete_files_in_folder('ue-data/')
-    delete_files_in_folder('data/')
+    delete_files_in_folder('../tmp/logs/')
+    delete_files_in_folder('../tmp/ue-data/')
+    delete_files_in_folder('../tmp/data/')
 
 
     # Time parameters of the experiment
@@ -798,22 +989,23 @@ if __name__ == "__main__":
     step = simulation_params['collection_step']
 
 
-    # Plot charts every 5 seconds for real-time visualisation
+    # Plot charts every 5 seconds for real-time visualisation of the Prometheus/Grafana collected metrics
     real_time_charts_process = multiprocessing.Process(target=exec_command, args=('python3 prometheus_data_collector.py',))
-    #real_time_charts_process = multiprocessing.Process(target=prometheus_data_collector.real_time_charts, args=(prometheus_data_collector.metric_lists, prometheus_data_collector.labels_dict, start_time, end_collection_time, step, 'data/', 'charts/',))
+    #real_time_charts_process = multiprocessing.Process(target=prometheus_data_collector.real_time_charts, args=(prometheus_data_collector.metric_lists, prometheus_data_collector.labels_dict, start_time, end_collection_time, step, '..tmp/data/', '..tmp/charts/',))
     real_time_charts_process.start()
     print(f'[{datetime.now(timezone.utc).strftime("%H:%M:%S.%f")}]  Real-time charts running in background.')
 
 
     csv_files = []
-    # Generate random times for the benign users
-    for i in range(simulation_params['deployments']):#
+    # Generate random times for the benign users if required
+    for i in range(simulation_params['deployments']):
         csv_files.append(f'random_times_{i+1}.csv')
-        #random_times(simulation_params,csv_files[i])
+        if simulation_params['newRandomTimes']:
+            random_times(simulation_params,csv_files[i])
 
 
     # Collect data from the testbed (Prometheus) in the background
-    log_collection_process = multiprocessing.Process(target=prometheus_data_collector.generate_logs, args=('logs/', simulation_params['deployments'],))
+    log_collection_process = multiprocessing.Process(target=prometheus_data_collector.generate_logs, args=('../tmp/logs/', simulation_params['deployments'],))
     log_collection_process.start()
     print(f'[{datetime.now(timezone.utc).strftime("%H:%M:%S.%f")}]  Log collection running in background.')
     
@@ -822,15 +1014,14 @@ if __name__ == "__main__":
     shared_memory_blocks = []
     for i in range(simulation_params['deployments']):
         shared_memory_blocks.append(LatestDataQueue())
-    context_process = multiprocessing.Process(target=run_benign_users, args=(simulation_params, 'logs/', 'charts/', csv_files, shared_memory_blocks))
-    attack_process = multiprocessing.Process(target=run_flooding_attack, args=(simulation_params, 'logs/', 'charts/', shared_memory_blocks))
+    context_process = multiprocessing.Process(target=run_benign_users, args=(simulation_params, '..tmp/logs/', '..tmp/charts/', csv_files, shared_memory_blocks))
+    attack_process = multiprocessing.Process(target=run_flooding_attack, args=(simulation_params, '..tmp/logs/', '..tmp/charts/', shared_memory_blocks))
 
     # Perform simulation and save results
     print(f'[{datetime.now(timezone.utc).strftime("%H:%M:%S.%f")}]  Running simulation...')
-    #run_flooding_attack(simulation_params, 'logs/', 'charts/', shared_memory_blocks)
     attack_process.start()
-    #context_process.start()
-    run_benign_users(simulation_params, 'logs/', 'charts/', csv_files, shared_memory_blocks)
+    # context_process.start()
+    run_benign_users(simulation_params, '../tmp/logs/', '../tmp/charts/', csv_files, shared_memory_blocks)
 
     end = (start_now + timedelta(minutes=simulation_params['duration']))
     end2 = (start_now + timedelta(minutes=simulation_params['duration']+simulation_params['collection_extra_time']))
@@ -851,7 +1042,7 @@ if __name__ == "__main__":
 
     # Restart core
     termination_phase(_commands, pod_representants, deletion_order)
-    prometheus_data_collector.git_commit_results('Simulation-'+str(int(start_time)), withDefault=False)   
+    prometheus_data_collector.commit_results('Simulation-'+str(int(start_time)), withDefault=False)   
 
 """    time.sleep(2)
     creation_phase(pod_representants, creation_order)

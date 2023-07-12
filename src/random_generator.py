@@ -26,9 +26,6 @@ def plot_values(random_values, start, end, save = False):
     if save:
         plt.savefig('random_values_plot.png')
 
-    # Alternatively, you can save it with a different file format like PDF:
-    # plt.savefig('random_values_plot.pdf')
-
     # Close the plot
     plt.close()
 
@@ -60,7 +57,7 @@ if __name__ == "__main__":
         'collection_step': 1,           # in seconds
         'wave_freq': 60,                # in seconds
         'cooldown': 1,                  # in seconds
-        'nb_ues': 50,
+        'nb_ues': 30,
         'nb_benign': 220,
         'deployments': 1,       
         'restart_pod': True,           

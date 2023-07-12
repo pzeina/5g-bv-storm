@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: free5gc-udm
+  labels:
+    app: free5gc
+    nf: udm
+spec:
+  selector:
+    matchLabels:
+      app: free5gc
+      nf: udm
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: free5gc
+        nf: udm
+    spec:
+      initContainers:
+      - name: wait-nrf
+        image: appropriate/curl
+        command: ['sh', '-c', 'until curl -s -o /dev/null -w "%{http_code}" http://nrf-nnrf:8000 | grep "200"; do sleep 1; done;']
+      containers:
+      - image: ghcr.io/pzeina/free5gc-udm:latest
+        name: udm
+        ports:
+        - containerPort: 8000
+        command: ["./udm"]
+        args: ["--config", "config/udmcfg.yaml"]   
+        env:
+          - name: GIN_MODE
+            value: release
+        volumeMounts:
+        - mountPath: /free5gc/config/
+          name: udm-volume
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "150m" #"500m" # "150m" # "500m"
+          limits:
+            memory: "1024Mi"
+            cpu: "300m" # "1000m" # "300m" # "1000m"
+        securityContext:
+          capabilities:
+            add: ["NET_ADMIN"]
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      volumes:
+      - name: udm-volume
+        projected:
+          sources:
+          - configMap:
+              name: udm-configmap

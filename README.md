@@ -30,15 +30,15 @@ kubectl apply -k ./5g-manifests/ganache -n <namespace>
 7. After this change, compile the code using the `compile.sh` bash script located at the root of the same [repository](https://github.com/zbh888/free5gc-compose.git). You will get a docker image for the blockchain-assisted AMF, free5gc-compose-free5gc-amf. Store it to your docker hub or as a git package. With this image built, you do not need this code anymore except if your ganache container changes IP address (when restarting it for example).
 
 
-8. In the deployment files located at `5g-bv-storm\5g-manifests\free5gc\nf\amf{1,2,3}-storm\amf-deployment.yaml`, set the field spec>template>spec>containers['image'] to the docker image of the AMF you have just built.
+8. In the deployment files located at `5g-bv-storm/5g-manifests/free5gc/nf/amf{1,2,3}-storm/amf-deployment.yaml`, set the field spec>template>spec>containers['image'] to the docker image of the AMF you have just built.
 
 9. Before running the experiments, the last step you have to do is to populate the MongoDB. For the experiment use cases to be relevant, please add the following imsi ranges to the database: 
-(20893000000000 to 20893000000120), (20893000001000 to 20893000001220) and (20893000002000 to 20893000002220). The other fields must all be fixed to the values stored in `5g-bv-storm\5g-manifests/ueransim-ue-benign/ue1/ue-configmap.yaml`. Do **not** add imsi values between 20893000005000 and 20893000005220.
+(20893000000000 to 20893000000120), (20893000001000 to 20893000001220) and (20893000002000 to 20893000002220). The other fields must all be fixed to the values stored in `5g-bv-storm/5g-manifests/ueransim-ue-benign/ue1/ue-configmap.yaml`. Do **not** add imsi values between 20893000005000 and 20893000005220.
 
 **IMPORTANT: Make sure to back up this database once populated.**
 
-10.  If you have set up Grafana/Prometheus, you may change the urls in the files `5g-bv-storm\src\prometheus_data_collector` and `5g-bv-storm\src\prometheus_data_collector_input`.
-If you have not, make sure to comment lines 993-996 in `5g-bv-storm\src\flooding_simulation.py`:
+10.  If you have set up Grafana/Prometheus, you may change the urls in the files `5g-bv-storm/src/prometheus_data_collector` and `5g-bv-storm/src/prometheus_data_collector_input`.
+If you have not, make sure to comment lines 993-996 in `5g-bv-storm/src/flooding_simulation.py`:
 ```python
     real_time_charts_process = multiprocessing.Process(target=exec_command, args=('python3 prometheus_data_collector.py',))
     real_time_charts_process.start()
@@ -46,11 +46,11 @@ If you have not, make sure to comment lines 993-996 in `5g-bv-storm\src\flooding
 
 11. You now can start a registration storm signalling attack by simply running the following:
 ```
-python3 src\flooding_simulation.py
+python3 src/flooding_simulation.py
 ```
 
 # Simulation parameters
-At the end of the `src\flooding_simulation.py` script, you can select your own simulation parameters. We suggest you first try the 4 following scenarios, with the remaining fields unchanged.
+At the end of the `src/flooding_simulation.py` script, you can select your own simulation parameters. We suggest you first try the 4 following scenarios, with the remaining fields unchanged.
 
 ## No storm
 ```python

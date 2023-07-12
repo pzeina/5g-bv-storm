@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: ganache-deployment
 spec:
-  replicas: 1  # Adjust the number of replicas as needed
+  replicas: 1
   selector:
     matchLabels:
       app: ganache
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: ganache
-          image: ghcr.io/pzeina/ganache  # Replace with your Ganache Docker image and tag
+          image: ghcr.io/pzeina/ganache
           ports:
             - containerPort: 8545  # Ganache JSON-RPC port

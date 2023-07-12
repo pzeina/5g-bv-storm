@@ -940,12 +940,12 @@ if __name__ == "__main__":
                                         # Time of cooldown (sleep) after each wave, in seconds
 
         'nb_ues': 30,                   # Recommanded range:      0-30
-                                        # Number of attack UEs registering as a storm in synchronized waves, per deployment (see field below)
+                                        # Number of attack UEs registering as a storm in synchronized waves, per deployment (see field below). Please check that the MongoDB is set up accordingly (see README.md).
 
-        'nb_benign':220,                # Recommanded range:      0-300    (for a 5 minutes experiment)
-                                        # Number of benign UEs registering at random times, per deployment (see field below)
+        'nb_benign':220,                # Recommanded range:      0-220    (for a 5 minutes experiment)
+                                        # Number of benign UEs registering at random times, per deployment (see field below). Please check that the MongoDB is set up accordingly (see README.md).
 
-        'ghost': True,                  # Available options:    True, False
+        'ghost': False,                 # Available options:    True, False
                                         # When set to True, attack UEs will be provided invalid imsi (not registered in the MongoDB)
 
         'deployments': 2,               # Recommanded range:      1-2
@@ -1042,14 +1042,4 @@ if __name__ == "__main__":
 
     # Restart core
     termination_phase(_commands, pod_representants, deletion_order)
-    prometheus_data_collector.commit_results('Simulation-'+str(int(start_time)), withDefault=False)   
-
-"""    time.sleep(2)
-    creation_phase(pod_representants, creation_order)
-    print("\nWaiting for 60s before starting the default experiment...\n\n")
-    time.sleep(60)
-    run_default_experiment(simulation_params, start_time)
-
-    # Commit the results to the remote Git repository
-    prometheus_data_collector.git_commit_results('Simulation-'+str(int(start_time)), withDefault=True)   
-"""
+    prometheus_data_collector.commit_results('Simulation-'+str(int(start_time)), withDefault=False)

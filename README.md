@@ -92,6 +92,7 @@ You have been running experiments for a while and you noticed a performance decr
 
 
 # Credits
-The Kubernetes environment architecture comes from the [Network Research Group UW](Nhttps://github.com/nrg-uw/5g-manifests.git). It is itself heavily inspired from [towards5gs-helm](https://github.com/Orange-OpenSource/towards5gs-helm) and the Docker images used are based on [free5gc-compose](https://github.com/free5gc/free5gc-compose).
+The Kubernetes environment architecture comes from the [Network Research Group UW](https://github.com/nrg-uw/5g-manifests.git). It is itself heavily inspired from [towards5gs-helm](https://github.com/Orange-OpenSource/towards5gs-helm) and the Docker images used are based on [free5gc-compose](https://github.com/free5gc/free5gc-compose). 
 
+We also make use of some Docker images from [Niloy Saha](https://github.com/niloysh?tab=packages)'s repository, without whom these experiments could not have been done.
    

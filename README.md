@@ -8,6 +8,7 @@ It consists of a 5G core network using the [Free5GC](https://github.com/free5gc/
 
 The scripts for performing the attacks (`src`) are an original work.
 
+
 # Installation
 Installation steps from 1 to 4 are copied from the [Network Research Group UW](Nhttps://github.com/nrg-uw/5g-manifests.git) project.
 1. You need to have a working kubernetes cluster. Instructions for setting up a multi-node Kubernetes cluster is available in the [official docs](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/). Note that we are using `kubeadm=1.23.6-00 kubectl=1.23.6-00 kubelet=1.23.6-00` as this is the last version that supports Docker as a container runtime out of the box. If you are using the latest Kubernetes with docker, see instructions [here](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#docker).
@@ -84,6 +85,10 @@ As the AMF is unable to deconceal the SUCI and since the blockchain we deployed 
 Do not forget to set it back to 1 for the other scenarios.
 
 
+# Results
+Results from our experiments are given in `5g-bv-storm/results`. 
+
+In `5g-bv-storm/results/analysis` you can find graphs generated from these results using the script `5g-bv-storm/src/post_analysis.py`.
 
 # Running into issues?
 The manifest files are not working? Please see the [Network Research Group UW's FAQ](Fhttps://github.com/nrg-uw/5g-manifests/blob/main/FAQ.md).

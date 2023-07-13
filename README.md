@@ -113,7 +113,7 @@ ghost = False
 ```
 As the AMF is unable to deconceal the SUCI and since the blockchain we deployed is feeded fixed addresses unrelated to the received SUCIs, we need for this scenario to disable the SUCI encryption for attackers so the AMF is able to deny them (note again that this work does not address the *detection* of the malicious UEs but focuses on the *mitigation* of the storm). For this, go to the files `5g-bv-storm/5g-manifests/ueransim-ue-attacker/ue{1,2,3}/ue-configmap.yaml` and set the field `protectionScheme` to 0.
  
-Do not forget to set it back to 1 for the other scenarios.
+Do not forget to set it back to 1 when not using this `amf_mode`.
 
 
 

@@ -44,12 +44,8 @@ kubectl apply -k ./5g-manifests/ganache -n <namespace>
 
 **IMPORTANT: Make sure to back up this database once populated.**
 
-10.  If you have set up Grafana/Prometheus, you may change the urls in the files `5g-bv-storm/src/prometheus_data_collector` and `5g-bv-storm/src/prometheus_data_collector_input`.
-If you have not, make sure to comment lines 993-996 in `5g-bv-storm/src/flooding_simulation.py`:
-```python
-    real_time_charts_process = multiprocessing.Process(target=exec_command, args=('python3 prometheus_data_collector.py',))
-    real_time_charts_process.start()
-```
+10.  If you have set up Grafana/Prometheus, you may change the variable ```PROMETHEUS_URL``` in the top of `5g-bv-storm/src/flooding_simulation`.
+If you have not, make sure to set the boolean `withPrometheus` line 28 of this same script to `False`.
 
 11. You now can start a registration storm by simply running the following:
 ```

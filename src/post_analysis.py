@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 from utils import *
-from re import search
 import csv
 import matplotlib.pyplot as plt
 import seaborn as sb
@@ -338,16 +337,22 @@ if __name__ == "__main__":
     prefix = '../results/'
     output = '../results/analysis/'
 
+
     results = {
         f'{prefix}Simulation-1688920339': 'No Storm',
         f'{prefix}Simulation-1688871852': 'Storm With No Defense',
         f'{prefix}Simulation-1688864626': 'Storm With Baseline',
         f'{prefix}Simulation-1688916026': 'Storm With Blockchain 5GAKA'            
     }
+
+
     max_time = 10
     
+
     generate_graphs(results, max_time, output, deployments=2)
 
+
     get_quartiles(results, output, 'bars', cumulative=False, oneGraph=False)
+
 
     get_quartiles(results, output, 'density', cumulative=True, oneGraph=True)

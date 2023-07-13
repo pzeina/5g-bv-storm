@@ -1,7 +1,7 @@
 import subprocess
 import time
 from datetime import datetime, timezone
-
+from flooding_simulation import namespace
 
 def kill_pod_from_commands(commands): 
     COMMAND_GET_BENIGN = commands['getBenign']
@@ -55,16 +55,16 @@ def termination_phase(_commands, pod_representants, order):
     for pod_name in order:
 
         # Terminate the pod
-        exec_command(f'kubectl delete -k ./../5g-manifests/{pod_name} -n paul')
+        exec_command(f'kubectl delete -k ./../5g-manifests/{pod_name} -n {namespace}')
 
         # Wait until the pod is no longer in the terminating status
         pods = []
         for pod in pod_representants[pod_name]:
-            pods.append(exec_command(f"kubectl get pods -n paul | awk '/{pod}" + "/ {print $1;exit}'"))
+            pods.append(exec_command(f"kubectl get pods -n {namespace} | awk '/{pod}" + "/ {print $1;exit}'"))
 
         for pod in pods:
             if pod: 
-                while(exec_command("kubectl get pods -n paul | awk '/" + pod + "/ {print $1;exit}'")):
+                while(exec_command(f"kubectl get pods -n {namespace} | awk '/" + pod + "/ {print $1;exit}'")):
                     time.sleep(1)
 
         print(f"Pod '{pod_name}' terminated successfully.")  
@@ -76,18 +76,18 @@ def creation_phase(pod_representants, order):
     for pod_name in order:
 
         # Terminate the pod
-        exec_command(f'kubectl apply -k ./../5g-manifests/{pod_name} -n paul')
+        exec_command(f'kubectl apply -k ./../5g-manifests/{pod_name} -n {namespace}')
 
         time.sleep(0.5)
         # Wait until the pod is no longer in the terminating status
         pods = []
         for pod in pod_representants[pod_name]:
-            pods.append(exec_command(f"kubectl get pods -n paul | awk '/{pod}" + "/ {print $1;exit}'"))
-            print(exec_command(f"kubectl get pods -n paul | awk '/{pod}" + "/ {print $1;exit}'"))
+            pods.append(exec_command(f"kubectl get pods -n {namespace} | awk '/{pod}" + "/ {print $1;exit}'"))
+            print(exec_command(f"kubectl get pods -n {namespace} | awk '/{pod}" + "/ {print $1;exit}'"))
 
         for pod in pods:
-            while exec_command(f"kubectl get pod {pod} -n paul -o json | jq -r '.status.phase'") != 'Running':
-                if exec_command(f"kubectl get pod {pod} -n paul -o json | jq -r '.status.phase'") in ['CrashLoopBaskOff', 'error', 'Completed']:
+            while exec_command(f"kubectl get pod {pod} -n {namespace} -o json | jq -r '.status.phase'") != 'Running':
+                if exec_command(f"kubectl get pod {pod} -n {namespace} -o json | jq -r '.status.phase'") in ['CrashLoopBaskOff', 'error', 'Completed']:
                     print('Failed', pod)
                     return
                 time.sleep(1)

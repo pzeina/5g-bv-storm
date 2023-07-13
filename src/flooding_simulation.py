@@ -14,6 +14,30 @@ from restart_core import creation_phase,termination_phase
 from utils import *
 import prometheus_data_collector
 
+
+
+
+
+# =============================================================== 
+# =============================================================== 
+# =============================================================== 
+
+
+namespace = 'pzeina'
+
+withPrometheus = True
+
+PROMETHEUS_URL = "http://129.97.168.51:30090"
+
+
+# =============================================================== 
+# =============================================================== 
+# =============================================================== 
+
+
+
+
+
 coreSelector = 'free5gc'
 gnbSelector = 'ueransim-gnb'
 ueGeneralSelector = 'ueransim-ue'
@@ -32,15 +56,15 @@ PDU_SESSION_EST_ACCEPT = 'PDU Session Establishment Accept received'
 DEREGISTRATION_REQUEST = 'Starting de-registration procedure'
 DEREGISTRATION_ACCEPT = 'De-registration accept received'
 
-COMMAND_GET_GENERAL = "kubectl get pods -n paul | awk '/ueransim-ue1/ {print $1;exit}'"
-COMMAND_DELETE_GENERAL = f'kubectl delete -k ./{ueGeneralManifest} -n paul'
-COMMAND_CREATE_GENERAL = f'kubectl apply -k ./{ueGeneralManifest} -n paul'
-COMMAND_GET_BENIGN = "kubectl get pods -n paul | awk '/ueransim-ue1-benign/ {print $1;exit}'"
-COMMAND_DELETE_BENIGN = f'kubectl delete -k ./{ueBenignManifest} -n paul'
-COMMAND_CREATE_BENIGN = f'kubectl apply -k ./{ueBenignManifest} -n paul'
-COMMAND_GET_ATTACKER = "kubectl get pods -n paul | awk '/ueransim-ue1-attacker/ {print $1;exit}'"
-COMMAND_DELETE_ATTACKER = f'kubectl delete -k ./{ueAttackerManifest} -n paul'
-COMMAND_CREATE_ATTACKER = f'kubectl apply -k ./{ueAttackerManifest} -n paul'
+COMMAND_GET_GENERAL = f"kubectl get pods -n {namespace}"+" | awk '/ueransim-ue1/ {print $1;exit}'"
+COMMAND_DELETE_GENERAL = f'kubectl delete -k ./{ueGeneralManifest} -n {namespace}'
+COMMAND_CREATE_GENERAL = f'kubectl apply -k ./{ueGeneralManifest} -n {namespace}'
+COMMAND_GET_BENIGN = f"kubectl get pods -n {namespace}"+" | awk '/ueransim-ue1-benign/ {print $1;exit}'"
+COMMAND_DELETE_BENIGN = f'kubectl delete -k ./{ueBenignManifest} -n {namespace}'
+COMMAND_CREATE_BENIGN = f'kubectl apply -k ./{ueBenignManifest} -n {namespace}'
+COMMAND_GET_ATTACKER = f"kubectl get pods -n {namespace}"+" | awk '/ueransim-ue1-attacker/ {print $1;exit}'"
+COMMAND_DELETE_ATTACKER = f'kubectl delete -k ./{ueAttackerManifest} -n {namespace}'
+COMMAND_CREATE_ATTACKER = f'kubectl apply -k ./{ueAttackerManifest} -n {namespace}'
 
 _commands = {'getBenign':COMMAND_GET_BENIGN, 'getAttacker':COMMAND_GET_ATTACKER, 'deleteBenign':COMMAND_DELETE_BENIGN, 'deleteAttacker':COMMAND_DELETE_ATTACKER}
 
@@ -178,16 +202,16 @@ def init_pod(deployments):
         exec_command(COMMAND_CREATE_ATTACKER)
         exec_command(COMMAND_CREATE_BENIGN)
     else:
-        exec_command(f'kubectl apply -k ./{ueBenignManifest} -n paul')
+        exec_command(f'kubectl apply -k ./{ueBenignManifest} -n {namespace}')
         time.sleep(1)
-        exec_command(f'kubectl apply -k ./{ueAttackerManifest} -n paul')
+        exec_command(f'kubectl apply -k ./{ueAttackerManifest} -n {namespace}')
 
 
     benign_pod = exec_command(COMMAND_GET_BENIGN)
     attacker_pod = exec_command(COMMAND_GET_ATTACKER)
 
-    while (exec_command(f"kubectl get pod {benign_pod} -n paul -o json | jq -r '.status.phase'") != 'Running'
-           or exec_command(f"kubectl get pod {attacker_pod} -n paul -o json | jq -r '.status.phase'") != 'Running'):
+    while (exec_command(f"kubectl get pod {benign_pod} -n {namespace} -o json | jq -r '.status.phase'") != 'Running'
+           or exec_command(f"kubectl get pod {attacker_pod} -n {namespace} -o json | jq -r '.status.phase'") != 'Running'):
         time.sleep(1)
     time.sleep(5)
 
@@ -353,7 +377,7 @@ def run_flooding_attack(atk_params, log_folder, output_charts_folder, shared_mem
         # Create new nodes and store logs in a separate file
         if wave_num == 0 or atk_params['ghost']:
             for ue_pod in range(atk_params['deployments']):
-                my_ue = f"$(kubectl get pods -n paul | awk '/ueransim-ue{ue_pod+1}-attacker" + "/ {print $1;exit}')"
+                my_ue = f"$(kubectl get pods -n {namespace} | awk '/ueransim-ue{ue_pod+1}-attacker" + "/ {print $1;exit}')"
 
                 log_file_path = f'{log_folder}ueransim-ue{ue_pod+1}.txt'
                 if atk_params['ghost']:
@@ -361,11 +385,11 @@ def run_flooding_attack(atk_params, log_folder, output_charts_folder, shared_mem
                     if wave_num>0:
                         attacker_pod = exec_command(COMMAND_GET_ATTACKER)
                         print(f'{COLOR_INFO}[STORM][INFO]{COLOR_RESET} Storm pod is {attacker_pod}')
-                        while (exec_command(f"kubectl get pod {attacker_pod} -n paul -o json | jq -r '.status.phase'") != 'Running'):
+                        while (exec_command(f"kubectl get pod {attacker_pod} -n {namespace} -o json | jq -r '.status.phase'") != 'Running'):
                             time.sleep(0.01)
 
                 with Lock():
-                    prc.append(subprocess.Popen(f'kubectl exec {my_ue} -n paul -- ./nr-ue -c config/free5gc-ue.yaml -n {str(atk_params["nb_ues"])} {ghostStr}> {log_file_path}', shell=True, stdout=subprocess.PIPE))
+                    prc.append(subprocess.Popen(f'kubectl exec {my_ue} -n {namespace} -- ./nr-ue -c config/free5gc-ue.yaml -n {str(atk_params["nb_ues"])} {ghostStr}> {log_file_path}', shell=True, stdout=subprocess.PIPE))
 
             time.sleep(1)
 
@@ -527,7 +551,7 @@ def one_round_atk(
     deregistrations_started = False
     deregistrations_completed = False
     line_counter = 0
-    my_pod = exec_command("kubectl get pods -n paul | awk '/ueransim-ue" + str(ue_pod) + "-attacker/ {print $1;exit}'")
+    my_pod = exec_command("kubectl get pods -n {namespace} | awk '/ueransim-ue" + str(ue_pod) + "-attacker/ {print $1;exit}'")
     typeOfDeregistration = atk_params["deregistration"]
 
     if atk_params['ghost']:
@@ -594,10 +618,10 @@ def one_round_atk(
         
         # Check if it's time to deregister ()
         if withDeregistration and (not deregistrations_started) and ((wave_num == 0 and registrations_completed and pdu_session_est_completed) or wave_num>0):
-            ue_dump = exec_command(f'kubectl exec {my_pod} -n paul -- ./nr-cli --dump')
+            ue_dump = exec_command(f'kubectl exec {my_pod} -n {namespace} -- ./nr-cli --dump')
             ue_nodes = ue_dump.split('\n')
             for ue_id in ue_nodes:
-                exec_command(f'kubectl exec {my_pod} -n paul -- ./nr-cli {ue_id} --exec "deregister {typeOfDeregistration}"')
+                exec_command(f'kubectl exec {my_pod} -n {namespace} -- ./nr-cli {ue_id} --exec "deregister {typeOfDeregistration}"')
             deregistrations_started = True
         #elif atk_params['restart_pod'] and registrations_completed and pdu_session_est_completed:
 
@@ -651,7 +675,7 @@ def benign_flow(ue_pod_md, csv_times, offset):
     None
         
     """
-    my_pod = exec_command("kubectl get pods -n paul | awk '/ueransim-ue" + str(ue_pod_md) + "-benign/ {print $1;exit}'")
+    my_pod = exec_command(f"kubectl get pods -n {namespace} | awk '/ueransim-ue" + str(ue_pod_md) + "-benign/ {print $1;exit}'")
 
     with open(csv_times, 'r') as file:
         reader = csv.reader(file)
@@ -678,7 +702,7 @@ def benign_flow(ue_pod_md, csv_times, offset):
                 
 
             # Execute the command
-            process = multiprocessing.Process(target=exec_command, args=(f'kubectl exec {my_pod} -n paul -- ./nr-ue -c config/free5gc-ue.yaml -i imsi-20893000000{ue_pod_md}{str(imsi).zfill(3)} > {log_file_path}', ))
+            process = multiprocessing.Process(target=exec_command, args=(f'kubectl exec {my_pod} -n {namespace} -- ./nr-ue -c config/free5gc-ue.yaml -i imsi-20893000000{ue_pod_md}{str(imsi).zfill(3)} > {log_file_path}', ))
             process.start()
 
 
@@ -828,9 +852,9 @@ def run_benign_users(benign_params, log_folder, output_charts_folder, csv_times,
 
     for ue_pod in range(benign_params['deployments']):
         log_file_path = f'{log_folder}ueransim-ue{ue_pod+1}-benign.txt'
-        my_pod = f"$(kubectl get pods -n paul | awk '/ueransim-ue{ue_pod+1}-benign" + "/ {print $1;exit}')"
+        my_pod = f"$(kubectl get pods -n {namespace} | awk '/ueransim-ue{ue_pod+1}-benign" + "/ {print $1;exit}')"
         with Lock():
-            prc.append(subprocess.Popen(f'kubectl exec {my_pod} -n paul -- ./nr-ue -c config/free5gc-ue.yaml > {log_file_path}', shell=True, stdout=subprocess.PIPE))
+            prc.append(subprocess.Popen(f'kubectl exec {my_pod} -n {namespace} -- ./nr-ue -c config/free5gc-ue.yaml > {log_file_path}', shell=True, stdout=subprocess.PIPE))
     
         process = multiprocessing.Process(target=benign_flow, args=(ue_pod+1, csv_times[ue_pod], benign_params['start'].timestamp() + benign_params['wave_freq']))
 
@@ -988,11 +1012,14 @@ if __name__ == "__main__":
     step = simulation_params['collection_step']
 
 
-    # Plot charts every 5 seconds for real-time visualisation of the Prometheus/Grafana collected metrics
-    real_time_charts_process = multiprocessing.Process(target=exec_command, args=('python3 prometheus_data_collector.py',))
-    #real_time_charts_process = multiprocessing.Process(target=prometheus_data_collector.real_time_charts, args=(prometheus_data_collector.metric_lists, prometheus_data_collector.labels_dict, start_time, end_collection_time, step, '..tmp/data/', '..tmp/charts/',))
-    real_time_charts_process.start()
-    print(f'[{datetime.now(timezone.utc).strftime("%H:%M:%S.%f")}]  Real-time charts running in background.')
+    if withPrometheus:
+        # Plot charts every 5 seconds for real-time visualisation of the Prometheus/Grafana collected metrics
+        real_time_charts_process = multiprocessing.Process(target=prometheus_data_collector.run_data_collection_prom)
+        #real_time_charts_process = multiprocessing.Process(target=prometheus_data_collector.real_time_charts, args=(prometheus_data_collector.metric_lists, prometheus_data_collector.labels_dict, start_time, end_collection_time, step, '..tmp/data/', '..tmp/charts/',))
+        real_time_charts_process.start()
+        print(f'[{datetime.now(timezone.utc).strftime("%H:%M:%S.%f")}]  Real-time charts running in background.')
+    else:
+        simulation_params['collection_extra_time'] = 0
 
 
     csv_files = []
@@ -1013,8 +1040,12 @@ if __name__ == "__main__":
     shared_memory_blocks = []
     for i in range(simulation_params['deployments']):
         shared_memory_blocks.append(LatestDataQueue())
+
+
+    # Define the main processes of the experiment
     context_process = multiprocessing.Process(target=run_benign_users, args=(simulation_params, '..tmp/logs/', '..tmp/charts/', csv_files, shared_memory_blocks))
     attack_process = multiprocessing.Process(target=run_flooding_attack, args=(simulation_params, '..tmp/logs/', '..tmp/charts/', shared_memory_blocks))
+
 
     # Perform simulation and save results
     print(f'[{datetime.now(timezone.utc).strftime("%H:%M:%S.%f")}]  Running simulation...')
@@ -1022,11 +1053,10 @@ if __name__ == "__main__":
     # context_process.start()
     run_benign_users(simulation_params, '../tmp/logs/', '../tmp/charts/', csv_files, shared_memory_blocks)
 
-    end = (start_now + timedelta(minutes=simulation_params['duration']))
-    end2 = (start_now + timedelta(minutes=simulation_params['duration']+simulation_params['collection_extra_time']))
 
-    time.sleep(max(0,(end2 - datetime.now(timezone.utc)).total_seconds()))
-
+    # Wait for the final end (experiment duration + collection time)
+    final_end = (start_now + timedelta(minutes=simulation_params['duration']+simulation_params['collection_extra_time']))
+    time.sleep(max(0,(final_end - datetime.now(timezone.utc)).total_seconds()))
     kill_pod()
 
 
@@ -1034,9 +1064,7 @@ if __name__ == "__main__":
     log_collection_process.terminate()
     real_time_charts_process.terminate()
     real_time_charts_process.join()
-
     time.sleep(5)
-
 
 
     # Restart core

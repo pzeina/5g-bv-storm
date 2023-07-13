@@ -8,6 +8,7 @@ import os
 import shutil
 import time
 import schedule
+from flooding_simulation import PROMETHEUS_URL, namespace
 
 
 title_and_label_for_metrics = {
@@ -41,7 +42,7 @@ interfaces = ['n2', 'n3', 'n4', 'n6']
 
 
 def get_pod(container, prefix='free5gc'):
-    part1 = f"kubectl get pods -n paul | awk '/{prefix}-"
+    part1 = f"kubectl get pods -n {namespace} | awk '/{prefix}-"
     part2 = "/ {print $1;exit}'"
     command = part1 + container + part2
     output = exec_command(command, getRes=True)
@@ -99,8 +100,6 @@ labels_dict = {
 }
 
 queries_with_metric = {}
-
-PROMETHEUS_URL = "http://129.97.168.51:30090"
 
 def update_pods():
     global containers, pods
@@ -245,7 +244,7 @@ def generate_logs(output_folder, deployments=1):
 
     for item in entities:
         output_file = output_folder + item + ".txt"
-        command = "kubectl logs -f deployments/" + item + " -n paul > " + output_file
+        command = "kubectl logs -f deployments/" + item + f" -n {namespace} > " + output_file
         commands.append(command)
     
     # Create a process for each command
@@ -266,7 +265,7 @@ def query_constructor(metric, label_entries):
     for label_entry in label_entries:
         name, value = label_entry
         labels += f'{name}="{value}",'
-    query += '{' + labels + 'namespace="paul"}'
+    query += '{' + labels + f'namespace="{namespace}'+'"}'
     query += metric[1]
 
     return query, metric[0]
@@ -329,8 +328,7 @@ def real_time_charts(metric_lists, labels_dict, start_time, end_time, step, sour
         schedule.run_pending()
         time.sleep(1)
 
-
-if __name__ == "__main__":
+def run_data_collection_prom():
     start_now = datetime.now(timezone.utc)
     start_time = start_now.timestamp()
     end_time = (start_now + timedelta(hours=1)).timestamp()
@@ -343,3 +341,8 @@ if __name__ == "__main__":
     source_folder_path, dest_folder_path = '../tmp/data/', '../tmp/charts/' 
     # Plot charts every 5 seconds for real-time visualisation
     real_time_charts(metric_lists, labels_dict, start_time, end_time, step, source_folder_path, dest_folder_path, debug=True)
+  
+
+
+if __name__ == "__main__":
+    run_data_collection_prom()

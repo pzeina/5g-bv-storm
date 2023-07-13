@@ -1,5 +1,8 @@
 # 5g-bv-storm
 
+
+
+
 # About
 This repository contains the resources needed to perform a registration signaling storm attack on an emulated 5G core network, along with a blockchain-based mitigation solution designed by [Bohan Zhang](https://github.com/zbh888/free5gc-compose.git).
 
@@ -7,6 +10,9 @@ The Kubernetes cluster architecture (`5g-manifests`) comes from the [Network Res
 It consists of a 5G core network using the [Free5GC](https://github.com/free5gc/free5gc) project and RAN using the [UERANSIM](https://github.com/aligungr/UERANSIM) project.
 
 The scripts for performing the attacks (`src`) are an original work.
+
+
+
 
 
 # Installation
@@ -45,10 +51,35 @@ If you have not, make sure to comment lines 993-996 in `5g-bv-storm/src/flooding
     real_time_charts_process.start()
 ```
 
-11. You now can start a registration storm signalling attack by simply running the following:
+11. You now can start a registration storm by simply running the following:
 ```
 python3 src/flooding_simulation.py
 ```
+
+
+
+
+# Description of the script
+
+## Outline
+The script is organized as follows:
+- Clear the `5g-bc-storm/tmp` directory
+- Deploy a Free5GC core with one or multiple AMFs.
+- Deploy one set of UERANSIM (gNB, benign UE, malicious UE) containers per AMF.
+- Start a background process of log collection from the main 5G Network Functions and the UERANSIM containers.
+- If Grafana/Prometheus is set up, start a background process of data collection from Prometheus.
+- Start a background process registering benign UEs at random times.
+- Perform the storm consisting of successive waves of registrations performed by the attackers at regular intervals.
+
+Please refer to the section **Simulation parameters** for further details about the script.
+
+## Output
+- Data and logs are saved in `5g-bc-storm/tmp` during the experiment. The content of this directory is copied to the `5g-bc-storm/results` directory at the end of the each experiment.
+- Graphs representing the processing times of the registrations will be saved after each wave and stored in `5g-bc-storm/tmp/charts` as the experiment runs. These charts may sometimes be uncomplete and not show the last wave (although it is saved correctly).
+- If Grafana/Prometheus is set up, graphs representing the collected data from Prometheus are generated at regular intervals during the experiment and stored in `5g-bc-storm/tmp/charts`.
+
+
+
 
 # Simulation parameters
 At the end of the `src/flooding_simulation.py` script, you can select your own simulation parameters. We suggest you first try the 4 following scenarios, with the remaining fields unchanged.
@@ -85,10 +116,16 @@ As the AMF is unable to deconceal the SUCI and since the blockchain we deployed 
 Do not forget to set it back to 1 for the other scenarios.
 
 
+
+
+
 # Results
 Results from our experiments are given in `5g-bv-storm/results`. 
 
 In `5g-bv-storm/results/analysis` you can find graphs generated from these results using the script `5g-bv-storm/src/post_analysis.py`.
+
+
+
 
 # Running into issues?
 The manifest files are not working? Please see the [Network Research Group UW's FAQ](Fhttps://github.com/nrg-uw/5g-manifests/blob/main/FAQ.md).

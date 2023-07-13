@@ -12,7 +12,6 @@ import yaml
 from random_generator import *
 from restart_core import creation_phase,termination_phase
 from utils import *
-from flooding_context_input import run_default_experiment
 import prometheus_data_collector
 
 coreSelector = 'free5gc'
@@ -135,12 +134,12 @@ def exec_command(command):
 
 def delete_files_in_folder(folder_path, key=''):
     """
-    A simple function to delete all the files from inside a repository
+    A simple function to delete all the files from inside a directory
     
     Parameters
     ----------
     folder_path : str
-        Path to the target repository.
+        Path to the target directory.
     key (optional): str
         If provided, only the files that contain this `key` in their name will be deleted
 

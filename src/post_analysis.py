@@ -131,11 +131,20 @@ def get_quartiles(results, output, type, deployments=2, cumulative=True, oneGrap
         myBins = 500 if cumulative else 60
         if oneGraph:
             plt.figure(figsize=(8,4))
-
+            # plt.figure()
             tab_colors = plt.get_cmap('tab10').colors
+            marker_types = ['x', '^', 's', 'd']
             checkpoints = []
             for scenario in range(len(dataKeys)):
-                n,bins,patches = plt.hist(dataValues[scenario], histtype=histtype, bins=myBins, range=(0,10), cumulative=cumulative, label=dataKeys[scenario], density=True, color=tab_colors[scenario])
+                n,bins,patches = plt.hist(dataValues[scenario], histtype=histtype, bins=myBins, range=(0,10), cumulative=cumulative, density=True, color=tab_colors[scenario])
+
+                # Plotting markers for the host
+                n_with_step = []
+                bins_with_step = []
+                for i in range(3*(scenario+2),len(n),27):
+                    n_with_step.append(n[i])
+                    bins_with_step.append(bins[i])
+                plt.scatter(bins_with_step, n_with_step, color=tab_colors[scenario], marker=marker_types[scenario], s=35, label=dataKeys[scenario])
                 
                 subList1 = [val for val in dataValues[scenario] if val<1]
                 checkpt = float(len(subList1))/len(dataValues[scenario])
@@ -207,7 +216,7 @@ def get_data(filename, offset=0):
     return x_values, y_values
 
 
-def generate_graphs(paths, y_max, output, deployments=2, withAtk=False):
+def generate_graphs(paths, y_max, output, deployments=2, withAtk=False, oneGraph=True):
     graphs = {}
     for filename in paths:
         one_filename = filename
@@ -329,6 +338,31 @@ def generate_graphs(paths, y_max, output, deployments=2, withAtk=False):
 
     # Save the figure
     plt.savefig(f'{output}analysis_rt.png')
+    plt.close()
+
+    if not oneGraph:
+        nameList = []
+        plt.figure()
+        for name, values in graphs.items():
+            nameList.append(name)
+            x_storm, y_storm = values[0]
+            x_benign, y_benign = values[1]
+
+            
+            if not 'No Storm' in name:
+                for t_wave in x_waves:
+                    plt.axvline(x=t_wave, color='red', label='Storms', linestyle='dotted')
+
+            my_title = f'{name.split("-")[0]}'
+            plt.plot(x_benign, y_benign, 'o', label=f'Benign registrations', color='tab:green', alpha=0.3)
+            plt.xlabel('Registration Start Time (Second)',)
+            plt.ylabel('Registration Processing Time (Second)')
+            plt.xlim(0, end-origin)  # Adjust the range as needed
+            plt.ylim(0, y_max)  # Adjust the range as needed
+
+            # Save the figure
+            plt.savefig(f'{output}{my_title}.png')
+            plt.close()
 
     print(f'Charts generated.')
 
@@ -340,19 +374,17 @@ if __name__ == "__main__":
 
     results = {
         f'{prefix}Simulation-1688920339': 'No Storm',
-        f'{prefix}Simulation-1688871852': 'Storm With No Defense',
-        f'{prefix}Simulation-1688864626': 'Storm With Baseline',
-        f'{prefix}Simulation-1688916026': 'Storm With Blockchain 5GAKA'            
+        f'{prefix}Simulation-1688871852': 'Storm With No Defence',
+        f'{prefix}Simulation-1688864626': 'Storm With Baseline Defence',
+        f'{prefix}Simulation-1688916026': 'Storm With Blockchain-assisted 5GAKA'            
     }
 
 
     max_time = 10
     
 
-    generate_graphs(results, max_time, output, deployments=2)
+    generate_graphs(results, max_time, output, deployments=2, oneGraph=False)
 
-
-    get_quartiles(results, output, 'bars', cumulative=False, oneGraph=False)
-
-
+    get_quartiles(results, output, 'bars', cumulative=True, oneGraph=True)
+    
     get_quartiles(results, output, 'density', cumulative=True, oneGraph=True)

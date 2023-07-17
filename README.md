@@ -16,7 +16,7 @@ The scripts for performing the attacks (`src`) are an original work.
 
 
 # Installation
-Installation steps from 1 to 4 are copied from the [Network Research Group UW](Nhttps://github.com/nrg-uw/5g-manifests.git) project.
+Installation steps from 1 to 4 are copied from the [Network Research Group UW](https://github.com/nrg-uw/5g-manifests.git) project, and step 5 is copied from [5g-monarch](https://github.com/niloysh/5g-monarch.git).
 1. You need to have a working kubernetes cluster. Instructions for setting up a multi-node Kubernetes cluster is available in the [official docs](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/). Note that we are using `kubeadm=1.23.6-00 kubectl=1.23.6-00 kubelet=1.23.6-00` as this is the last version that supports Docker as a container runtime out of the box. If you are using the latest Kubernetes with docker, see instructions [here](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#docker).
 
 2. You need to install [Flannel CNI](https://github.com/flannel-io/flannel) and [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni). Flannel is used for cluster networking. Multus CNI enables attaching multiple network interfaces to pods in Kubernetes, which is required for 5G NFs with multiple interfaces (e.g., UPF has the N3 interface towards gNB and the N4 interface towards SMF).
@@ -26,28 +26,37 @@ Note that you need to change the `path` and `values` in the `free5gc-pv.yaml` fi
 
 4. The Multus CNI interfaces in the manifests, denoted by `k8s.v1.cni.cncf.io/networks` in the deployment files have static IPs assigned to them according to our lab setup (129.97.168.0/24 subnet). All these IPs need to be changed according your scenario. Use an IP range that you can access from all nodes of your Kubernetes cluster.
 
-5. The ganache environment required for the blockchain-based mitigation deployment can be installed as follows:
+5. Clone [5g-monarch](https://github.com/niloysh/5g-monarch.git) and deploy SSMC and Visualization module as follows. We use Prometheus as the SSMC and Grafana as the visualization module. We use [kube-prometheus-stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack) to deploy Prometheus and Grafana using the custom values file `monacrh-components/ssmc/kube-prometheus-values-nuc.yaml`.
+
+```
+helm install prometheus prometheus-community/kube-prometheus-stack -f kube-prometheus-values-nuc.yaml
+```
+
+**Note**: The use of the namespace `monitoring` is very important! This will affect autodiscovery of monitoring exporters.
+
+
+6. The ganache environment required for the blockchain-based mitigation deployment can be installed as follows:
 ```
 kubectl apply -k ./5g-manifests/ganache -n <namespace>
 ```
 **WARNING: Do not stop this container otherwise you will have to build a new image for the AMF.**
 
-6. Once the ganache container started, note down its IP address. Clone the repository for the [blockchain-assisted solution](https://github.com/zbh888/free5gc-compose.git). Then go to `free5gc-compose/base/free5gc/NFs/amf/internal/sbi/consumer/ue_authentication.go` and replace the IP address in the `web3url` variable line 97 with the IP address of your ganache container, port 8545.
+7. Once the ganache container started, note down its IP address. Clone the repository for the [blockchain-assisted solution](https://github.com/zbh888/free5gc-compose.git). Then go to `free5gc-compose/base/free5gc/NFs/amf/internal/sbi/consumer/ue_authentication.go` and replace the IP address in the `web3url` variable line 97 with the IP address of your ganache container, port 8545.
 
-7. After this change, compile the code using the `compile.sh` bash script located at the root of the same [repository](https://github.com/zbh888/free5gc-compose.git). You will get a docker image for the blockchain-assisted AMF, free5gc-compose-free5gc-amf. Store it to your docker hub or as a git package. With this image built, you do not need this code anymore except if your ganache container changes IP address (when restarting it for example).
+8. After this change, compile the code using the `compile.sh` bash script located at the root of the same [repository](https://github.com/zbh888/free5gc-compose.git). You will get a docker image for the blockchain-assisted AMF, free5gc-compose-free5gc-amf. Store it to your docker hub or as a git package. With this image built, you do not need this code anymore except if your ganache container changes IP address (when restarting it for example).
 
 
-8. In the deployment files located at `5g-bv-storm/5g-manifests/free5gc/nf/amf{1,2,3}-storm/amf-deployment.yaml`, set the field spec>template>spec>containers['image'] to the docker image of the AMF you have just built.
+9. In the deployment files located at `5g-bv-storm/5g-manifests/free5gc/nf/amf{1,2,3}-storm/amf-deployment.yaml`, set the field spec>template>spec>containers['image'] to the docker image of the AMF you have just built.
 
-9. Before running the experiments, the last step you have to do is to populate the MongoDB. For the experiment use cases to be relevant, please add the following imsi ranges to the database: 
-(20893000000000 to 20893000000120), (20893000001000 to 20893000001220) and (20893000002000 to 20893000002220). The other fields must all be fixed to the values stored in `5g-bv-storm/5g-manifests/ueransim-ue-benign/ue1/ue-configmap.yaml`. Do **not** add imsi values between 20893000005000 and 20893000005220.
+10. Before running the experiments, the last step you have to do is to populate the MongoDB using the Free5GC webconsole. The webconsole can be accessed at port 30600 on any of the Kubernetes nodes. For the experiment use cases to be relevant, please add the following imsi ranges to the database: 
+(20893000000000 to 20893000000120), (20893000001000 to 20893000001220) and (20893000002000 to 20893000002220). The other fields must all be fixed to the values stored in `free5gc-ue.yaml` in `5g-bv-storm/5g-manifests/ueransim-ue-benign/ue1/ue-configmap.yaml`. Do **not** add imsi values between 20893000005000 and 20893000005220.
 
 **IMPORTANT: Make sure to back up this database once populated.**
 
-10.  If you have set up Grafana/Prometheus, you may change the variable ```PROMETHEUS_URL``` in the top of `5g-bv-storm/src/flooding_simulation`.
+11.  If you have set up Grafana/Prometheus, you may change the variable ```PROMETHEUS_URL``` in the top of `5g-bv-storm/src/flooding_simulation`.
 If you have not, make sure to set the boolean `withPrometheus` line 28 of this same script to `False`.
 
-11. You now can start a registration storm by simply running the following:
+12. You now can start a registration storm by simply running the following:
 ```
 python3 src/flooding_simulation.py
 ```

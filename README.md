@@ -1,5 +1,20 @@
 # 5g-bv-storm
 
+If you wish to utilize this work in your research, we kindly request that you include the following citation:
+
+```
+@INPROCEEDINGS{10327880,
+  author={Zhang, Bohan and Zeinaty, Paul and Limam, Noura and Boutaba, Raouf},
+  booktitle={2023 19th International Conference on Network and Service Management (CNSM)}, 
+  title={Mitigating Signaling Storms in 5G with Blockchain-assisted 5GAKA}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-9},
+  keywords={Resistance;Protocols;Costs;5G mobile communication;Storms;Emulation;Authentication;5G;security;5GAKA;signaling storm;blockchain},
+  doi={10.23919/CNSM59352.2023.10327880}
+}
+```
 
 
 
